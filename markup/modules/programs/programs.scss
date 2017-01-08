@@ -1,0 +1,2082 @@
+.js-first-paragraph {
+    div { display: none;
+        &:first-child { display: block; }
+    }
+    &__link { color: #ef465b; display: inline-block; margin-top: rem(30); text-decoration: none; }
+}
+
+.programs {
+    background: #f6f6f6;
+
+    @include below($mobile) {
+        padding: 0 0 rem(20);
+        overflow-x: hidden;
+    }
+
+    .start {
+        background: transparent;
+        min-height: 28rem;
+    }
+
+    .start__title {
+        margin-bottom: 0;
+    }
+
+    &__content-wrap {
+
+    }
+
+    &__tab {
+        @include below($mobile) {
+            margin: 0 rem(10) rem(10);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: rem(100);
+            padding: rem(20) rem(25);
+            font-size: rem(18);
+            line-height: rem(24);
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #fff;
+            border-radius: rem(3);
+            box-shadow: 1px 1.7px 4px rgba(4, 4, 4, 0.28);
+
+            &_bachelor {
+                background-color: #742a49;
+            }
+            &_middle {
+                background-color: #456633;
+            }
+            &_bottom {
+                background-color: #464646;
+            }
+        }
+    }
+
+    &__more {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: rem(14);
+        letter-spacing: rem(2);
+        font-weight: normal;
+        display: inline-block;
+        margin-bottom: rem(25);
+        color: #ef465b;
+
+        @include above($mobile) {
+            display: none;
+        }
+
+        &_direction {
+            position: relative;
+            z-index: 9999;
+        }
+    }
+
+    &__hr {
+        margin: rem(40) 0;
+        
+        &_hide {
+            @include below($mobile) {
+                display: none;
+            }
+        }
+    }
+
+    &__title {
+        font-size: rem(48);
+        margin: rem(40) 0;
+        font-weight: normal;
+        letter-spacing: rem(10);
+        text-align: center;
+        text-transform: uppercase;
+        color: #000000 !important;
+        
+        @include below($mobile) {
+            display: none;
+        }
+    }
+
+    &__subtitle {
+        font-weight: normal;
+        font-size: rem(30);
+        margin-bottom: rem(30);
+        letter-spacing: rem(5);
+        margin-top: 0;
+        text-transform: uppercase;
+        text-align: center;
+
+        @include below($mobile) {
+            display: none;
+        }
+        &_mobile {
+            display: block;
+            margin-bottom: rem(20);
+            font-size: rem(18);
+            line-height: rem(20);
+            letter-spacing: 0.15em;
+
+            @include above($mobile) {
+                display: none;
+            }
+        }
+    }
+
+    &__desc {
+        text-align: center;
+        font-size: rem(28);
+        margin-bottom: rem(40);
+        line-height: rem(33);
+
+        @include below($mobile) {
+            display: none;
+        }
+        &_mobile {
+            display: none;
+            padding: 0 rem(10);
+            font-size: rem(14);
+            font-weight: 300;
+            line-height: rem(16);
+            margin-bottom: rem(20);
+        }
+        &_direction {
+            position: relative;
+            z-index: 9999;
+        }
+    }
+
+    &__content {
+        background: #ffffff;
+        border-radius: rem(3);
+        padding: rem(40) rem(46) rem(46);
+        position: relative;
+        z-index: 1;
+        margin-bottom: rem(50);
+
+        @include below($mobile) {
+            padding: 0;
+            margin-bottom: rem(30);
+            text-align: center;
+            background: #f6f6f6;
+
+            &_mobile {
+                display: none;
+                padding: rem(20) rem(10) rem(10) rem(10);
+
+                &.active {
+                    padding-top: rem(20);
+                    background-color: #ffffff;
+                }
+            }
+        }
+    }
+
+    .bid-tabs {
+        margin-bottom: rem(30);
+        
+        @include below($mobile) {
+            display: none;
+        }
+    }
+
+    .bid-tabs__item.active {
+        color: #000000;
+    }
+
+    .bid-tabs__item.active:before {
+        border-color: #f6f6f6 transparent transparent transparent;
+    }
+
+    .prof__list {
+        height: auto;
+    }
+}
+
+.programs-row {
+    margin: 0 rem(-20);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &--bottom {
+        margin: 0;
+        border-radius: 3px;
+        background-color: #f5f5f5;
+        box-shadow: 0 2px 4px rgba(4,4,4,.28);
+
+        .program__more {
+            color: #fff;
+        }
+        @include below($mobile) {
+            .program__hr {
+                background-image: url("../img/general/hr.png") !important;
+                opacity: 1;
+            }
+        }
+    }
+
+    &__col {
+        float: left;
+        width: percentage(1/2);
+        padding: 0 rem(20);
+
+        display: flex;
+        flex-direction: column;
+
+        @include below($mobile) {
+            display: flex;
+            width: 100%;
+            margin-bottom: rem(10);
+            float: none;
+        }
+    }
+
+    &--bottom &__col {
+        padding: 0;
+    }
+}
+
+.program-box {
+}
+
+.program {
+    border-radius: rem(3);
+    text-align: center;
+    font-weight: normal;
+    position: relative;
+    perspective: 1000;
+    //height: 0;
+    //padding-bottom: 100%;
+
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+
+    &__mobile-desc {
+        display: none;
+
+        .program__more--close {
+            margin-bottom: rem(15);
+        }
+        .program__links {
+            margin-bottom: rem(30);
+        }
+    }
+
+    @include below($mobile) {
+
+        hr {
+            display: none;
+        }
+    }
+
+    &--bottom {
+        box-shadow: none;
+        overflow: hidden;
+        height: rem(300);
+
+        @include below($mobile) {
+            height: auto;
+        }
+    }
+
+    &--gray {
+        box-shadow: none;
+        height: rem(300);
+
+        @include below($mobile) {
+            height: auto;
+        }
+    }
+
+    &__mask {
+        box-shadow: 0 rem(2) rem(4) rgba(4,4,4,.28);
+        position: relative;
+        z-index: 100;
+        backface-visibility: hidden;
+        transform-style: preserve-3d;
+        transition: transform 0.6s;
+        transform: rotateY(0deg);
+
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+
+        border-radius: rem(3);
+        overflow: hidden;
+
+        &--back {
+            background: #742a49;
+            transform: rotateY(-180deg);
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+    }
+
+    &--open &__mask {
+        transform: rotateY(180deg);
+    }
+
+    &--open &__mask--back {
+        transform: rotateY(0deg);
+    }
+
+    &--bachelor &__mask,
+    &--magistrate &__mask {
+        background-color: #742a49;
+    }
+
+    &--middle &__mask {
+        background: #456633;
+    }
+
+    &--courses &__mask {
+        background: #0f4579;
+    }
+
+    &__content {
+        padding: rem(30);
+        color: #ffffff;
+        position: relative;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: cover;
+        flex: 1 1 auto;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+
+        @include below($mobile) {
+            padding-bottom: 0;
+        }
+
+        @include below($mobile) {
+            padding: rem(20);
+        }
+    }
+
+    &--gray &__content {
+        padding-bottom: 0;
+    }
+
+    &--gray &__content {
+        color: #000000;
+    }
+
+    &--bachelor &__content {
+        background-image: url(../img/content/bachelor.jpg);
+
+        &:before {
+            background: rgba(116, 42, 73, 0.8);
+        }
+    }
+
+    &--magistrate &__content {
+        background-image: url(../img/content/magistrate.jpg);
+
+        &:before {
+            background: rgba(116, 42, 73, 0.8);
+        }
+    }
+
+    &--middle &__content {
+        background-image: url(../img/content/middle.jpg);
+
+        &:before {
+            background: rgba(69, 102, 51, 0.8);
+        }
+    }
+
+    &--courses &__content {
+        background-image: url(../img/content/courses.jpg);
+
+        &:before {
+            background: rgba(15, 69, 121, 0.8);
+        }
+    }
+
+    &--bottom &__content {
+        background-image: url(../img/content/program-bottom.jpg);
+        height: rem(300);
+
+        @include below($mobile) {
+            height: auto;
+        }
+    }
+
+    .program__mask--back &__content {
+        background: none;
+        padding-bottom: 0;
+    }
+
+    &__inner {
+        position: relative;
+        z-index: 100;
+    }
+
+    &__title {
+        font-size: rem(45);
+        font-weight: normal;
+        letter-spacing: rem(1);
+        margin: rem(15) 0 rem(20) 0;
+
+        @include below($mobile) {
+            font-size: rem(36);
+            font-weight: 500;
+            line-height: rem(38);
+        }
+    }
+
+    &__text {
+        color: #b6b6b6;
+        font-size: rem(12);
+        text-transform: uppercase;
+        letter-spacing: rem(2);
+        line-height: rem(14);
+
+        &--white {
+            color: #ffffff;
+            margin-top: rem(5);
+        }
+
+        @include below($mobile) {
+            font-size: rem(12);
+            font-weight: 300;
+            line-height: rem(14);
+        }
+    }
+
+    &__text-open {
+        @include below($mobile) {
+            margin-bottom: rem(30);
+        }
+    }
+
+    &--gray &__text--white {
+        color: #000000;
+    }
+
+    &__desc {
+        font-size: rem(18);
+        margin-bottom: rem(20);
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        @include below($mobile) {
+            font-size: rem(18);
+            font-weight: 300;
+            line-height: rem(20);
+        }
+
+        &--small {
+            font-size: rem(12);
+        }
+    }
+
+    &__hide-desc {
+        font-size: rem(14);
+        line-height: rem(17);
+        margin-bottom: rem(20);
+        //height: rem(82);
+        //overflow: hidden;
+
+        @include below($mobile) {
+            font-weight: 300;
+        }
+    }
+
+    &__links {
+        margin-top: rem(10);
+
+        &_directions {
+            @include below($mobile) {
+                color: #ef465b;
+            }
+        }
+    }
+
+    &__link {
+        text-decoration: underline;
+        font-size: rem(18);
+        color: #ffffff;
+
+        @include below($mobile) {
+            margin-bottom: rem(10);
+            display: block;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+    }
+
+    &__more {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: rem(14);
+        letter-spacing: rem(2);
+        font-weight: normal;
+        display: inline-block;
+        margin-bottom: rem(25);
+
+        &--close {
+            @include below($mobile) {
+                margin-bottom: 0;
+            }
+        }
+        &.active {
+            display: none;
+        }
+    }
+
+    &--bachelor a {
+        color: #ef465b;
+    }
+
+    &--magistrate a {
+        color: #ef465b;
+    }
+
+    &--middle a {
+        color: #b2d340;
+    }
+
+    &--courses a {
+        color: #27b2e4;
+    }
+
+    &__hr {
+        margin-bottom: rem(30);
+
+        @include below($mobile) {
+            display: block !important;
+            background: url("../img/general/hr-gray.png") 0 0 repeat-x transparent !important;
+            opacity: 0.3;
+        }
+    }
+
+    .program__mask--back &__hr {
+        margin-top: rem(38);
+        margin-bottom: rem(38);
+    }
+
+    &--gray &__hr {
+        margin-top: rem(35);
+    }
+
+    &__row {
+        @include cf;
+        margin: 0 rem(-30) rem(30) rem(-30);
+
+        @include below($mobile) {
+            margin: 0 0 rem(30) 0;
+
+            &--close {
+
+                & *:not(.program__close),
+                *:not(.program__text) {
+                    display: none;
+                }
+            }
+        }
+        @include below($mobile) {
+            //margin-bottom: rem(15);
+        }
+    }
+    //
+    //&--middle &__row {
+    //    margin-bottom: rem(14);
+    //}
+
+    &__col {
+        float: left;
+        width: percentage(1/2);
+        padding-bottom: rem(10);
+
+        @include below($mobile) {
+            width: 100%;
+            float: none;
+            margin-bottom: rem(13);
+        }
+        &:last-child {
+            @include below($mobile) {
+                margin-bottom: 0;
+                padding-bottom: 0;
+            }
+        }
+        & + & {
+            background: url(../img/general/hr-purple-vertical.png) 0 0 repeat-y transparent;
+
+            @include below($mobile) {
+                background: transparent !important;
+            }
+        }
+
+    }
+
+    &--gray &__col {
+        padding-bottom: 0;
+    }
+
+    &--middle &__col + &__col {
+        background: url(../img/general/hr-green-vertical.png) 0 0 repeat-y transparent;
+
+        @include below($mobile) {
+            background: transparent;
+        }
+    }
+
+    &--courses &__col + &__col {
+        background: url(../img/general/hr-blue-vertical.png) 0 0 repeat-y transparent;
+    }
+
+    &--gray &__col + &__col {
+        background: url(../img/general/hr-vertical.png) 0 0 repeat-y transparent;
+    }
+
+    &__sum {
+        font-size: rem(30);
+        font-weight: normal;
+        margin-top: rem(6);
+
+        @include below($mobile) {
+            font-size: rem(24);
+            line-height: rem(26);
+        }
+    }
+
+    &__footer {
+        padding: rem(30);
+
+        @include below($mobile) {
+            padding-top: 0;
+        }
+
+        .btn.btn_md {
+            letter-spacing: normal;
+        }
+
+        .btn {
+            @include below($mobile) {
+                margin-bottom: rem(15);
+                font-size: rem(14);
+                line-height: rem(16);
+            }
+        }
+
+        .btn + .btn {
+            margin-left: rem(20);
+
+            @include below($mobile) {
+                margin-left: 0;
+            }
+        }
+    }
+
+    .program__mask--back &__footer {
+
+        padding-top: 0;
+
+        .btn + .btn {
+            margin-left: 0;
+        }
+    }
+
+    &--gray &__footer {
+        padding-top: 0;
+    }
+
+    &--middle .hr-purple {
+        background: url(../img/general/hr-green.png) 0 0 repeat-x !important;
+    }
+
+    &--courses .hr-purple {
+        background: url("../img/general/hr-blue.png") 0 0 repeat-x transparent !important;
+    }
+
+    &__close {
+        display: inline-block;
+
+        color: $brand-primary;
+        text-decoration: none;
+
+        &--margin-top {
+            margin-top: rem(15);
+        }
+    }
+
+    &__direction {
+        margin-top: rem(5);
+
+        font-size: rem(14);
+        text-transform: uppercase;
+        line-height: 1.3;
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+    &__btn {
+        display: block;
+        padding: rem(16) rem(20);
+        margin: 0 auto;
+        width: 90%;
+        max-width: rem(300);
+        border: 2px solid;
+
+        color: $brand-primary;
+        font-size: rem(14);
+        font-weight: 500;
+        text-transform: uppercase;
+        text-decoration: none;
+
+        border-radius: rem(30);
+        background-color: transparent;
+    }
+}
+
+
+.program-text {
+    @include cf;
+    margin-bottom: 40px;
+
+    &__col {
+        float: left;
+        width: 50%;
+        text-align: center;
+        font-size: rem(18);
+        line-height: rem(22);
+        position: relative;
+        padding: 5px 0;
+
+        & + & {
+            &:before {
+                content: '';
+                position: absolute;
+                width: 3px;
+                background: url(../img/general/vr.png) 0 0 repeat-y;
+                height: 100%;
+                left: 0;
+                top: 0;
+            }
+        }
+    }
+}
+
+.mail-tab {
+    position: fixed;
+    top: 20%;
+    z-index: 150;
+    right: rem(10);
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+    width: rem(150);
+    height: rem(150);
+    border-radius: 50%;
+    opacity: 1;
+    transition: opacity .5s ease-in-out;
+
+    @include below($mobile) {
+        display: none;
+    }
+
+    &:before {
+        content: '';
+        width: rem(150);
+        height: rem(150);
+        border-radius: 50%;
+        position: absolute;
+        background: #fccb0b;
+        top: 0;
+        left: 0;
+        z-index: 10;
+    }
+
+    &:after {
+        content: '';
+        width: rem(150);
+        height: rem(150);
+        border-radius: 50%;
+        position: absolute;
+        top: rem(2);
+        left: rem(2);
+        background: #862733;
+    }
+
+    .fp-viewing-0 & { opacity: 0; }
+
+    &__text {
+        text-transform: uppercase;
+        font-size: rem(14);
+        font-weight: 900;
+        color: #ffffff;
+        line-height: 1.2;
+        margin-bottom: rem(10);
+        padding-top: rem(26);
+        position: relative;
+        z-index: 100;
+
+    }
+
+    &__mail {
+        width: rem(90);
+        margin: 0 auto;
+        height: rem(60);
+        z-index: 100;
+        position: relative;
+        background-image: url('%=static=%general/big-mail.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 0 0;
+    }
+}
+
+.new-mail {
+    text-align: right;
+    padding-right: rem(75);
+}
+
+.mail-icon {
+    position: fixed;
+    top: rem(500);
+    z-index: 150;
+    display: none !important;
+    right: 0;
+    text-decoration: none;
+    color: #ffffff;
+
+
+    &__img {
+        display: block;
+        background-position: 50% 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &__text {
+        text-transform: uppercase;
+        font-size: rem(18);
+        font-weight: 900;
+        color: #ffffff;
+        line-height: 1.2;
+        margin-bottom: rem(10);
+        padding-top: rem(26);
+        position: relative;
+        z-index: 100;
+    }
+
+    &__mail {
+        width: rem(123);
+        margin: 0 auto;
+        height: rem(81);
+        z-index: 100;
+        position: relative;
+        background-image: url('%=static=%general/big-mail.png');
+    }
+
+    &--1 {
+        text-align: center;
+        width: rem(206);
+        height: rem(206);
+        border-radius: 50%;
+
+        &:before {
+            content: '';
+            width: rem(206);
+            height: rem(206);
+            border-radius: 50%;
+            position: absolute;
+            background: #fccb0b;
+            top: 0;
+            left: 0;
+            z-index: 10;
+        }
+
+        &:after {
+            content: '';
+            width: rem(206);
+            height: rem(206);
+            border-radius: 50%;
+            position: absolute;
+            top: rem(3);
+            left: rem(3);
+            background: #862733;
+        }
+    }
+
+    &--2 &__img {
+        width: rem(127);
+        height: rem(127);
+        background-image: url('%=static=%general/mail-icon-2.png');
+    }
+
+    &__count {
+        display: block;
+        border-radius: 50%;
+        background-color: #ef465b;
+        position: absolute;
+        color: #ffffff;
+        text-align: center;
+        font-weight: 700;
+        font-size: rem(24);
+    }
+
+    &--1 &__count {
+        height: rem(38);
+        line-height: rem(38);
+        min-width: rem(40);
+        right: rem(-13);
+        top: rem(-13);
+    }
+
+    &--2 &__count {
+        height: rem(32);
+        line-height: rem(32);
+        min-width: rem(32);
+        right: rem(13);
+        top: rem(24);
+    }
+}
+
+.mail-msg {
+    display: none;
+    position: absolute;
+    top: 100px;
+    bottom: rem(15);
+    left: 0;
+    right: 0;
+    width: rem(650);
+    //max-height: rem(800);
+    //overflow-y: auto;
+    margin: 0 auto;
+    z-index: 7000;
+
+    &:before {
+        content: '';
+        position: absolute;
+        width: rem(248);
+        height: rem(237);
+        background: url('%=static=%general/mail-msg-box.png') no-repeat 50% 50%;
+        background-size: cover;
+        right: rem(-88);
+        top: rem(-90);
+        z-index: 8000;
+    }
+
+    @include below($mobile) {
+        top: 32px !important;
+        max-height: 100vh;
+        overflow-y: auto !important;
+
+        width: 100%;
+        padding: 0 rem(10);
+
+        &:before {
+            left: rem(-32);
+            top: 0.25rem;;
+            z-index: 0;
+
+            width: rem(143);
+            height: rem(131);
+
+            background-size: contain;
+
+            transform: rotate(-65deg);
+        }
+    }
+
+    &__content {
+        box-shadow: 0 rem(2) rem(4) rgba(4,4,4,.28);
+        background: #ececec url('%=static=%general/mail-msg-top.png') no-repeat center top;
+        background-size: contain;
+        padding: rem(45) rem(40) rem(45) rem(60);
+        position: relative;
+        margin-bottom: rem(30);
+
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: rem(318);
+            background: url('%=static=%general/mail-msg-bottom.png') no-repeat 50% 50%;
+            background-size: cover;
+        }
+
+        @include below($mobile) {
+            padding: rem(30) rem(20) rem(50);
+            margin-bottom: rem(20);
+            margin-top: 2.875rem;
+            background-image: url(%=static=%general/mail-msg-top-mob.png);
+            background-position: top right;
+            background-size: rem(180) rem(150);
+            background-color: #fff;
+
+            &:after {
+                background: url('%=static=%general/mail-msg-bottom-mob.png') no-repeat bottom left;
+                background-size: rem(187) rem(200) ;
+            }
+        }
+    }
+
+    &__close {
+        position: absolute;
+        right: rem(16);
+        top: rem(15);
+        z-index:10;
+
+        color: #000;
+        font-weight: 700;
+        font-size: rem(14);
+        text-transform: uppercase;
+        text-decoration: none;
+        
+    }
+
+    &__title {
+        font-size: rem(30);
+        font-weight: 700;
+        line-height: 1.2;
+        letter-spacing: rem(2);
+        margin-bottom: rem(40);
+
+        @include below($mobile) {
+            margin-bottom: rem(28);
+
+            font-size: rem(24);
+        }
+    }
+
+    &__text {
+        line-height: 1.3;
+        font-size: rem(16);
+        position: relative;
+        z-index: 1;
+        margin-bottom: rem(40);
+
+        p {
+            margin-bottom: rem(22);
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        @include below($mobile) {
+            font-size: rem(15);
+        }
+    }
+
+    &__btns {
+        @include cf;
+        margin-bottom: rem(25);
+        margin-right: rem(15);
+
+        @include below($mobile) {
+            margin: 0 0 rem(20);
+        }
+    }
+
+    &__btn {
+        width: 50%;
+        float: left;
+        padding: 0 rem(18);
+
+        //&:first-child {
+        //    padding-right: rem(18);
+        //}
+        //
+        //&:last-child {
+        //    padding-left: rem(18);
+        //}
+
+        a {
+            display: block;
+            height: rem(62);
+            line-height: rem(62);
+            border-radius: rem(25);
+            font-size: rem(21);
+            text-transform: uppercase;
+            color: #ffffff;
+            text-decoration: none;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        &--pink a {
+            background: #ef475b;
+        }
+
+        &--green a {
+            background: #acd23f;
+        }
+
+        @include below($mobile) {
+            width: 100%;
+            margin-bottom: rem(20);
+            float: none;
+            padding: 0 rem(10);
+        }
+    }
+}
+
+.mail-msg-wrap {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: rem(650);
+
+    @include below($mobile) {
+        width: 100%;
+    }
+}
+
+.mail-msg-inner {
+    position: relative;
+    width: rem(650);
+    height: 100%;
+    overflow-y: auto;
+
+    @include below($mobile) {
+        width: 100%;
+    }
+}
+
+.mail-msg__socials {
+    text-align: right;
+    padding-right: rem(25);
+
+    @include below($mobile) {
+        padding: 0 rem(20);
+
+        text-align: left;
+    }
+}
+
+.mail-msg__social {
+    display: inline-block;
+
+    &-title {
+        font-size: rem(21);
+        letter-spacing: 1px;
+        color: #ffffff;
+        margin-bottom: rem(15);
+    }
+
+    ul {
+        @include cf;
+        @include reset-list;
+
+        li {
+            float: left;
+        }
+
+        li + li {
+            margin-left: rem(11);
+        }
+    }
+}
+
+.feedback-form {
+    display: none;
+    position: fixed;
+    top: 100px !important;
+    left: 0;
+    right: 0;
+    bottom: 100px;
+    width: rem(866);
+    margin: 0 auto;
+    z-index: 7000;
+
+    @include below($mobile) {
+        top: rem(40) !important;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        min-height: rem(480);
+    }
+
+    &__wrap {
+        position: relative;
+        height: rem(760);
+        max-height: 100%;
+        width: 100%;
+        margin: 0 auto;
+
+        border-radius: rem(3);
+        overflow: auto;
+        background: #ffffff url("../img/general/mail-form.png") no-repeat left top;
+
+        @include below($mobile) {
+            background: #ffffff;
+            border-radius: 0;
+        }
+
+        /*&:after {
+            content: '';
+            width: rem(195);
+            height: rem(145);
+            background: url('%=static=%general/mail-form-bottom.png') no-repeat right bottom;
+            background-size: cover;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }*/
+    }
+
+    &__inner {
+        padding: rem(55) rem(75);
+
+        @include below($mobile) {
+            padding: rem(20);
+        }
+    }
+
+    &__submit {
+        color: #fff;
+    }
+
+    &__input {
+        color: #000 !important;
+        font-size: rem(24);
+
+        ::-webkit-input-placeholder,
+        ::-moz-placeholder,
+        :-moz-placeholder,
+        :-ms-input-placeholder {
+            color: #000 !important;
+            font-size: rem(24);
+            font-weight: 500;
+        }
+    }
+
+    &__textarea {
+        color: #8f8f8f !important;
+        font-size: rem(24);
+
+        ::-webkit-input-placeholder,
+        ::-moz-placeholder,
+        :-moz-placeholder,
+        :-ms-input-placeholder {
+            color: #8f8f8f;
+            font-size: rem(24) !important;
+            font-weight: 500;
+        }
+    }
+
+    label.error-class {
+        padding-left: rem(40);
+        font-size: rem(14);
+    }
+
+    .mail-form__col {
+        @include below($mobile) {
+            width: 100%;
+            float: none;
+            padding: 0;
+        }
+    }
+
+    .mail-form__input {
+        @include below($mobile) {
+            height: rem(45);
+            line-height: rem(45);
+            padding: 0 rem(15);
+        }
+    }
+
+    .mail-form__close {
+        @include below($mobile) {
+            top: rem(-40) !important;
+            right: 0 !important;
+            left: 0 !important;
+            padding: rem(12) rem(20);
+            text-align: right;
+            background: #333;
+            color: #fff;
+        }
+    }
+
+    .mail-form__textarea {
+        @include below($mobile) {
+            height: auto;
+            min-height: rem(150);
+            margin-top: 0;
+            margin-bottom: rem(20);
+            padding: rem(15);
+        }
+    }
+
+    .mail-form__row {
+        @include below($mobile) {
+            margin-top: rem(15);
+        }
+    }
+
+    .mail-future-error {
+        @include below($mobile) {
+            margin: rem(5) 0;
+        }
+    }
+
+    .feedback-form__submit {
+        @include below($mobile) {
+            width: 100%;
+            font-size: rem(12);
+        }
+    }
+}
+
+.feedback-form-success {
+    display: none;
+    position: fixed;
+    top: 0 !important;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: rem(866);
+    height: rem(185);
+    margin: auto;
+    z-index: 7000;
+
+    @include below($mobile) {
+        width: 100%;
+    }
+
+    &__wrap {
+        position: relative;
+        //height: 100%;
+        overflow: hidden;
+        background: #ffffff url("../img/general/mail-form.png") no-repeat left top;
+        //width: rem(866);
+        margin: 0 auto;
+        padding: rem(55) rem(75);
+        border-radius: rem(3);
+
+        @include below($mobile) {
+            background: #ffffff;
+            padding: rem(40) rem(20);
+        }
+
+        &:after {
+            @include above($mobile) {
+                content: '';
+                width: rem(195);
+                height: rem(145);
+                background: url('%=static=%general/mail-form-bottom.png') no-repeat right bottom;
+                background-size: cover;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+        }
+    }
+}
+
+.mail-form {
+    display: none;
+    position: fixed;
+    top: 41px !important;
+    left: 0;
+    right: 0;
+    //bottom: 100px;
+    width: 54.125rem;
+    max-height: 92vh;
+    margin: 0 auto;
+    z-index: 7000;
+    overflow-y: auto;
+
+    @include below($mobile) {
+        top: 10px !important;
+
+        width: 100%;
+        max-height: 100vh;
+        padding: rem(50) rem(10);
+
+        background: #fbca31;
+
+        &:before {
+            position: absolute;
+            top: rem(6);
+            left: rem(21);
+
+            width: rem(42);
+            height: rem(27);
+
+            background: url(__static__general/mail.svg) no-repeat;
+            background-size: contain;
+
+            content: '';
+        }
+
+
+        .fsz-30 {
+            font-size: rem(24);
+        }
+
+        hr{
+            display: none;
+        }
+
+        .text-center {
+            margin-bottom: rem(18);
+        }
+    }
+
+    &__close {
+        color: #ffffff;
+        position: absolute;
+        font-size: rem(16);
+        text-transform: uppercase;
+        letter-spacing: rem(1);
+        top: rem(-25);
+        z-index: 10;
+        right: 0;
+        font-weight: 500;
+
+        span {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        &:after {
+            content: '';
+            width: rem(18);
+            height: rem(18);
+            background: url('%=static=%general/mail-form-close.png') no-repeat 50% 50%;
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: rem(10);
+            background-size: cover;
+
+        }
+        
+        @include below($mobile) {
+            top: rem(11);
+            right: rem(22);
+
+            color: #000;
+
+            &:after {
+                display: none;
+            }
+        }
+    }
+
+    * {
+        outline: none;
+    }
+
+    input[type='submit'] {
+        color: #ffffff;
+    }
+
+    &__row {
+        @include cf;
+
+        &--one {
+            margin-bottom: rem(15);
+
+            @include below($mobile) {
+                margin: 0;
+            }
+        }
+    }
+
+    &__col {
+        float: left;
+        width: 50%;
+
+        &--left {
+            padding-right: rem(20);
+        }
+
+        &--right {
+            padding-left: rem(20);
+        }
+
+        @include below($mobile) {
+            width: 100%;
+            float: none;
+
+            &--right,
+            &--left {
+                padding: 0;
+            }
+
+            &--left {
+                margin-bottom: rem(18);
+            }
+        }
+
+        .select2-container {
+            width: 100% !important;
+            //margin-bottom: rem(10);
+        }
+
+        .select2-container.select2-container--default.select2-container--open {
+            @include below($mobile) {
+                //top: 44px !important;
+            }
+        }
+
+        .select2-selection {
+            width: 100%;
+            height: rem(44);
+            border: none;
+            padding: 0 rem(30);
+            border-radius: rem(3);
+            background-color: #fccb0b;
+            box-shadow: inset 0 rem(1) rem(5) rgba(4,4,4,.31);
+
+            @include below($mobile) {
+                //height: rem(74);
+                padding: 0 rem(20);
+            }
+        }
+
+        .select2-selection__rendered {
+            line-height: rem(44) !important;
+            font-size: rem(18);
+            font-weight: 500 !important;
+            color: #a18004 !important;
+            display: block !important;
+            padding-left: 0 !important;
+
+            @include below($mobile) {
+
+            }
+        }
+
+        .select2-selection__placeholder {
+            font-weight: 500 !important;
+            color: #a18004 !important;
+        }
+
+        .select2-container--default .select2-selection--single .select2-selection__arrow {
+            right: rem(15);
+            top: 50%;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: rem(12) rem(16) 0 rem(16);
+            border-color: #000000 transparent transparent transparent;
+
+            b {
+                display: none;
+            }
+        }
+
+        .select2-dropdown {
+            background: #ffffff;
+            border: none;
+            box-shadow: rem(1) rem(2) rem(4) rgba(4,4,4,.28);
+        }
+
+        .select2-search--dropdown {
+            padding: rem(10);
+        }
+
+        .select2-container .select2-search--dropdown .select2-search__field {
+            outline: none;
+            border: none;
+            padding: 0 rem(20);
+            height: rem(46);
+            border-radius: rem(23);
+            background-color: #fff;
+            font-size: rem(30);
+            box-shadow: inset rem(3) rem(4) rem(5) rgba(4,4,4,.17);
+
+            @include below($mobile) {
+                height: rem(30);
+            }
+        }
+
+        .select2-results__option {
+            padding: rem(15) rem(30);
+            font-size: rem(30);
+            border-top: 1px solid #e0e0e0;
+
+            @include below($mobile) {
+                padding: rem(7) rem(20);
+
+                font-size: rem(18);
+            }
+        }
+
+        .select2-container--default .select2-results__option[aria-selected=true] {
+            background: #949494;
+            color: #ffffff;
+        }
+
+        .select2-container--default .select2-results__option--highlighted[aria-selected] {
+            background: #27b2e4;
+        }
+
+        ::-webkit-input-placeholder {
+            color: #a18004;
+            font-weight: 500;
+        }
+
+        ::-moz-placeholder {
+            color: #a18004;
+            font-weight: 500;
+        }
+
+        :-moz-placeholder {
+            color: #a18004;
+            font-weight: 500;
+        }
+
+        :-ms-input-placeholder {
+            color: #a18004;
+            font-weight: 500;
+        }
+    }
+
+    &__title {
+        font-size: rem(18);
+        letter-spacing: rem(1);
+        font-weight: 500;
+        margin-bottom: rem(20);
+
+        span {
+            color: #ef465b;
+            margin-left: rem(4);
+        }
+
+        @include below($mobile) {
+            font-size: rem(14);
+        }
+    }
+
+    &__label {
+        cursor: pointer;
+
+        input[type='radio'],
+        input[type='checkbox'] {
+            display: none;
+        }
+
+        & + & {
+            margin-left: rem(25);
+        }
+
+        @include below($mobile) {
+            display: inline-block;
+            width: 49%;
+            vertical-align: top;
+
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+            & + & {
+                margin-left: 0;
+            }
+        }
+    }
+
+    &__label input[type=radio]:checked + &__check {
+        background: #b2d340;
+    }
+
+    &__check {
+        display: inline-block;
+        vertical-align: middle;
+        width: rem(37);
+        height: rem(37);
+        border-radius: 50%;
+        background-color: #fbcb0b;
+        box-shadow: inset 0 0 rem(4) rgba(4,4,4,.75);
+    }
+
+    &__legend {
+        font-size: rem(18);
+        letter-spacing: rem(1);
+        color: #adadad;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: rem(10);
+    }
+
+    &__years {
+        //position: relative;
+    }
+
+    &__input {
+        height: rem(74);
+        border-radius: rem(3);
+        background-color: #fbcb0b;
+        outline: none;
+        width: 100%;
+        border: none;
+        font-weight: 500;
+        padding: 0 rem(38);
+        box-shadow: inset 0 rem(1) rem(5) rgba(4,4,4,.31);
+        color: #a18004 !important;
+        -webkit-appearance: none;
+
+        & + .error-class {
+            margin-top: rem(8);
+        }
+
+        @include below($mobile) {
+            color: #000 !important;
+            padding: 0 rem(15);
+        }
+    }
+
+    &__textarea {
+        width: 100%;
+        height: rem(210);
+        margin: rem(15) 0;
+        padding: rem(25) 0 0 rem(35);
+
+        border: none;
+        border-radius: rem(3);
+        box-shadow: inset 0 rem(1) rem(5) rgba(4,4,4,.31);
+        resize: none;
+        -webkit-appearance: none;
+    }
+}
+
+.mail-form-wrap {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    background: #ffffff url("../img/general/mail-form.png") no-repeat left top;
+    //width: rem(866);
+    margin: 0 auto;
+    border-radius: rem(3);
+
+    &:after {
+        content: '';
+        width: rem(195);
+        height: rem(145);
+        background: url('%=static=%general/mail-form-bottom.png') no-repeat right bottom;
+        background-size: cover;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    @include below($mobile) {
+        padding: rem(20) rem(10) rem(40);
+
+        background: #fff;
+
+        &::after {
+            display: none;
+        }
+    }
+}
+
+.mail-form-inner {
+    position: relative;
+    height: 100%;
+    padding: rem(65) rem(85) rem(82) rem(85);
+    //width: rem(890);
+    z-index: 10;
+    overflow: auto;
+
+    @include below($mobile) {
+        padding: 0;
+    }
+}
+
+.mail-form-direct {
+    position: relative;
+    margin-bottom: rem(30);
+
+    @include below($mobile) {
+        margin-bottom: 0;
+    }
+
+    .select2-container {
+        width: 100% !important;
+        z-index: 7001;
+        //margin-bottom: rem(10);
+    }
+
+    .select2-selection {
+        width: 100%;
+        height: rem(74);
+        border: none;
+        padding: 0 rem(30);
+        border-radius: rem(3);
+        background-color: #b2d340;
+        box-shadow: inset 0 rem(1) rem(5) rgba(4,4,4,.31);
+
+        @include below($mobile) {
+            background: #acd23f;
+        }
+    }
+
+    .select2-selection__rendered {
+        line-height: rem(74) !important;
+        font-size: rem(36);
+        font-weight: 500 !important;
+        color: #000000 !important;
+        display: block !important;
+        padding-left: 0 !important;
+    }
+
+    .select2-selection__placeholder {
+        font-weight: 500 !important;
+        color: #000000 !important;
+
+        @include below($mobile) {
+            display: table-cell;
+            vertical-align: middle;
+        }
+    }
+
+    .select2-container--default .select2-selection--single .select2-selection__arrow {
+        right: rem(15);
+        top: 50%;
+        transform: translateY(-50%);
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: rem(12) rem(16) 0 rem(16);
+        border-color: #000000 transparent transparent transparent;
+
+        b {
+            display: none;
+        }
+    }
+
+    .select2-dropdown {
+        background: #ffffff;
+        border: none;
+        box-shadow: rem(1) rem(2) rem(4) rgba(4,4,4,.28);
+    }
+
+    .select2-search--dropdown {
+        padding: rem(10);
+        display: none;
+    }
+
+    .select2-container .select2-search--dropdown .select2-search__field {
+        outline: none;
+        border: none;
+        padding: 0 rem(20);
+        height: rem(46);
+        border-radius: rem(23);
+        background-color: #fff;
+        font-size: rem(30);
+        box-shadow: inset rem(3) rem(4) rem(5) rgba(4,4,4,.17);
+
+        @include below($mobile) {
+            height: rem(28);
+
+            font-size: rem(18);
+        }
+    }
+
+    .select2-results__option {
+        padding: rem(15) rem(30);
+        font-size: rem(30);
+        border-top: 1px solid #e0e0e0;
+
+        @include below($mobile) {
+            padding: rem(7) rem(20);
+
+            font-size: rem(18);
+        }
+    }
+
+    .select2-container--default .select2-results__option[aria-selected=true] {
+        background: #949494;
+        color: #ffffff;
+    }
+
+    .select2-container--default .select2-results__option--highlighted[aria-selected] {
+        background: #27b2e4;
+    }
+
+    .select2-container--default .select2-selection--single .select2-selection__rendered {
+        font-size: rem(30);
+        text-transform: uppercase;
+        font-weight: 700 !important;
+
+        @include below($mobile) {
+            //padding-top: rem(13);
+            height: 100%;
+            display: flex !important;
+            align-items: center;
+
+            font-size: rem(16);
+            white-space: pre-line !important;
+            line-height: 1.5 !important;
+        }
+    }
+}
+
+.mail-future-error {
+    margin-top: rem(10);
+}
+
+.error-class {
+    color: #ef465b;
+    display: inline-block;
+}
+
+.btn_bordered {
+    &.active {
+        display: none;
+    }
+}
+
+.mail-get {
+    padding: rem(10) rem(15);
+
+    color: #fff;
+    letter-spacing: normal;
+
+    @include below($mobile) {
+        padding: rem(18) rem(25) !important;
+        font-size: rem(16) !important;
+        line-height: rem(18) !important;
+    }
+}
+
+.select2-container--mail-form-year {
+    z-index: 7000;
+
+    .select2-results>.select2-results__options {
+        max-height: 200px;
+        overflow-y: auto;
+    }
+
+    .select2-selection {
+        width: 100%;
+        height: rem(44);
+        border: none;
+        padding: 0 rem(30);
+        border-radius: rem(3);
+        background-color: #fccb0b;
+        box-shadow: inset 0 rem(1) rem(5) rgba(4,4,4,.31);
+
+        @include below($mobile) {
+            //height: rem(74);
+            padding: 0 rem(20);
+        }
+    }
+
+    .select2-selection__rendered {
+        line-height: rem(44) !important;
+        font-size: rem(18);
+        font-weight: 500 !important;
+        color: #a18004 !important;
+        display: block !important;
+        padding-left: 0 !important;
+
+        @include below($mobile) {
+
+        }
+    }
+
+    .select2-selection__placeholder {
+        font-weight: 500 !important;
+        color: #a18004 !important;
+    }
+
+    .select2-container--default .select2-selection--single .select2-selection__arrow {
+        right: rem(15);
+        top: 50%;
+        transform: translateY(-50%);
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: rem(12) rem(16) 0 rem(16);
+        border-color: #000000 transparent transparent transparent;
+
+        b {
+            display: none;
+        }
+    }
+
+    .select2-dropdown {
+        background: #ffffff;
+        border: none;
+        box-shadow: rem(1) rem(2) rem(4) rgba(4,4,4,.28);
+    }
+
+    .select2-search--dropdown {
+        padding: rem(10);
+    }
+
+    .select2-search--dropdown .select2-search__field {
+        outline: none;
+        border: none;
+        padding: 0 rem(20);
+        height: rem(46);
+        border-radius: rem(23);
+        background-color: #fff;
+        font-size: rem(30);
+        box-shadow: inset rem(3) rem(4) rem(5) rgba(4,4,4,.17);
+
+        @include below($mobile) {
+            height: rem(30);
+            font-size: rem(18);
+        }
+    }
+
+    .select2-results__option {
+        padding: rem(15) rem(30);
+        font-size: rem(30);
+        border-top: 1px solid #e0e0e0;
+
+        @include below($mobile) {
+            padding: rem(7) rem(20);
+
+            font-size: rem(18);
+        }
+    }
+
+    .select2-container--default .select2-results__option[aria-selected=true] {
+        background: #949494;
+        color: #ffffff;
+    }
+
+    .select2-container--default .select2-results__option--highlighted[aria-selected] {
+        background: #27b2e4;
+    }
+
+    ::-webkit-input-placeholder {
+        color: #a18004;
+        font-weight: 500;
+    }
+
+    ::-moz-placeholder {
+        color: #a18004;
+        font-weight: 500;
+    }
+
+    :-moz-placeholder {
+        color: #a18004;
+        font-weight: 500;
+    }
+
+    :-ms-input-placeholder {
+        color: #a18004;
+        font-weight: 500;
+    }
+}

@@ -1,0 +1,66 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+<head>
+    {{> head/head }}
+</head>
+
+<body class="page">
+    %=symbols=%
+
+    {{> header/header }}
+
+        <div class="container-wide">
+            <div class="not-found">
+                <div class="not-found__wrap">
+                    <div class="not-found__content">
+                        <div class="not-found__error">
+                            <div class="not-found__error-text">404</div>
+                        </div>
+                        <div class="not-found__message">
+                            <p class="not-found__title">Такой страницы не существует.</p>
+                            <p class="not-found__subtitle">Перейдите на <a href="#main.html">Главную</a> или воспользуйтесь поиском.</p>
+                        </div>
+                    </div>
+                    <hr class="hr">
+                    <div class="search-wrap">
+                        <div class="prof-search prof-search--nomargin">
+                            <form method="post">
+                                <div class="prof-search__holder">
+                                    <input class="prof-search__input" type="text">
+                                    <span class="prof-search__placeholder"><span>Например:</span> Психолог</span>
+                                    <input type="submit" class="prof-search__submit" value="Поиск">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div class="container-wide">
+        <div class="start start--hidden js-vertical-anim">
+            <div class="start-wrap-left">
+                {{Icon iconName='logotype' className='start-anim__left js-rotate-anim'}}
+            </div>
+            <div class="start-wrap-right">
+                {{Icon iconName='logotype' className='start-anim__right js-rotate-anim'}}
+            </div>
+            <div class="content">
+                <div class="start__holder">
+                    <h2 class="start__title js-vertical-anim">Начни <br class="mobile-visible"> учиться с нами<br> прямо сейчас!</h2>
+                    <a class="btn btn_default start_btn js-vertical-anim" href="javascript:void(0)">подать заявку</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{> footer/footer }}
+
+    <script src="%=static=%js/separate-js/svg4everybody.min.js"></script>
+    <script>svg4everybody();</script>
+
+    <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
+    <script src="%=static=%js/main%=hash=%%=min=%.js"></script>
+
+</body>
+</html>

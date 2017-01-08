@@ -1,0 +1,73 @@
+<div class="mobile-orientation"><img class="mobile-orientation__img" src="/local/templates/general/markup/builds/static/img/general/rotate.png" alt=""></div>
+
+{{#if main}}
+<header class="header header_main">
+{{else}}
+<header class="header">
+{{/if}}
+	<div class="container choose-city">
+		<a class="logo js-vertical-anim" href="index.html">
+			{{#if main}}
+			{{Icon iconName='logo-main_white' className='logo-main'}}
+			{{else}}
+			{{Icon iconName='logo-main_black' className='logo-main'}}
+			{{/if}}
+		</a>
+		<a class="logo-mobile js-vertical-anim" href="index.html">
+			{{Icon iconName='logo-mobile' className='logo-mobile__icon'}}
+			<span class="logo-mobile__title">Умней</span>
+			<span class="logo-mobile__subtitle">Образование твоего будущего</span>
+		</a>
+		<div class="hamburger">
+			<div class="hamburger__icon"></div>
+		</div>
+		<ul class="header-menu js-vertical-anim">
+			<li class="header-menu__item">
+				<a href="#">Что такое Умней?</a>
+			<li class="header-menu__item">
+				<a href="#">Программы обучения</a>
+			<li class="header-menu__item">
+				<a href="#">Как учиться Умней?</a>
+			<li class="header-menu__item">
+				<a href="#">Зарубежное образование</a>
+			<li class="header-menu__item">
+				<a href="#">Умней на свой счет!</a>
+			{{#if main}}
+			<li class="header-menu__item">
+				<a href="contacts.html">Контакты</a>
+			{{else}}
+			<li class="header-menu__item active">
+				<a href="contacts.html">Контакты</a>
+			{{/if}}
+		</ul>
+		<div class="header__right js-vertical-anim">
+			<div class="header-control">
+				<!--<a class="header-control__item" href="#">ENG</a>-->
+				<a class="header-control__item select-city" href="#">Москва</a>
+                <span class="choose-city-pop">
+                    <span class="choose-city-pop__text">Ваш город:</span>
+                    <select class="choose-city__select">
+                        <option value="1">Челябинск</option>
+                        <option value="2">Челябор</option>
+                        <option value="3">Владивосток</option>
+                        <option value="1">Челябинск</option>
+                        <option value="2">Челябор</option>
+                        <option value="3">Владивосток</option>
+                        <option value="1">Челябинск</option>
+                        <option value="2">Челябор</option>
+                        <option value="3">Владивосток</option>
+                    </select>
+                </span>
+				<a class="header__login" href="#">Личная студия</a>
+			</div>
+			<div class="header-info">
+				<strong>8 (800) 200-61-01</strong>  Бесплатная линия
+			</div>
+			<div class="header-icons clearfix">
+				<a href="#" class="header-icons__item header-icons__item_fb"><img src="static/img/general/fb_header.png" alt=""></a>
+				<a href="#" class="header-icons__item"><img src="static/img/general/vk_header.png" alt=""></a>
+				<a href="#" class="header-icons__item header-icons__item_ok"><img src="static/img/general/ok_header.png" alt=""></a>
+			</div>
+		</div>
+	</div>
+</header>

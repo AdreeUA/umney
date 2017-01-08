@@ -1,0 +1,598 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+<head>
+    {{> head/head }}
+</head>
+
+<body class="page">
+    %=symbols=%
+
+    {{> header/header }}
+
+	<div class="bid oh">
+        <div class="container">
+            <div class="search-wrap">
+                <a href="#" class="search-icon js-vertical-anim"></a>
+                <div class="prof-search prof-search--hidden">
+                    <form method="post">
+                        <div class="prof-search__holder">
+                            <input class="prof-search__input" type="text">
+                            <span class="prof-search__placeholder"><span>Например:</span> Психолог, Финансирование, Бух. учет</span>
+                            <input type="submit" class="prof-search__submit" value="Поиск">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h2 class="bid__title js-vertical-anim">—Программы обучения—</h2>
+            <div class="bid-tabs">
+                <a class="bid-tabs__item js-vertical-anim-3" href="#spec">
+                    <span class="bid-tabs__title">выбрать<br> ваш уровень обучения</span>
+                </a>
+                <a class="bid-tabs__item js-vertical-anim-3" href="#vyz">
+                    <span class="bid-tabs__title">выбрать<br> направление обучения</span>
+                </a>
+                <a class="bid-tabs__item js-vertical-anim-3 active" href="">
+                    <span class="bid-tabs__title">Заполнить<br> заявку на обучение</span>
+                </a>
+            </div>
+        </div>
+        <form action="#">
+            <div class="container-wide">
+                <div class="bid__content">
+                    <div class="bid-learn">
+                        <div class="bid-learn__header js-vertical-anim">
+                            <h2 class="bid-learn__title">заявка на обучение</h2>
+                        </div>
+                        <hr>
+                        <div class="bid-learn__body">
+                            <div class="bid-learn__col js-vertical-anim-3 js-step-1 active">
+                                <div class="bid-learn__head">
+                                    <div class="bid-learn__subtitle">уровень<br>обучения</div>
+                                </div>
+                                <div class="bid-learn__cell">
+                                    <ul class="vmenu vmenu--level">
+                                        <li class="vmenu__item">
+                                            <label class="vmenu__label">
+                                                <input type="radio" name="level" value="1">
+                                                <div class="vmenu__target">
+                                                    <div class="vmenu__text">
+                                                        <div class="vmenu__title">Среднее
+                                                            <div class="vmenu__attention"></div>
+                                                        </div>
+                                                        <div class="vmenu__subtitle">профессиональное образование</div>
+                                                        <div class="vmenu__radio"></div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="program program--middle vmenu__popup">
+                                                    <div class="program__content">
+                                                        <div class="program__inner">
+                                                            <div class="program__row">
+                                                                <div class="program__text">среднее профессиональное образование:</div>
+                                                                <div class="program__title">Среднее</div>
+                                                                <div class="program__desc"> Получение необходимым навыков, <br>достаточных для работы в различных сферах.</div>
+                                                                <div class="program__desc program__desc--small ">После окончания обучения в бакалавриате выпускник получает государственный диплом о высшем профессиональном образовании с присужденной степенью «бакалавр» и может начать применять на практике полученные знания и</div>
+                                                                <hr class="hr-green program__hr">
+                                                                <a href="javascript:void[0]" class="program__close mobile-visible">Закрыть</a>
+                                                            </div>
+                                                            <div class="program__row">
+                                                                <div class="program__col">
+                                                                    <div class="program__text">Срок обучения:</div>
+                                                                    <div class="program__sum">от 2 лет 10 мес.<br> до 4 лет 4 мес.</div>
+                                                                </div>
+                                                                <div class="program__col">
+                                                                    <div class="program__text">Стоимость <br>за 1 семестр:</div>
+                                                                    <div class="program__sum">9 000 руб.</div>
+                                                                </div>
+                                                                <div class="program__text-open">
+                                                                    <div class="program__text">Поступление на базе:</div>
+                                                                    <div class="program__text program__text--white">Диплом 9 класса</div>
+                                                                </div>
+                                                                <a href="javascript:void(0)" class="program__close program__close--margin-top mobile-visible">Закрыть</a>
+                                                            </div>
+                                                            <div class="program__row">
+                                                                <div class="program__text">Направление на обучения:</div>
+                                                                <div class="program__direction">
+                                                                    <a href="#">Бакалавр социальных наук </a>,
+                                                                    <a href="#">Экономика </a>,
+                                                                    <a href="#">Гос. и муниц управление </a>,
+                                                                    <a href="#">Бизнес-информатика </a>,
+                                                                    <a href="#">Логистика на транспорте и бизнесе </a>,
+                                                                    <a href="#">Юриспруденция </a>,
+                                                                    <a href="#">Психология </a>,
+                                                                    <a href="#">Бакалавр социальных наук в экономике </a>,
+                                                                    <a href="#">Менеджмент</a>
+                                                                </div>
+                                                            </div>
+                                                            <a href="javascript:void(0)" class="program__btn js-next-step">Выбрать направление</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                            <div class="vmenu__info">
+                                                <div class="vmenu__info-row">
+                                                    <div class="vmenu__info-label">Ваша будующая квалификация</div>
+                                                    <div class="vmenu__info-value">Бакалавр</div>
+                                                    <a href="#" class="vmenu__link js-vmenu-more">Подробнее</a>
+                                                </div>
+                                                <div class="vmenu__info-row">
+                                                    <div class="vmenu__info-label">Срок обучения</div>
+                                                    <div class="vmenu__info-value">5 лет</div>
+                                                </div>
+                                                <div class="vmenu__info-row">
+                                                    <div class="vmenu__info-label">Стоимость обучения</div>
+                                                    <div class="vmenu__info-value">13 000 руб.</div>
+                                                </div>
+                                                <a href="javascript:void(0)" class="vmenu__info-btn js-next-step">Выбрать направление</a>
+                                            </div>
+                                        </li>
+                                        <li class="vmenu__item">
+                                            <label class="vmenu__label">
+                                                <input type="radio" name="level" value="2">
+                                                <div class="vmenu__target">
+                                                    <div class="vmenu__text">
+                                                        <div class="vmenu__title">Бакалавриат
+                                                            <div class="vmenu__attention">
+                                                            </div>
+                                                        </div>
+                                                        <div class="vmenu__subtitle">высшее образование</div>
+                                                        <div class="vmenu__radio"></div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="program program--bachelor vmenu__popup">
+                                                    <div class="program__content">
+                                                        <div class="program__inner">
+                                                            <div class="program__text">высшее профессиональное образование:</div>
+                                                            <div class="program__title">Бакалавриат</div>
+                                                            <div class="program__desc">Высшее профессиональное образование<br> мирового уровня за несколько лет.</div>
+                                                            <hr class="hr-purple program__hr">
+                                                            <div class="program__row">
+                                                                <div class="program__col">
+                                                                    <div class="program__text">Срок обучения:</div>
+                                                                    <div class="program__sum">до 5 лет</div>
+                                                                </div>
+                                                                <div class="program__col">
+                                                                    <div class="program__text">Стоимость <br>за 1 семестр:</div>
+                                                                    <div class="program__sum">13 000 руб.</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="program__text-open">
+                                                                <div class="program__text">Поступление на базе:</div>
+                                                                <div class="program__text program__text--white">Диплом 11 класса</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                            <div class="vmenu__info">
+                                                <div class="vmenu__info-row">
+                                                    <div class="vmenu__info-label">Ваша будующая квалификация</div>
+                                                    <div class="vmenu__info-value">Бакалавр</div>
+                                                    <a href="#" class="vmenu__link js-vmenu-more">Подробнее</a>
+                                                </div>
+                                                <div class="vmenu__info-row">
+                                                    <div class="vmenu__info-label">Срок обучения</div>
+                                                    <div class="vmenu__info-value">5 лет</div>
+                                                </div>
+                                                <div class="vmenu__info-row">
+                                                    <div class="vmenu__info-label">Стоимость обучения</div>
+                                                    <div class="vmenu__info-value">13 000 руб.</div>
+                                                </div>
+                                                <button class="vmenu__info-btn">Выбрать направление</button>
+                                            </div>
+                                        </li>
+                                        <li class="vmenu__item">
+                                            <label class="vmenu__label">
+                                                <input type="radio" name="level" value="3">
+                                                <div class="vmenu__target">
+                                                    <div class="vmenu__text">
+                                                        <div class="vmenu__title">Магистратура
+                                                            <div class="vmenu__attention"></div>
+                                                        </div>
+                                                        <div class="vmenu__subtitle">высшее образование</div>
+                                                        <div class="vmenu__radio"></div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="program program--magistrate vmenu__popup">
+                                                    <div class="program__content">
+                                                        <div class="program__inner">
+                                                            <div class="program__text">высшее профессиональное образование:</div>
+                                                            <div class="program__title">Магистратура</div>
+                                                            <div class="program__desc">Углубленное высшее образование<br> для специалистов высокого уровня.</div>
+                                                            <hr class="hr-purple program__hr">
+                                                            <div class="program__row">
+                                                                <div class="program__col">
+                                                                    <div class="program__text">Срок обучения:</div>
+                                                                    <div class="program__sum">2,5 года</div>
+                                                                </div>
+                                                                <div class="program__col">
+                                                                    <div class="program__text">Стоимость <br>за 1 семестр:</div>
+                                                                    <div class="program__sum">13 000 руб.</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="program__text-open">
+                                                                <div class="program__text">Поступление на базе:</div>
+                                                                <div class="program__text program__text--white">Диплом 11 класса</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                            <div class="vmenu__info">
+                                                <div class="vmenu__info-row">
+                                                    <div class="vmenu__info-label">Ваша будующая квалификация</div>
+                                                    <div class="vmenu__info-value">Бакалавр</div>
+                                                    <a href="#" class="vmenu__link js-vmenu-more">Подробнее</a>
+                                                </div>
+                                                <div class="vmenu__info-row">
+                                                    <div class="vmenu__info-label">Срок обучения</div>
+                                                    <div class="vmenu__info-value">5 лет</div>
+                                                </div>
+                                                <div class="vmenu__info-row">
+                                                    <div class="vmenu__info-label">Стоимость обучения</div>
+                                                    <div class="vmenu__info-value">13 000 руб.</div>
+                                                </div>
+                                                <button class="vmenu__info-btn">Выбрать направление</button>
+                                            </div>
+                                        </li>
+                                        <li class="vmenu__item">
+                                            <label class="vmenu__label">
+                                                <input type="radio" name="level" value="4">
+                                                <div class="vmenu__target">
+                                                    <div class="vmenu__text">
+                                                        <div class="vmenu__title">
+                                                            <span>Повышение
+                                                                <div class="vmenu__attention">
+                                                                </div>
+                                                            </span><br>квалификации
+                                                        </div>
+                                                        <div class="vmenu__subtitle">доп. проф. образование</div>
+                                                        <div class="vmenu__radio"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="program program--courses vmenu__popup">
+                                                    <div class="program__content">
+                                                        <div class="program__inner">
+                                                            <div class="program__text">дополнительное профессиональное образование:</div>
+                                                            <div class="program__title">Курсы</div>
+                                                            <div class="program__desc">Повышение квалификации<br> или смена сферы деятельности за короткий срок.</div>
+                                                            <hr class="hr-blue program__hr">
+                                                            <div class="program__row">
+                                                                <div class="program__col">
+                                                                    <div class="program__text">Срок обучения:</div>
+                                                                    <div class="program__sum">от 16 до 508 час.</div>
+                                                                </div>
+                                                                <div class="program__col">
+                                                                    <div class="program__text">Стоимость <br>за курс:</div>
+                                                                    <div class="program__sum">от 1 400 руб.</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="program__text-open">
+                                                                <div class="program__text">Поступление на базе:</div>
+                                                                <div class="program__text program__text--white">без документов</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                            <div class="vmenu__info">
+                                                <div class="vmenu__info-row">
+                                                    <div class="vmenu__info-label">Ваша будующая квалификация</div>
+                                                    <div class="vmenu__info-value">Бакалавр</div>
+                                                    <a href="#" class="vmenu__link js-vmenu-more">Подробнее</a>
+                                                </div>
+                                                <div class="vmenu__info-row">
+                                                    <div class="vmenu__info-label">Срок обучения</div>
+                                                    <div class="vmenu__info-value">5 лет</div>
+                                                </div>
+                                                <div class="vmenu__info-row">
+                                                    <div class="vmenu__info-label">Стоимость обучения</div>
+                                                    <div class="vmenu__info-value">13 000 руб.</div>
+                                                </div>
+                                                <button class="vmenu__info-btn">Выбрать направление</button>
+                                            </div>
+                                        </li>
+                                        <li class="vmenu__item">
+                                            <label class="vmenu__label">
+                                                <input type="radio" name="level" value="5">
+                                                <div class="vmenu__target">
+                                                    <div class="vmenu__text">
+                                                        <div class="vmenu__title">За рубежом<div class="vmenu__attention"></div></div>
+                                                        <div class="vmenu__subtitle">высшее образование</div>
+                                                        <div class="vmenu__radio"></div>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div><!-- .bid-learn__col -->
+                            <div class="bid-learn__col bid-learn__col_2x js-vertical-anim-3 js-step-2">
+
+                                <div class="tooltip-help tooltip-help_bottom-arrow bid__tooltip mobile-visible">
+
+                                    <div class="tooltip-help__row">
+                                        <div class="tooltip-help__subtitle">Ваша будующая квалификация:</div>
+                                        <div class="tooltip-help__val">Бакалавр</div>
+                                        <a href="#" class="tooltip-help__link tooltip-help__link_uppercase">Подробнее</a>
+                                    </div>
+
+                                    <div class="tooltip-help__row">
+                                        <div class="tooltip-help__subtitle">Скро обучения:</div>
+                                        <div class="tooltip-help__val">5 лет</div>
+                                    </div>
+
+                                    <div class="tooltip-help__row">
+                                        <div class="tooltip-help__subtitle">Стоимость обучения:</div>
+                                        <div class="tooltip-help__val">13000 руб</div>
+                                    </div>
+
+                                    <a href="javascript:void(0)" class="info-btn js-prev-step">изменить уровень</a>
+                                </div>
+
+
+                                <div class="bid-learn__head">
+                                    <div class="bid-learn__subtitle">направления<br>обучения</div>
+                                </div>
+                                <div class="bid-learn__cell">
+                                    <div class="bid-learn__placeholder">
+                                        <div class="bid-learn__tip">Для выбора направления<br>Вам необходимо выбрать<br>Уровень обучения</div>
+                                    </div>
+                                    <ul class="vmenu vmenu--course">
+                                        <li class="vmenu__item">
+                                            <label class="vmenu__label">
+                                                <input type="checkbox" name="course[]" value="1">
+                                                <div class="vmenu__target">
+                                                    <div class="vmenu__text">
+                                                        <div class="vmenu__title">Бизнес-информатика</div>
+                                                        <div class="vmenu__radio"></div>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </li>
+                                        <li class="vmenu__item">
+                                            <label class="vmenu__label">
+                                                <input type="checkbox" name="course[]" value="2">
+                                                <div class="vmenu__target">
+                                                    <div class="vmenu__text">
+                                                        <div class="vmenu__title">Государственное и муниципальное управление</div>
+                                                        <div class="vmenu__radio"></div>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </li>
+                                        <li class="vmenu__item">
+                                            <label class="vmenu__label">
+                                                <input type="checkbox" name="course[]" value="3">
+                                                <div class="vmenu__target">
+                                                    <div class="vmenu__text">
+                                                        <div class="vmenu__title">Менеджмент</div>
+                                                        <div class="vmenu__radio"></div>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </li>
+                                        <li class="vmenu__item">
+                                            <label class="vmenu__label">
+                                                <input type="checkbox" name="course[]" value="4">
+                                                <div class="vmenu__target">
+                                                    <div class="vmenu__text">
+                                                        <div class="vmenu__title">Психология</div>
+                                                        <div class="vmenu__radio"></div>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </li>
+                                        <li class="vmenu__item">
+                                            <label class="vmenu__label">
+                                                <input type="checkbox" name="course[]" value="5">
+                                                <div class="vmenu__target">
+                                                    <div class="vmenu__text">
+                                                        <div class="vmenu__title">Психолого- педагогическое образование</div>
+                                                        <div class="vmenu__radio"></div>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </li>
+                                        <li class="vmenu__item">
+                                            <label class="vmenu__label">
+                                                <input type="checkbox" name="course[]" value="6">
+                                                <div class="vmenu__target">
+                                                    <div class="vmenu__text">
+                                                        <div class="vmenu__title">Социальная работа</div>
+                                                        <div class="vmenu__radio"></div>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </li>
+                                        <li class="vmenu__item">
+                                            <label class="vmenu__label">
+                                                <input type="checkbox" name="course[]" value="7">
+                                                <div class="vmenu__target">
+                                                    <div class="vmenu__text">
+                                                        <div class="vmenu__title">Экономика</div>
+                                                        <div class="vmenu__radio"></div>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </li>
+                                        <li class="vmenu__item">
+                                            <label class="vmenu__label">
+                                                <input type="checkbox" name="course[]" value="8">
+                                                <div class="vmenu__target">
+                                                    <div class="vmenu__text">
+                                                        <div class="vmenu__title">Юриспруденция</div>
+                                                        <div class="vmenu__radio"></div>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </li>
+
+                                        <li class="vmenu__item vmenu__item_info">
+                                            <div class="vmenu__info vmenu__info_center">
+                                                <div class="vmenu__info-row">
+                                                    <div class="vmenu__info-label">Вы выбрали специальности: </div>
+                                                    <div class="vmenu__info-value">Экономика</div>
+                                                    <a href="#" class="vmenu__link">Удалить</a>
+                                                </div>
+                                                <div class="vmenu__info-row">
+                                                    <div class="vmenu__info-label">Дисциплины вступительных экзаменов: </div>
+                                                    <div class="vmenu__info-disc">математика, обществознание,
+                                                        биология, русский язык,
+                                                        русский язык,</div>
+                                                </div>
+
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <a href="javascript:void(0)" class="info-btn bid__info-btn mobile-visible">учебное заведение</a>
+
+                            </div><!-- .bid-learn__col -->
+                        </div>
+
+
+                    </div><!-- .bid-learn -->
+
+                    <div class="bid-card js-vertical-anim js-step-3">
+                        <div class="bid-card__title js-vertical-anim">карточка заявки</div>
+                        <div class="bid-card__row">
+                            <div class="bid-card__col bid-card__col--lg js-vertical-anim-4">
+                                <div class="bid-card__def">
+                                    <div class="bid-card__subtitle">Ваша будующая<br>квалификация:</div>
+                                    <div class="bid-card__value">Бакалавр</div>
+                                    <a href=javascript:void(0) class="bid-card__link">Подробнее</a>
+                                </div>
+                                <div class="bid-card__def">
+                                    <div class="bid-card__subtitle">Срок обучения:</div>
+                                    <div class="bid-card__value">5 лет</div>
+                                </div>
+                                <div class="bid-card__def">
+                                    <div class="bid-card__subtitle">Стоимость обучения:</div>
+                                    <div class="bid-card__value">13000 руб.</div>
+                                    <a href=javascript:void(0) class="bid-card__link">Изменить</a>
+                                </div>
+                            </div>
+                            <div class="bid-card__col bid-card__col--sm js-vertical-anim-4">
+                                <div class="bid-card__def">
+                                    <div class="bid-card__subtitle">Вы выбрали<br>специальности:</div>
+                                    <div class="bid-card__value">Психолого- педагогическое образование</div>
+                                    <div class="bid-card__value">Экономика</div>
+                                    <a href=javascript:void(0) class="bid-card__link">Изменить</a>
+                                </div>
+                            </div>
+                            <div class="bid-card__col bid-card__col--md js-vertical-anim-4">
+                                <div class="bid-card__def">
+                                    <div class="bid-card__subtitle">Вы выбрали<br>ВУЗ для обучения:</div>
+                                    <div class="bid-card__value">МНЭУ</div>
+                                    <a href=javascript:void(0) class="bid-card__link">Изменить</a>
+                                </div>
+                            </div>
+                            <div class="bid-card__col bid-card__col--xs js-vertical-anim-4">
+                                <div class="bid-card__def">
+                                    <div class="bid-card__subtitle">Дисциплины<br>вступительных экзаменов:</div>
+                                    <div class="bid-card__value">Русский язык,<br>Математика,<br>Биология</div>
+                                </div>
+                                <div class="bid-card__def">
+                                    <div class="bid-card__subtitle">Сроки приема документов:</div>
+                                    <div class="bid-card__value">01.06.2016г.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- .bid-card -->
+                    <hr>
+                    <div class="form-area js-step-3">
+                        <div class="form">
+                            <div class="form__row">
+                                <div class="form__col js-vertical-anim-3">
+                                    <div class="form__field">
+                                        <input type="text" class="form__input" placeholder="Фамилия / Имя / Отчество">
+                                    </div>
+                                </div>
+                                <div class="form__col js-vertical-anim-3">
+                                    <div class="form__field">
+                                        <input type="text" class="form__input" placeholder="Ваш e-mail">
+                                    </div>
+                                </div>
+                                <div class="form__col js-vertical-anim-3">
+                                    <div class="form__field">
+                                        <input type="text" class="form__input" placeholder="+7 (___) ___ — __ — __">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form__row">
+                                <div class="form__col mobile-hide js-vertical-anim">
+                                    <div class="form-area__tip">
+                                        <div class="form-area__title">Консультация:</div>
+                                        <div class="form-area__text">Вы может отправить Заявку<br>на любом шаге с вопросами<br>для консультации.</div>
+                                    </div>
+                                    <hr>
+                                </div>
+                                <div class="form__wide-col js-vertical-anim">
+                                    <div class="form__field">
+                                        <textarea class="form__input" placeholder="Напишите ваши вопросы"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form__row">
+                                <div class="form__col">&nbsp;</div>
+                                <div class="form__wide-col js-vertical-anim">
+                                    <button class="form__btn js-send-request" type="submit">отправить заявку</button>
+                                </div>
+                            </div>
+                            <div class="form-thx">
+                                <div class="form-thx__header">Заявка отправлена!</div>
+                                <div class="form-thx__text">C вами свяжутся в ближайшее время.</div>
+                            </div>
+                        </div><!-- .form -->
+                    </div><!-- .form-area -->
+
+
+                    <div class="tooltip-help bid__tooltip mobile-visible">
+                        <div class="tooltip-help__title">Чтобы <br> отправить заявку, <br> выберите:</div>
+                        <div class="tooltip-help__disc">Ты можешь отправить заявкуна любом шаге с вопросами для консультации.</div>
+                        <div class="tooltip-help__recomend">Рекомендуем еще выбрать:</div>
+                        <hr class="tooltip-help__hr">
+                        <a href="#" class="tooltip-help__link">Уровень обучения</a>
+                        <hr class="tooltip-help__hr">
+                        <a href="#" class="tooltip-help__link">Уровень обучения</a>
+                    </div>
+
+                    <div class="bid-learn__footer mobile-visible">
+                        <a href="javascript:void(0)" class="info-btn info-btn_bg js-last-step">отправить заявку</a>
+                        <div class="bid-learn__disc">и заполнить форму
+                            <br>с контактными данными.</div>
+                    </div>
+
+                </div><!-- .bid__content -->
+            </div>
+            <div class="start js-vertical-anim">
+                <div class="start-wrap-left">
+                    {{Icon iconName='logotype' className='start-anim__left'}}
+                </div>
+                <div class="start-wrap-right">
+                    {{Icon iconName='logotype' className='start-anim__right'}}
+                </div>
+                <div class="content">
+                    <div class="start__holder">
+                        <h2 class="start__title js-vertical-anim">Решить по контенту<br>в подвале вместо<br>заявки</h2>
+                    </div>
+                </div>
+            </div>
+        </form>
+	</div>
+
+    {{> footer/footer }}
+
+    <script src="%=static=%js/separate-js/svg4everybody.min.js"></script>
+    <script>svg4everybody();</script>
+
+    <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
+    <script src="%=static=%js/main%=hash=%%=min=%.js"></script>
+</body>
+</html>

@@ -1,0 +1,726 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+<head>
+    {{> head/head }}
+</head>
+
+<body class="page">
+    %=symbols=%
+
+    {{> header/header }}
+
+    <div class="universities container fw-500">
+        <h2 class="bid__title color-black js-vertical-anim">—Вузы и колледжи—</h2>
+        <div class="bid-tabs _rose _low _rose-black">
+            <a class="bid-tabs__item active js-vertical-anim-3" href="#">
+                <span class="bid-tabs__title">Российские вузы</span>
+            </a>
+            <a class="bid-tabs__item js-vertical-anim-3" href="#">
+                <span class="bid-tabs__title">Зарубежные вузы</span>
+            </a>
+            <a class="bid-tabs__item js-vertical-anim-3" href="#">
+                <span class="bid-tabs__title">Колледжи</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="container-wide">
+        <div class="univer-holder fw-500">
+            <div class="univer" style="background-image: url('%=static=%img/content/univer.jpg')">
+                <div class="univer__inner">
+                    <div class="univer__top">
+                        <div class="univer__left js-vertical-anim">
+                            <div class="fsz-18 ttu lts-4 mb-20">Город:</div>
+                            <div class="fsz-36">Москва</div>
+                        </div>
+                        <div class="univer__logo js-vertical-anim">
+                            <img src="%=static=%img/general/univer-logo.png" alt="Logo Univer">
+                        </div>
+                        <div class="univer__right js-vertical-anim">
+                            <div class="fsz-18 ttu lts-4 mb-20">Год основания:</div>
+                            <div class="fsz-36">1995</div>
+                        </div>
+                    </div>
+                    <div class="univer__content js-vertical-anim">
+                        <div class="fsz-48 ttu lts-8 mb-20">МНЕПУ</div>
+                        <div class="fsz-30 lh-1-3">
+                            Международный независимый<br>эколого-политологический университет
+                        </div>
+                    </div>
+                </div>
+            </div><!-- .univer -->
+            <div class="univer-holder__content">
+                <div class="item-grid mb-0 text-center pt-35 pb-35">
+                    <div class="item-grid__half pt-5 pb-5 js-vertical-anim">
+                        <div class="fsz-18 ttu lts-4 fw-700 mb-20">Номера лицензии:</div>
+                        <div class="fsz18">Серия ААА, № 001430, рег. № 1380 от 09.06.2011 г.</div>
+                    </div>
+                    <div class="item-grid__half hr-left pt-5 pb-5 js-vertical-anim">
+                        <div class="fsz-18 ttu lts-4 fw-700 mb-20">Номера аккредитации:</div>
+                        <div class="fsz18">Cерия 90А01, № 0000815, рег. № 0757 от 19.07.2013 г.</div>
+                    </div>
+                    <a href="javascript:void(0)" class="univer-close">Закрыть</a>
+                </div>
+                <hr>
+                <div class="text-center">
+                    <div class="fsz-24 lh-1-4 pl-50 pr-50 pt-25 pb-25 js-vertical-anim">Международный независимый эколого-политологический университет (Академия МНЭПУ) – единственный специализированный экологический вуз в России - является одним из лидеров в сфере экологического образования.  Многие наши выпускники, численность которых превышает 20 тысяч, добились выдающихся успехов в разных направлениях. Востребованность экологического образования в современном мире – тот вызов, на который МНЭПУ дает достойный ответ блестящей подготовкой своих студентов.</div>
+                </div>
+                <hr class="mb-40">
+                <div class="fsz-18 ttu lts-4 fw-700 mb-35 text-center js-vertical-anim">Преимущества:</div>
+                <div class="item-grid text-center">
+                    <div class="item-grid__col-thrid pl-50 pr-50 js-vertical-anim-3">
+                        <div class="fsz18 lh-1-4">Секрет успеха МНЭПУ в профессионализме преподавателей, мощной научной базе</div>
+                    </div>
+                    <div class="item-grid__col-thrid pl-50 pr-50 hr-left js-vertical-anim-3">
+                        <div class="fsz18 lh-1-4">МНЭПУ в профессионализме преподавателей, мощной научной базе и высоком качестве обучения</div>
+                    </div>
+                    <div class="item-grid__col-thrid pl-50 pr-50 hr-left js-vertical-anim-3">
+                        <div class="fsz18 lh-1-4">Мощной научной базе и высоком качестве обучения по всем гуманитарным дисциплинам.</div>
+                    </div>
+
+                    <a href="javascript:void(0)" class="univer-close">Закрыть</a>
+                    <hr class="mobile-visible">
+
+                </div>
+                <form action="#">
+                    <div class="univer-card">
+                        <div class="text-center fsz-30 ttu lts-6 mb-35 js-vertical-anim">карточка направлений вуза</div>
+                        <hr class="mb-40">
+                        <div class="item-grid mb-40">
+                            <div class="item-grid__half  js-vertical-anim-2">
+                                <div class="univer-col">
+                                    <div class="univer-card__subtitle">Уровень обучения</div>
+                                    <div class="univer-box">
+                                        <label class="vmenu__label univer-label">
+                                            <input type="radio" name="level">
+                                            <div class="vmenu__target">
+                                                <div class="vmenu__text">
+                                                    <div class="vmenu__title">
+                                                        Бакалавриат
+                                                        <div class="vmenu__attention">
+                                                            <!-- Начала попапа при наведении на вопросик Бакалавриат -->
+                                                            <div class="program program--bachelor vmenu__popup">
+                                                                <div class="program__content">
+                                                                    <div class="program__inner">
+                                                                        <div class="program__title">Бакалавриат</div>
+                                                                        <div class="program__desc">Высшее профессиональное образование<br> мирового уровня за несколько лет.</div>
+                                                                        <hr class="hr-purple program__hr">
+                                                                        <div class="program__row">
+                                                                            <div class="program__col">
+                                                                                <div class="program__text">Срок обучения:</div>
+                                                                                <div class="program__sum">до 5 лет</div>
+                                                                            </div>
+                                                                            <div class="program__col">
+                                                                                <div class="program__text">Стоимость <br>за 1 семестр:</div>
+                                                                                <div class="program__sum">13 000 руб.</div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="program__text-open">
+                                                                            <div class="program__text">Поступление на базе:</div>
+                                                                            <div class="program__text program__text--white">Диплом 11 класса</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Конец попап при наведении на вопросик Бакалавриат -->
+                                                        </div>
+                                                    </div>
+                                                    <div class="vmenu__subtitle">высшее образование</div>
+                                                    <div class="vmenu__radio"></div>
+                                                </div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="univer-card__subtitle">Направления обучения</div>
+                                    <ul class="univer-list">
+                                        <li class="univer-list__item">
+                                            <label class="vmenu__label">
+                                                <input type="radio" name="direction">
+                                                <div class="vmenu__target">
+                                                    <div class="vmenu__text">
+                                                        <div class="vmenu__title">Бизнес-информатика</div>
+                                                        <div class="vmenu__radio"></div>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </li>
+                                        <li class="univer-list__item">
+                                            <label class="vmenu__label">
+                                                <input type="radio" name="direction">
+                                                <div class="vmenu__target">
+                                                    <div class="vmenu__text">
+                                                        <div class="vmenu__title">Государственное и муниципальное управление</div>
+                                                        <div class="vmenu__radio"></div>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </li>
+                                        <li class="univer-list__item">
+                                            <label class="vmenu__label">
+                                                <input type="radio" name="direction">
+                                                <div class="vmenu__target">
+                                                    <div class="vmenu__text">
+                                                        <div class="vmenu__title">Менеджмент</div>
+                                                        <div class="vmenu__radio"></div>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </li>
+                                        <li class="univer-list__item">
+                                            <label class="vmenu__label">
+                                                <input type="radio" name="direction">
+                                                <div class="vmenu__target">
+                                                    <div class="vmenu__text">
+                                                        <div class="vmenu__title">Психология</div>
+                                                        <div class="vmenu__radio"></div>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </li>
+                                        <li class="univer-list__item">
+                                            <label class="vmenu__label">
+                                                <input type="radio" name="direction">
+                                                <div class="vmenu__target">
+                                                    <div class="vmenu__text">
+                                                        <div class="vmenu__title">Психолого-педагогическое образование</div>
+                                                        <div class="vmenu__radio"></div>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </li>
+                                        <li class="univer-list__item">
+                                            <label class="vmenu__label">
+                                                <input type="radio" name="direction">
+                                                <div class="vmenu__target">
+                                                    <div class="vmenu__text">
+                                                        <div class="vmenu__title">Социальная работа</div>
+                                                        <div class="vmenu__radio"></div>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </li>
+                                        <li class="univer-list__item">
+                                            <label class="vmenu__label">
+                                                <input type="radio" name="direction">
+                                                <div class="vmenu__target">
+                                                    <div class="vmenu__text">
+                                                        <div class="vmenu__title">Экономика</div>
+                                                        <div class="vmenu__radio"></div>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </li>
+                                        <li class="univer-list__item">
+                                            <label class="vmenu__label">
+                                                <input type="radio" name="direction">
+                                                <div class="vmenu__target">
+                                                    <div class="vmenu__text">
+                                                        <div class="vmenu__title">Юриспруденция</div>
+                                                        <div class="vmenu__radio"></div>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item-grid__half hr-left  js-vertical-anim-2">
+                                <div class="univer-col">
+                                    <div class="univer-card__subtitle">Уровень обучения</div>
+                                    <div class="univer-box">
+                                        <label class="vmenu__label univer-label">
+                                            <input type="radio" name="level">
+                                            <div class="vmenu__target">
+                                                <div class="vmenu__text">
+                                                    <div class="vmenu__title">
+                                                        Магистратура
+                                                        <div class="vmenu__attention">
+                                                            <!-- Начала попапа при наведении на вопросик Магистратура -->
+                                                            <div class="program program--magistrate vmenu__popup">
+                                                                <div class="program__content">
+                                                                    <div class="program__inner">
+                                                                        <div class="program__title">Магистратура</div>
+                                                                        <div class="program__desc">Углубленное высшее образование<br> для специалистов высокого уровня.</div>
+                                                                        <hr class="hr-purple program__hr">
+                                                                        <div class="program__row">
+                                                                            <div class="program__col">
+                                                                                <div class="program__text">Срок обучения:</div>
+                                                                                <div class="program__sum">2,5 года</div>
+                                                                            </div>
+                                                                            <div class="program__col">
+                                                                                <div class="program__text">Стоимость <br>за 1 семестр:</div>
+                                                                                <div class="program__sum">13 000 руб.</div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="program__text-open">
+                                                                            <div class="program__text">Поступление на базе:</div>
+                                                                            <div class="program__text program__text--white">Диплом 11 класса</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Конец попап при наведении на вопросик Бакалавриат -->
+                                                        </div>
+                                                    </div>
+                                                    <div class="vmenu__subtitle">высшее образование</div>
+                                                    <div class="vmenu__radio"></div>
+                                                </div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="univer-card__subtitle">Направления обучения</div>
+                                    <ul class="univer-list">
+                                        <li class="univer-list__item">
+                                            <label class="vmenu__label">
+                                                <input type="radio" name="direction">
+                                                <div class="vmenu__target">
+                                                    <div class="vmenu__text">
+                                                        <div class="vmenu__title">Бизнес-информатика</div>
+                                                        <div class="vmenu__radio"></div>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </li>
+                                        <li class="univer-list__item">
+                                            <label class="vmenu__label">
+                                                <input type="radio" name="direction">
+                                                <div class="vmenu__target">
+                                                    <div class="vmenu__text">
+                                                        <div class="vmenu__title">Государственное и муниципальное управление</div>
+                                                        <div class="vmenu__radio"></div>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </li>
+                                        <li class="univer-list__item">
+                                            <label class="vmenu__label">
+                                                <input type="radio" name="direction">
+                                                <div class="vmenu__target">
+                                                    <div class="vmenu__text">
+                                                        <div class="vmenu__title">Менеджмент</div>
+                                                        <div class="vmenu__radio"></div>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </li>
+                                        <li class="univer-list__item">
+                                            <label class="vmenu__label">
+                                                <input type="radio" name="direction">
+                                                <div class="vmenu__target">
+                                                    <div class="vmenu__text">
+                                                        <div class="vmenu__title">Психология</div>
+                                                        <div class="vmenu__radio"></div>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </li>
+                                        <li class="univer-list__item">
+                                            <label class="vmenu__label">
+                                                <input type="radio" name="direction">
+                                                <div class="vmenu__target">
+                                                    <div class="vmenu__text">
+                                                        <div class="vmenu__title">Психолого-педагогическое образование</div>
+                                                        <div class="vmenu__radio"></div>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </li>
+                                        <li class="univer-list__item">
+                                            <label class="vmenu__label">
+                                                <input type="radio" name="direction">
+                                                <div class="vmenu__target">
+                                                    <div class="vmenu__text">
+                                                        <div class="vmenu__title">Социальная работа</div>
+                                                        <div class="vmenu__radio"></div>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </li>
+                                        <li class="univer-list__item">
+                                            <label class="vmenu__label">
+                                                <input type="radio" name="direction">
+                                                <div class="vmenu__target">
+                                                    <div class="vmenu__text">
+                                                        <div class="vmenu__title">Экономика</div>
+                                                        <div class="vmenu__radio"></div>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </li>
+                                        <li class="univer-list__item">
+                                            <label class="vmenu__label">
+                                                <input type="radio" name="direction">
+                                                <div class="vmenu__target">
+                                                    <div class="vmenu__text">
+                                                        <div class="vmenu__title">Юриспруденция</div>
+                                                        <div class="vmenu__radio"></div>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- .univer-card -->
+                    <div class="text-center mt-45 js-vertical-anim">
+                        <input type="submit" value="Подать заявку на обучение" class="btn btn_bordered btn_xlg">
+                    </div>
+                </form>
+            </div><!-- .univer-holder__content -->
+        </div><!-- .univer-holder -->
+    </div>
+
+    <div class="other-univer">
+        <div class="container">
+            <h2 class="bid__title color-black js-vertical-anim">—Другие вузы—</h2>
+            <div class="sort univer-sort js-vertical-anim">
+                <ul class="sort__list">
+                    <li class="sort__item js-vertical-anim-4"><a href="#" class="sort__link active">все<br>Российские<br>вузы</a></li>
+                    <li class="sort__item js-vertical-anim-4">
+                        <span>для высшее проф.:</span><br>
+                        <a href="#" class="sort__link">бакалавриат</a><br>
+                        <a href="#" class="sort__link">магистратура</a>
+                    </li>
+                    <li class="sort__item js-vertical-anim-4">
+                        <span>по региону:</span><br>
+                        <a href="#" class="sort__link">Москва</a><br>
+                    </li>
+                    <li class="sort__item js-vertical-anim-4">
+                        <span>По направлению:</span><br>
+                        <a href="#" class="sort__link">Выбрать</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="earning-cards">
+
+                <div class="earning-cards__select-wrap">
+                    <select name="earning-cards" class="earning-cards__select">
+                        <option value="russion-school">Все Российские вузы</option>
+                        <option value="">Все Зарубежные вузы</option>
+                        <option value="">Все Колледжи</option>
+                    </select>
+                </div>
+
+                <div class="item-grid mt-0 mb-0" id="russion-school">
+                    <div class="item-grid__col-thrid js-vertical-anim-3">
+                        <div class="prof__item">
+                            <a href="#" class="prof__item-link">
+                                <div class="prof__item-front">
+                                    <div class="prof__header">
+                                        <h3 class="prof__name">ВПШ</h3>
+                                        <div class="prof__header-desc">Открытый институт — высшая профессиональная школа</div>
+                                    </div>
+                                    <hr>
+                                    <p class="prof__desc lh-1">
+                                        <span class="prof__logo">
+                                            <img src="%=static=%img/general/univer-logo-1.jpg" alt="Logo Univer">
+                                        </span>
+                                    </p>
+                                </div>
+                                <div class="prof__overlay">
+                                    <h4 class="prof__overlay-title">Заголовок</h4>
+                                    <hr>
+                                    <div class="prof__overlay-text">
+                                        <a href="#">Ссылка</a> описание
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item-grid__col-thrid js-vertical-anim-3">
+                        <div class="prof__item">
+                            <a href="#" class="prof__item-link">
+                                <div class="prof__item-front">
+                                    <div class="prof__header">
+                                        <h3 class="prof__name">МЭИ</h3>
+                                        <div class="prof__header-desc">Московский экономический институт</div>
+                                    </div>
+                                    <hr>
+                                    <p class="prof__desc lh-1">
+                                        <span class="prof__logo">
+                                            <img src="%=static=%img/general/univer-logo-2.jpg" alt="Logo Univer">
+                                        </span>
+                                    </p>
+                                </div>
+                                <div class="prof__overlay">
+                                    <h4 class="prof__overlay-title">Заголовок</h4>
+                                    <hr>
+                                    <div class="prof__overlay-text">
+                                        <a href="#">Ссылка</a> описание
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item-grid__col-thrid js-vertical-anim-3">
+                        <div class="prof__item">
+                            <a href="#" class="prof__item-link">
+                                <div class="prof__item-front">
+                                    <div class="prof__header">
+                                        <h3 class="prof__name">ЭКИДА</h3>
+                                        <div class="prof__header-desc">Санкт-Петербургский институт экономики, культуры и делового администрирования </div>
+                                    </div>
+                                    <hr>
+                                    <p class="prof__desc lh-1">
+                                        <span class="prof__logo">
+                                            <img src="%=static=%img/general/univer-logo-3.jpg" alt="Logo Univer">
+                                        </span>
+                                    </p>
+                                </div>
+                                <div class="prof__overlay">
+                                    <h4 class="prof__overlay-title">Заголовок</h4>
+                                    <hr>
+                                    <div class="prof__overlay-text">
+                                        <a href="#">Ссылка</a> описание
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item-grid__col-thrid js-vertical-anim-3">
+                        <div class="prof__item">
+                            <a href="#" class="prof__item-link">
+                                <div class="prof__item-front">
+                                    <div class="prof__header">
+                                        <h3 class="prof__name">ВПШ</h3>
+                                        <div class="prof__header-desc">Открытый институт — высшая профессиональная школа</div>
+                                    </div>
+                                    <hr>
+                                    <p class="prof__desc lh-1">
+                                        <span class="prof__logo">
+                                            <img src="%=static=%img/general/univer-logo-1.jpg" alt="Logo Univer">
+                                        </span>
+                                    </p>
+                                </div>
+                                <div class="prof__overlay">
+                                    <h4 class="prof__overlay-title">Заголовок</h4>
+                                    <hr>
+                                    <div class="prof__overlay-text">
+                                        <a href="#">Ссылка</a> описание
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item-grid__col-thrid js-vertical-anim-3">
+                        <div class="prof__item">
+                            <a href="#" class="prof__item-link">
+                                <div class="prof__item-front">
+                                    <div class="prof__header">
+                                        <h3 class="prof__name">МЭИ</h3>
+                                        <div class="prof__header-desc">Московский экономический институт</div>
+                                    </div>
+                                    <hr>
+                                    <p class="prof__desc lh-1">
+                                        <span class="prof__logo">
+                                            <img src="%=static=%img/general/univer-logo-2.jpg" alt="Logo Univer">
+                                        </span>
+                                    </p>
+                                </div>
+                                <div class="prof__overlay">
+                                    <h4 class="prof__overlay-title">Заголовок</h4>
+                                    <hr>
+                                    <div class="prof__overlay-text">
+                                        <a href="#">Ссылка</a> описание
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item-grid__col-thrid js-vertical-anim-3">
+                        <div class="prof__item">
+                            <a href="#" class="prof__item-link">
+                                <div class="prof__item-front">
+                                    <div class="prof__header">
+                                        <h3 class="prof__name">ЭКИДА</h3>
+                                        <div class="prof__header-desc">Санкт-Петербургский институт экономики, культуры и делового администрирования </div>
+                                    </div>
+                                    <hr>
+                                    <p class="prof__desc lh-1">
+                                        <span class="prof__logo">
+                                            <img src="%=static=%img/general/univer-logo-3.jpg" alt="Logo Univer">
+                                        </span>
+                                    </p>
+                                </div>
+                                <div class="prof__overlay">
+                                    <h4 class="prof__overlay-title">Заголовок</h4>
+                                    <hr>
+                                    <div class="prof__overlay-text">
+                                        <a href="#">Ссылка</a> описание
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div><!-- .item-grid -->
+                <div class="earning-hidden">
+                    <div class="item-grid mt-0 mb-0">
+                        <div class="item-grid__col-thrid js-vertical-anim-3">
+                            <div class="prof__item">
+                                <a href="#" class="prof__item-link">
+                                    <div class="prof__item-front">
+                                        <div class="prof__header">
+                                            <h3 class="prof__name">ВПШ</h3>
+                                            <div class="prof__header-desc">Открытый институт — высшая профессиональная школа</div>
+                                        </div>
+                                        <hr>
+                                        <p class="prof__desc lh-1">
+                                        <span class="prof__logo">
+                                            <img src="%=static=%img/general/univer-logo-1.jpg" alt="Logo Univer">
+                                        </span>
+                                        </p>
+                                    </div>
+                                    <div class="prof__overlay">
+                                        <h4 class="prof__overlay-title">Заголовок</h4>
+                                        <hr>
+                                        <div class="prof__overlay-text">
+                                            <a href="#">Ссылка</a> описание
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item-grid__col-thrid js-vertical-anim-3">
+                            <div class="prof__item">
+                                <a href="#" class="prof__item-link">
+                                    <div class="prof__item-front">
+                                        <div class="prof__header">
+                                            <h3 class="prof__name">МЭИ</h3>
+                                            <div class="prof__header-desc">Московский экономический институт</div>
+                                        </div>
+                                        <hr>
+                                        <p class="prof__desc lh-1">
+                                        <span class="prof__logo">
+                                            <img src="%=static=%img/general/univer-logo-2.jpg" alt="Logo Univer">
+                                        </span>
+                                        </p>
+                                    </div>
+                                    <div class="prof__overlay">
+                                        <h4 class="prof__overlay-title">Заголовок</h4>
+                                        <hr>
+                                        <div class="prof__overlay-text">
+                                            <a href="#">Ссылка</a> описание
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item-grid__col-thrid js-vertical-anim-3">
+                            <div class="prof__item">
+                                <a href="#" class="prof__item-link">
+                                    <div class="prof__item-front">
+                                        <div class="prof__header">
+                                            <h3 class="prof__name">ЭКИДА</h3>
+                                            <div class="prof__header-desc">Санкт-Петербургский институт экономики, культуры и делового администрирования </div>
+                                        </div>
+                                        <hr>
+                                        <p class="prof__desc lh-1">
+                                        <span class="prof__logo">
+                                            <img src="%=static=%img/general/univer-logo-3.jpg" alt="Logo Univer">
+                                        </span>
+                                        </p>
+                                    </div>
+                                    <div class="prof__overlay">
+                                        <h4 class="prof__overlay-title">Заголовок</h4>
+                                        <hr>
+                                        <div class="prof__overlay-text">
+                                            <a href="#">Ссылка</a> описание
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item-grid__col-thrid js-vertical-anim-3">
+                            <div class="prof__item">
+                                <a href="#" class="prof__item-link">
+                                    <div class="prof__item-front">
+                                        <div class="prof__header">
+                                            <h3 class="prof__name">ВПШ</h3>
+                                            <div class="prof__header-desc">Открытый институт — высшая профессиональная школа</div>
+                                        </div>
+                                        <hr>
+                                        <p class="prof__desc lh-1">
+                                        <span class="prof__logo">
+                                            <img src="%=static=%img/general/univer-logo-1.jpg" alt="Logo Univer">
+                                        </span>
+                                        </p>
+                                    </div>
+                                    <div class="prof__overlay">
+                                        <h4 class="prof__overlay-title">Заголовок</h4>
+                                        <hr>
+                                        <div class="prof__overlay-text">
+                                            <a href="#">Ссылка</a> описание
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item-grid__col-thrid js-vertical-anim-3">
+                            <div class="prof__item">
+                                <a href="#" class="prof__item-link">
+                                    <div class="prof__item-front">
+                                        <div class="prof__header">
+                                            <h3 class="prof__name">МЭИ</h3>
+                                            <div class="prof__header-desc">Московский экономический институт</div>
+                                        </div>
+                                        <hr>
+                                        <p class="prof__desc lh-1">
+                                        <span class="prof__logo">
+                                            <img src="%=static=%img/general/univer-logo-2.jpg" alt="Logo Univer">
+                                        </span>
+                                        </p>
+                                    </div>
+                                    <div class="prof__overlay">
+                                        <h4 class="prof__overlay-title">Заголовок</h4>
+                                        <hr>
+                                        <div class="prof__overlay-text">
+                                            <a href="#">Ссылка</a> описание
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item-grid__col-thrid js-vertical-anim-3">
+                            <div class="prof__item">
+                                <a href="#" class="prof__item-link">
+                                    <div class="prof__item-front">
+                                        <div class="prof__header">
+                                            <h3 class="prof__name">ЭКИДА</h3>
+                                            <div class="prof__header-desc">Санкт-Петербургский институт экономики, культуры и делового администрирования </div>
+                                        </div>
+                                        <hr>
+                                        <p class="prof__desc lh-1">
+                                        <span class="prof__logo">
+                                            <img src="%=static=%img/general/univer-logo-3.jpg" alt="Logo Univer">
+                                        </span>
+                                        </p>
+                                    </div>
+                                    <div class="prof__overlay">
+                                        <h4 class="prof__overlay-title">Заголовок</h4>
+                                        <hr>
+                                        <div class="prof__overlay-text">
+                                            <a href="#">Ссылка</a> описание
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div><!-- .item-grid -->
+                </div><!-- .earning-hidden -->
+                <div class="text-center mt-20 earning-btn js-vertical-anim">
+                    <a href="#" class="earning__all"><span>Еще 14 вузов</span></a>
+                </div>
+            </div><!-- .earning-cards -->
+        </div>
+    </div><!-- .other-univer -->
+
+    {{> footer/footer }}
+
+    <script src="%=static=%js/separate-js/svg4everybody.min.js"></script>
+    <script>svg4everybody();</script>
+
+    <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
+    <script src="%=static=%js/main%=hash=%%=min=%.js"></script>
+</body>
+</html>

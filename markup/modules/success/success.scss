@@ -1,0 +1,106 @@
+.success {
+    padding: rem(45) rem(10);
+
+    &__wrap {
+        position: relative;
+        padding: rem(25);
+
+        border: 2px solid #000;
+        border-radius: 3px;
+
+        z-index: 2;
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -20px;
+            left: 49%;
+        }
+
+        &::before {
+            margin-bottom: 5px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 15px 15px 0 15px;
+            border-color: #f6f6f6 transparent transparent transparent;
+
+            z-index: 3;
+        }
+
+        &::after {
+            margin-bottom: 3px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 15px 15px 0 15px;
+            border-color: #000000 transparent transparent transparent;
+            z-index: 1;
+        }
+    }
+
+    &__content {
+        font-family: $Museo;
+    }
+
+    &__title {
+        font-size: rem(60);
+        line-height: rem(62);
+        margin-bottom: rem(25);
+    }
+
+    &__subtitle {
+        font-size: rem(30);
+        line-height: rem(32);
+        margin-bottom: rem(25);
+    }
+
+    &__recommend {
+        margin: rem(15) 0;
+        font-family: $Museo;
+    }
+
+    &__text {
+        font-size: rem(18);
+        font-weight: 500;
+        line-height: rem(20);
+    }
+
+    &__nav {
+        padding: 0;
+        list-style-type: none;
+    }
+
+    &__nav-item {
+        display: inline-block;
+
+        &:not(:last-child) {
+            margin-right: rem(15);
+            padding-right: rem(20);
+
+            border-right: 1px solid #000;
+        }
+    }
+
+    &__nav-link {
+        font-size: rem(24);
+        line-height: rem(26);
+        color: #ef465b;
+
+        text-decoration: none;
+
+        transition: .2s;
+
+        &:hover {
+            color: #000;
+        }
+    }
+
+    hr {
+        margin: 0 auto;
+        padding: rem(15) 0;
+
+        background-position: center center;
+    }
+}

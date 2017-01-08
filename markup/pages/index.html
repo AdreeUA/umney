@@ -1,0 +1,1371 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+<head>
+    {{> head/head }}
+</head>
+
+<body class="page">
+    %=symbols=%
+
+
+    <div class="fullpage-main">
+        <div class="section">
+            <div class="mainline">
+                {{> header/header main='true' }}
+
+                <div class="mainline__slider">
+                    <div class="mainline-slider-item" data-hash="one">
+                        <div class="mainline-slider-picture" style="background-image: url('%=static=%img/general/main-2.jpg')"></div>
+                        <div class="mainline__center">
+                            <h2 class="mainline__title js-vertical-anim">
+                                Учись на будущее.<br>
+                                <span>УМНЕЙ на свой счет.</span>
+                            </h2>
+                            <a class="mainline__start" href="/about-us.html#section-entrance">Начать</a>
+                        </div>
+                    </div>
+                    <div class="mainline-slider-item" data-hash="two">
+                        <div class="mainline-slider-picture" style="background-image: url('%=static=%img/general/main-3.jpg')"></div>
+                        <div class="mainline__center">
+                            <h2 class="mainline__title js-vertical-anim">
+                                Поступай УМНЕЙ.<br>
+                                <span>Как начать обучение?</span>
+                            </h2>
+                            <a class="mainline__start" href="/about-us.html#section-entrance">Начать</a>
+                        </div>
+                    </div>
+                    <div class="mainline-slider-item" data-hash="three">
+                        <div class="mainline-slider-picture" style="background-image: url('%=static=%img/general/main-4.jpg')"></div>
+                        <div class="mainline__center">
+                            <h2 class="mainline__title js-vertical-anim">
+                                УМНЕЙ удобно.<br>
+                                <span>В ритме свой жизни.</span>
+                            </h2>
+                            <a class="mainline__start" href="/about-us.html#section-entrance">Начать</a>
+
+                        </div>
+                    </div>
+                    <div class="mainline-slider-item" data-hash="four">
+                        <div class="mainline-slider-picture" style="background-image: url('%=static=%img/general/main-5.jpg')"></div>
+                        <div class="mainline__center">
+                            <h2 class="mainline__title js-vertical-anim">
+                                УМНЕЙ, чем кажется.<br>
+                                <span>Смотреть видео ролик</span>
+                            </h2>
+                            <a id="mainline-play-yt-video" href="#" class="mainline__play"></a>
+                        </div>
+                        <div class="mainline__video">
+                            <iframe id="mainline-yt-video" src="https://www.youtube.com/embed/nzyqv872ckQ?rel=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mainline__menu">
+                    <div class="mainline__menu__item js-vertical-anim-3">
+                        <h4 class="mainline__menu__title">Учись на будущее</h4>
+                    </div>
+                    <div class="mainline__menu__item js-vertical-anim-3">
+                        <h4 class="mainline__menu__title">Поступай УМНЕЙ</h4>
+                    </div>
+                    <div class="mainline__menu__item js-vertical-anim-3">
+                        <h4 class="mainline__menu__title">УМНЕЙ удобно</h4>
+                    </div>
+                    <div class="mainline__menu__item mainline__menu__item_video js-vertical-anim-3" style="background-image: url('%=static=%img/general/main-menu-video-2.jpg')">
+                        <h4 class="mainline__menu__title">Умней, чем кажется</h4>
+                    </div>
+                </div>
+                <a class="mainline__arr scrolling" href="#prof"></a>
+            </div>
+        </div>
+        <div class="container-wide">
+            <a href="#" class="letter-future js-mail-tab">
+                {{Icon iconName='mail' className='letter-future__icon'}}
+                Письмо из будущего
+            </a>
+        </div>
+
+        <div class="section" id="prof">
+            <div class="prof">
+                <div class="container">
+                    <div class="prof__title-holder">
+                        <h3 class="prof__title js-vertical-anim">
+                            <img class="prof__title-icon" src="%=static=%img/general/gerb.png" alt="">
+                            Государственная лицензия и аккредитация на обучение! <a class="more-prof" href="#prof-diplom">Подробнее</a> <a class="more-prof-close" href="#">Закрыть!</a>
+                        </h3>
+                        <div id="prof-diplom" class="diplom-box diplom-box--main">
+                            <div class="diplom-box__col">
+                                <div class="diplom-box__title">Государственная<br> лицензия<br> и аккредитация<br> на обучение<br> в России!</div>
+                            </div>
+                            <div class="diplom-box__col">
+                                <div class="diplom-box__subtitle">Вы получаете диплом государственного образца!</div>
+                                <div class="diplom-box__desc">Цифры/тайминг справа и весь сладй целиком, должен донести одну простую идею (ни кому не интересно читать сложности индустрии ДО) главное: Cейчас это официально и государственно одобренно!</div>
+                                <div class="diplom-box__text">Развитие системы дистанционного образования в Российской Федерации началось в период создания первых негосударственных</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="search-wrap">
+                        <div class="prof-search prof-search--main js-vertical-anim">
+                            <form method="post">
+                                <div class="prof-search__holder main-search">
+                                    <input class="prof-search__input main-search__input" type="text">
+                                    <span class="prof-search__placeholder main-search__placeholder"><span>Например:</span> Психолог, Финансирование, Бух. учет</span>
+                                    <input type="submit" class="prof-search__submit main-search__submit" value="Поиск">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="prof__container">
+                        <div class="prof-tabs prof-tabs_hide">
+                            <a class="prof-tabs__item active prof-tabs__item_spec js-vertical-anim-3" href="#spec">
+                                <span class="prof-tabs__count">60</span>
+                                <span class="prof-tabs__title">специальностей<br> разных уровней<br> и направлений</span>
+                            </a>
+                            <a class="prof-tabs__item prof-tabs__item_vyz js-vertical-anim-3" href="#vyz">
+                                <span class="prof-tabs__count">14</span>
+                                <span class="prof-tabs__title">вузов<br> в России<br> и Зарубежом</span>
+                            </a>
+                            <a class="prof-tabs__item prof-tabs__item_sred js-vertical-anim-3">
+                                <span class="prof-tabs__count">5</span>
+                                <span class="prof-tabs__title">средних профессиональных заведений</span>
+                            </a>
+                        </div>
+                        <div class="prof__content active">
+                            <a href="javascript:void(0)" class="prof-tab__link prof-tab__link_spec js-mobile-tab">
+                                <span class="prof-tab__num">60</span>
+                                <span class="prof-tab__desc">специальностей разных уровней и направлений</span>
+                            </a>
+                            <div id="spec" class="prof__block js-mobile-body">
+                                <ul class="prof__list">
+                                    <li class="prof__item js-vertical-anim-3">
+                                        <a href="about-us.html" class="prof__item-link">
+                                            <div class="prof__item-front">
+                                                <div class="prof__header">
+                                                    <h3 class="prof__name">Юриспруденция</h3>
+                                                </div>
+                                                <hr>
+                                                <p class="prof__desc">
+                                                    <strong>1-ое место</strong> в рейтинге самых высокооплачиваемых сфер деятельности
+                                                </p>
+                                            </div>
+                                            <div class="prof__overlay">
+                                                <h4 class="prof__overlay-title">Экономика</h4>
+                                                <hr>
+                                                <div class="prof__overlay-text">
+                                                    <a href="#">Экономист управляет</a>, планирует и контролирует финансовые ресурсы предприятий
+                                                </div>
+                                            </div>
+                                        </a>
+                                    <li class="prof__item js-vertical-anim-3">
+                                        <a href="#" class="prof__item-link">
+                                            <div class="prof__item-front">
+                                                <div class="prof__header">
+                                                    <h3 class="prof__name">Экономика</h3>
+                                                </div>
+                                                <hr>
+                                                <p class="prof__desc">
+                                                    <strong>5 млрд</strong> выделит государство до конца 2016 года на развитие сферы
+                                                </p>
+                                            </div>
+                                            <div class="prof__overlay">
+                                                <h4 class="prof__overlay-title">Экономика</h4>
+                                                <hr>
+                                                <div class="prof__overlay-text">
+                                                    Экономист управляет, планирует и контролирует финансовые ресурсы предприятий
+                                                </div>
+                                            </div>
+                                        </a>
+                                    <li class="prof__item js-vertical-anim-3">
+                                        <a href="#" class="prof__item-link">
+                                            <div class="prof__item-front">
+                                                <div class="prof__header">
+                                                    <h3 class="prof__name">Менеджмент</h3>
+                                                </div>
+                                                <hr>
+                                                <p class="prof__desc">
+                                                    <strong>+33%</strong> ежемесячно  увеличивается количество вакансий
+                                                </p>
+                                            </div>
+                                            <div class="prof__overlay">
+                                                <h4 class="prof__overlay-title">Экономика</h4>
+                                                <hr>
+                                                <div class="prof__overlay-text">
+                                                    Экономист управляет, планирует и контролирует финансовые ресурсы предприятий
+                                                </div>
+                                            </div>
+                                        </a>
+                                    <li class="prof__item js-vertical-anim-3">
+                                        <a href="#" class="prof__item-link">
+                                            <div class="prof__item-front">
+                                                <div class="prof__header">
+                                                    <h3 class="prof__name">Психология</h3>
+                                                </div>
+                                                <hr>
+                                                <p class="prof__desc">
+                                                    <strong>5%</strong> выделит государство до конца 2016 года на развитие сферы
+                                                </p>
+                                            </div>
+                                            <div class="prof__overlay">
+                                                <h4 class="prof__overlay-title">Экономика</h4>
+                                                <hr>
+                                                <div class="prof__overlay-text">
+                                                    Экономист управляет, планирует и контролирует финансовые ресурсы предприятий
+                                                </div>
+                                            </div>
+                                        </a>
+                                    <li class="prof__item js-vertical-anim-3">
+                                        <a href="#" class="prof__item-link">
+                                            <div class="prof__item-front">
+                                                <div class="prof__header">
+                                                    <h3 class="prof__name">Гос.<br> и муниц. управление</h3>
+                                                </div>
+                                                <hr>
+                                                <p class="prof__desc">
+                                                    <strong>+90%</strong> ежемесячно  увеличивается количество вакансий
+                                                </p>
+                                            </div>
+                                            <div class="prof__overlay">
+                                                <h4 class="prof__overlay-title">Экономика</h4>
+                                                <hr>
+                                                <div class="prof__overlay-text">
+                                                    Экономист управляет, планирует и контролирует финансовые ресурсы предприятий
+                                                </div>
+                                            </div>
+                                        </a>
+                                    <li class="prof__item js-vertical-anim-3">
+                                        <a href="#" class="prof__item-link">
+                                            <div class="prof__item-front">
+                                                <div class="prof__header">
+                                                    <h3 class="prof__name">Экономика и бух. учет</h3>
+                                                </div>
+                                                <hr>
+                                                <p class="prof__desc">
+                                                    <strong>5-ое место</strong> в рейтинге самых высокооплачиваемых сфер деятельности
+                                                </p>
+                                            </div>
+                                            <div class="prof__overlay">
+                                                <h4 class="prof__overlay-title">Экономика</h4>
+                                                <hr>
+                                                <div class="prof__overlay-text">
+                                                    Экономист управляет, планирует и контролирует финансовые ресурсы предприятий
+                                                </div>
+                                            </div>
+                                        </a>
+                                    <li class="prof__item js-vertical-anim-3">
+                                        <a href="#" class="prof__item-link">
+                                            <div class="prof__item-front">
+                                                <div class="prof__header">
+                                                    <h3 class="prof__name">Юриспруденция</h3>
+                                                </div>
+                                                <hr>
+                                                <p class="prof__desc">
+                                                    <strong>1-ое место</strong> в рейтинге самых высокооплачиваемых сфер деятельности
+                                                </p>
+                                            </div>
+                                            <div class="prof__overlay">
+                                                <h4 class="prof__overlay-title">Экономика</h4>
+                                                <hr>
+                                                <div class="prof__overlay-text">
+                                                    <a href="#">Экономист управляет</a>, планирует и контролирует финансовые ресурсы предприятий
+                                                </div>
+                                            </div>
+                                        </a>
+                                    <li class="prof__item js-vertical-anim-3">
+                                        <a href="#" class="prof__item-link">
+                                            <div class="prof__item-front">
+                                                <div class="prof__header">
+                                                    <h3 class="prof__name">Экономика</h3>
+                                                </div>
+                                                <hr>
+                                                <p class="prof__desc">
+                                                    <strong>5 млрд</strong> выделит государство до конца 2016 года на развитие сферы
+                                                </p>
+                                            </div>
+                                            <div class="prof__overlay">
+                                                <h4 class="prof__overlay-title">Экономика</h4>
+                                                <hr>
+                                                <div class="prof__overlay-text">
+                                                    Экономист управляет, планирует и контролирует финансовые ресурсы предприятий
+                                                </div>
+                                            </div>
+                                        </a>
+                                    <li class="prof__item js-vertical-anim-3">
+                                        <a href="#" class="prof__item-link">
+                                            <div class="prof__item-front">
+                                                <div class="prof__header">
+                                                    <h3 class="prof__name">Менеджмент</h3>
+                                                </div>
+                                                <hr>
+                                                <p class="prof__desc">
+                                                    <strong>+33%</strong> ежемесячно  увеличивается количество вакансий
+                                                </p>
+                                            </div>
+                                            <div class="prof__overlay">
+                                                <h4 class="prof__overlay-title">Экономика</h4>
+                                                <hr>
+                                                <div class="prof__overlay-text">
+                                                    Экономист управляет, планирует и контролирует финансовые ресурсы предприятий
+                                                </div>
+                                            </div>
+                                        </a>
+                                    <li class="prof__item js-vertical-anim-3">
+                                        <a href="#" class="prof__item-link">
+                                            <div class="prof__item-front">
+                                                <div class="prof__header">
+                                                    <h3 class="prof__name">Психология</h3>
+                                                </div>
+                                                <hr>
+                                                <p class="prof__desc">
+                                                    <strong>5%</strong> выделит государство до конца 2016 года на развитие сферы
+                                                </p>
+                                            </div>
+                                            <div class="prof__overlay">
+                                                <h4 class="prof__overlay-title">Экономика</h4>
+                                                <hr>
+                                                <div class="prof__overlay-text">
+                                                    Экономист управляет, планирует и контролирует финансовые ресурсы предприятий
+                                                </div>
+                                            </div>
+                                        </a>
+                                    <li class="prof__item js-vertical-anim-3">
+                                        <a href="#" class="prof__item-link">
+                                            <div class="prof__item-front">
+                                                <div class="prof__header">
+                                                    <h3 class="prof__name">Гос.<br> и муниц. управление</h3>
+                                                </div>
+                                                <hr>
+                                                <p class="prof__desc">
+                                                    <strong>+90%</strong> ежемесячно  увеличивается количество вакансий
+                                                </p>
+                                            </div>
+                                            <div class="prof__overlay">
+                                                <h4 class="prof__overlay-title">Экономика</h4>
+                                                <hr>
+                                                <div class="prof__overlay-text">
+                                                    Экономист управляет, планирует и контролирует финансовые ресурсы предприятий
+                                                </div>
+                                            </div>
+                                        </a>
+                                    <li class="prof__item js-vertical-anim-3">
+                                        <a href="#" class="prof__item-link">
+                                            <div class="prof__item-front">
+                                                <div class="prof__header">
+                                                    <h3 class="prof__name">Экономика и бух. учет</h3>
+                                                </div>
+                                                <hr>
+                                                <p class="prof__desc">
+                                                    <strong>5-ое место</strong> в рейтинге самых высокооплачиваемых сфер деятельности
+                                                </p>
+                                            </div>
+                                            <div class="prof__overlay">
+                                                <h4 class="prof__overlay-title">Экономика</h4>
+                                                <hr>
+                                                <div class="prof__overlay-text">
+                                                    Экономист управляет, планирует и контролирует финансовые ресурсы предприятий
+                                                </div>
+                                            </div>
+                                        </a>
+                                </ul>
+
+                                <div class="prof__end prof__end_main js-vertical-anim">
+                                    <a class="prof__all" href="#">Все 12 направлений</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="prof__content">
+                            <a href="javascript:void(0)" class="prof-tab__link prof-tab__link_vyz js-mobile-tab">
+                                <span class="prof-tab__num">14</span>
+                                <span class="prof-tab__desc">Вузов в России и Зарубежом</span>
+                            </a>
+                            <div id="vyz" class="prof__block js-mobile-body">
+                                <ul class="prof__list">
+                                    <li class="prof__item js-vertical-anim">
+                                        <a href="#" class="prof__item-link">
+                                            <div class="prof__item-front">
+                                                <div class="prof__header">
+                                                    <h3 class="prof__name">ВПШ</h3>
+                                                    <p class="prof__subname">
+                                                        Открытый институт — высшая профессиональная школа
+                                                    </p>
+                                                </div>
+                                                <hr>
+                                                <p class="prof__desc">
+                                                    <strong>1-ое место</strong> в рейтинге самых высокооплачиваемых сфер деятельности
+                                                </p>
+                                            </div>
+                                            <div class="prof__overlay">
+                                                <h4 class="prof__overlay-title">Экономика</h4>
+                                                <hr>
+                                                <div class="prof__overlay-text">
+                                                    Экономист управляет, планирует и контролирует финансовые ресурсы предприятий
+                                                </div>
+                                            </div>
+                                        </a>
+                                    <li class="prof__item js-vertical-anim">
+                                        <a href="#" class="prof__item-link">
+                                            <div class="prof__item-front">
+                                                <div class="prof__header">
+                                                    <h3 class="prof__name">МЭИ</h3>
+                                                    <p class="prof__subname">
+                                                        Московский<br> экономический институт
+                                                    </p>
+                                                </div>
+                                                <hr>
+                                                <p class="prof__desc">
+                                                    <strong>5 млрд</strong> выделит государство до конца 2016 года на развитие сферы
+                                                </p>
+                                            </div>
+                                            <div class="prof__overlay">
+                                                <h4 class="prof__overlay-title">Экономика</h4>
+                                                <hr>
+                                                <div class="prof__overlay-text">
+                                                    Экономист управляет, планирует и контролирует финансовые ресурсы предприятий
+                                                </div>
+                                            </div>
+                                        </a>
+                                    <li class="prof__item js-vertical-anim">
+                                        <a href="#" class="prof__item-link">
+                                            <div class="prof__item-front">
+                                                <div class="prof__header">
+                                                    <h3 class="prof__name">ЭКИДА</h3>
+                                                    <p class="prof__subname">
+                                                        Санкт-Петербургский институт экономики, культуры и делового администрирования
+                                                    </p>
+                                                </div>
+                                                <hr>
+                                                <p class="prof__desc">
+                                                    <strong>+33%</strong> ежемесячно  увеличивается количество вакансий
+                                                </p>
+                                            </div>
+                                            <div class="prof__overlay">
+                                                <h4 class="prof__overlay-title">Экономика</h4>
+                                                <hr>
+                                                <div class="prof__overlay-text">
+                                                    Экономист управляет, планирует и контролирует финансовые ресурсы предприятий
+                                                </div>
+                                            </div>
+                                        </a>
+                                    <li class="prof__item js-vertical-anim">
+                                        <a href="#" class="prof__item-link">
+                                            <div class="prof__item-front">
+                                                <div class="prof__header">
+                                                    <h3 class="prof__name">Академия МНЭПУ</h3>
+                                                    <p class="prof__subname">
+                                                        Международный независимый эколого-политологический университет
+                                                    </p>
+                                                </div>
+                                                <hr>
+                                                <p class="prof__desc">
+                                                    <strong>5%</strong> выделит государство до конца 2016 года на развитие сферы
+                                                </p>
+                                            </div>
+                                            <div class="prof__overlay">
+                                                <h4 class="prof__overlay-title">Экономика</h4>
+                                                <hr>
+                                                <div class="prof__overlay-text">
+                                                    Экономист управляет, планирует и контролирует финансовые ресурсы предприятий
+                                                </div>
+                                            </div>
+                                        </a>
+                                    <li class="prof__item js-vertical-anim">
+                                        <a href="#" class="prof__item-link">
+                                            <div class="prof__item-front">
+                                                <div class="prof__header">
+                                                    <h3 class="prof__name">ИМЭИ</h3>
+                                                    <p class="prof__subname">
+                                                        Институт<br> мировой экономики<br> и информатизации
+                                                    </p>
+                                                </div>
+                                                <hr>
+                                                <p class="prof__desc">
+                                                    <strong>+90%</strong> ежемесячно  увеличивается количество вакансий
+                                                </p>
+                                            </div>
+                                            <div class="prof__overlay">
+                                                <h4 class="prof__overlay-title">Экономика</h4>
+                                                <hr>
+                                                <div class="prof__overlay-text">
+                                                    Экономист управляет, планирует и контролирует финансовые ресурсы предприятий
+                                                </div>
+                                            </div>
+                                        </a>
+                                    <li class="prof__item js-vertical-anim">
+                                        <a href="#" class="prof__item-link">
+                                            <div class="prof__item-front">
+                                                <div class="prof__header">
+                                                    <h3 class="prof__name">СИБИИС</h3>
+                                                    <p class="prof__subname">
+                                                        Сибирский институт интеллектуальной собственности
+                                                    </p>
+                                                </div>
+                                                <hr>
+                                                <p class="prof__desc">
+                                                    <strong>5-ое место</strong> в рейтинге самых высокооплачиваемых сфер деятельности
+                                                </p>
+                                            </div>
+                                            <div class="prof__overlay">
+                                                <h4 class="prof__overlay-title">Экономика</h4>
+                                                <hr>
+                                                <div class="prof__overlay-text">
+                                                    Экономист управляет, планирует и контролирует финансовые ресурсы предприятий
+                                                </div>
+                                            </div>
+                                        </a>
+                                </ul>
+
+                                <div class="prof-hidden">
+
+                                </div><!-- Сюда подгружаем карточки с test-prof.html -->
+
+                                <div class="prof__end js-vertical-anim">
+                                    <a class="prof__all" href="#">Смотреть все 14 вузов</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="prof__content">
+                            <a href="javascript:void(0)" class="prof-tab__link prof-tab__link_sred js-mobile-tab">
+                                <span class="prof-tab__num">5</span>
+                                <span class="prof-tab__desc">Средних профессиональных заведений</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="section section-white">
+            <div class="promo">
+                <div class="promo-slider">
+                    <div class="promo__desc">
+                        <div class="promo__title js-vertical-anim">
+                            <img class="promo__title-img" src="%=static=%img/general/main-title.png" alt="Умней">
+                            <div class="promo__mobile">
+                                <img class="promo__mobile-img" src="%=static=%img/general/main-title-mobile.jpg" alt="Умней">
+                                <p class="promo__mobile-title">УМНЕЙ</p>
+                                <p class="promo__mobile-subtitle">Получать качественное образование</p>
+                            </div>
+                        </div>
+                        <p class="promo__text container js-vertical-anim">
+                            Опытные преподаватели и IT-специалисты<br>
+                            обеспечивают высокое качество дистанционных программ обучения. А ты, благодаря новым знаниям, повышаешь свой<br>
+                            профессиональный уровень, а значит, становишься востребован<br>
+                            на рынке труда и получаешь новые возможности в жизни!
+                        </p>
+                    </div>
+                    <div class="promo__desc">
+                        <div class="promo__title js-vertical-anim">
+                            <img class="promo__title-img" src="%=static=%img/general/main-title2.png" alt="Умней">
+                            <div class="promo__mobile">
+                                <img class="promo__mobile-img" src="%=static=%img/general/main-title-mobile.jpg" alt="Умней">
+                                <p class="promo__mobile-title">УМНЕЙ</p>
+                                <p class="promo__mobile-subtitle">Получать качественное образование</p>
+                            </div>
+                        </div>
+                        <p class="promo__text container js-vertical-anim">
+                            — это удобное обучение в любое время<br>
+                            из любой точки земного шара!<br>
+                            Нужен только компьютер или гаджет и доступ в Интернет.<br>
+                            По всем техническим и административным вопросам тебе<br> оперативно помогают наши специалисты.
+                        </p>
+                    </div>
+                    <div class="promo__desc">
+                        <div class="promo__title js-vertical-anim">
+                            <img class="promo__title-img" src="%=static=%img/general/main-title3.png" alt="Умней">
+                            <div class="promo__mobile">
+                                <img class="promo__mobile-img" src="%=static=%img/general/main-title-mobile.jpg" alt="Умней">
+                                <p class="promo__mobile-title">УМНЕЙ</p>
+                                <p class="promo__mobile-subtitle">Получать качественное образование</p>
+                            </div>
+                        </div>
+                        <p class="promo__text container js-vertical-anim">
+                            Ты можешь легко совмещать учебу с другими занятиями и работой.<br>
+                            Не меняй ритм жизни – учеба сама подстраивается под тебя!<br>
+                            Планируй расписание обучения и каникул так,<br>
+                            как это удобно именно тебе.
+                        </p>
+                    </div>
+                    <div class="promo__desc">
+                        <div class="promo__title js-vertical-anim">
+                            <img class="promo__title-img" src="%=static=%img/general/main-title4.png" alt="Умней">
+                            <div class="promo__mobile">
+                                <img class="promo__mobile-img" src="%=static=%img/general/main-title-mobile.jpg" alt="Умней">
+                                <p class="promo__mobile-title">УМНЕЙ</p>
+                                <p class="promo__mobile-subtitle">Получать качественное образование</p>
+                            </div>
+                        </div>
+                        <p class="promo__text container js-vertical-anim">
+                            УМНЕЙ позволяет избежать сложных переездов<br>
+                            в другие города и постоянных затрат на дорогу,<br>
+                            неизбежных при очном образовании.<br>
+                            И при этом максимально снизить стоимость твоего обучения,<br>
+                            не теряя в его качестве.
+                        </p>
+                    </div>
+                    <div class="promo__desc">
+                        <div class="promo__title js-vertical-anim">
+                            <img class="promo__title-img" src="%=static=%img/general/main-title5.png" alt="Умней">
+                            <div class="promo__mobile">
+                                <img class="promo__mobile-img" src="%=static=%img/general/main-title-mobile.jpg" alt="Умней">
+                                <p class="promo__mobile-title">УМНЕЙ</p>
+                                <p class="promo__mobile-subtitle">Получать качественное образование</p>
+                            </div>
+                        </div>
+                        <p class="promo__text container js-vertical-anim">
+                            УМНЕЙ позволяет избежать сложных переездов<br>
+                            в другие города и постоянных затрат на дорогу,<br>
+                            неизбежных при очном образовании.<br>
+                            И при этом максимально снизить стоимость твоего обучения,<br>
+                            не теряя в его качестве.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <hr class="promo__hr promo__hr_hide">
+                    <ul class="promo__feature-list">
+                        <li class="promo__feature-item js-vertical-anim-4">
+                            качественное<br> образование
+                        <li class="promo__feature-item js-vertical-anim-4">
+                            Ощущать<br> комфорт
+                        <li class="promo__feature-item js-vertical-anim-4">
+                            Живи <br>полной жизнью
+                        <li class="promo__feature-item js-vertical-anim-4">
+                            Обучаться<br>выгодно
+                        <li class="promo__feature-item js-vertical-anim-4">
+                            5ый <br>слайд
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section section-white">
+            <div class="cost">
+                <div class="container">
+                    <div class="cost__header">
+                        <h2 class="cost__title js-vertical-anim">Стоимость обучения УМНЕЙ</h2>
+                        <p class="cost__subtitle js-vertical-anim">
+                            Пишем из чего складывается стоимость обучения и почему такая цена<br> или оставляем без сопроводительного текста.
+                        </p>
+                        <a href="javascript:void(0)" class="cost__button">Подробнее</a>
+                    </div>
+                    <ul class="cost-list">
+                        <li class="cost-item js-vertical-anim-3">
+                            <div class="cost-item__header">
+                                <div class="cost-item__label">Уровень подготовки</div>
+                                <h4 class="cost-item__title cost-item__title--nofit">Среднее проф.</h4>
+                                <p class="cost-item__desc">
+                                    Объяснение что такое<br> среднее-cпециальное образование.
+                                </p>
+                                <a href="javascript:void(0)" class="cost__button">Подробнее</a>
+                            </div>
+                            <hr class="cost-item__hr cost-item__hr_hide">
+                            <div class="cost-item__main">
+                                <div class="cost-item__cost">9 000 руб.</div>
+                                <div class="cost-item__long">Стоимость за 1 семестр</div>
+                                <a class="btn btn_invert cost-item__btn" href="#">Начать</a>
+                            </div>
+                        <li class="cost-item js-vertical-anim-3">
+                            <div class="cost-item__header">
+                                <div class="cost-item__label">Уровень подготовки</div>
+                                <h4 class="cost-item__title">Бакалавриат</h4>
+                                <p class="cost-item__desc">
+                                    Объяснение что такое бакалавриат и сроки.
+                                </p>
+                            </div>
+                            <hr class="cost-item__hr cost-item__hr_hide">
+                            <div class="cost-item__main">
+                                <div class="cost-item__cost">11 000 руб.</div>
+                                <div class="cost-item__long">Стоимость за 1 семестр</div>
+                                <a class="btn btn_invert cost-item__btn" href="#">Начать</a>
+                            </div>
+                        <li class="cost-item js-vertical-anim-3">
+                            <div class="cost-item__header">
+                                <div class="cost-item__label">Уровень подготовки</div>
+                                <h4 class="cost-item__title">Магистратура</h4>
+                                <p class="cost-item__desc">
+                                    Объяснение что такое магистратура и сроки.
+                                </p>
+                            </div>
+                            <hr class="cost-item__hr cost-item__hr_hide">
+                            <div class="cost-item__main">
+                                <div class="cost-item__cost">16 000 руб.</div>
+                                <div class="cost-item__long">Стоимость за 1 семестр</div>
+                                <a class="btn btn_invert cost-item__btn" href="#">Начать</a>
+                            </div>
+                    </ul>
+                    <div class="cost-all">
+                        <a href="javascript:void(0)" class="cost-all__button cost__button cost__button_big">Все уровни обучения</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section  section-white">
+            <div class="review js-vertical-anim">
+                <div class="review-slider">
+                    <div class="review-slider__item">
+                        <img class="review-slider__img" src="%=static=%img/content/slide-1.jpg" alt="">
+                        <div class="review-slider__desc">
+                            <div class="review-slider__main">
+                                <p>Я, например,</p>
+                                <p><em>обучался на юриста прямо в океане</em></p>
+                                <p>
+                                    во время своей одиночной кругосветки на парусной яхте. Проходил курсы во время путешествий в пустынях Эфиопии, во льдах Арктики и даже на склоне Эвереста. И это действительно здорово, ведь мир слишком велик и многообразен, чтобы просиживать лучшие годы в аудиториях на скучных, нередко, и однообразных лекциях!
+                                    <br>Дистанционное обучение – лучший подарок для тех, кто ценит свободу и стремится жить полной жизнью. Ведь современные технологии позволяют получать знания в любой точке Земли и в любое удобное время.
+                                </p>
+                            </div>
+                            <div class="review-slider__end">
+                                <p class="review-slider__end-title">Федор Конюхов,</p>
+                                <p class="review-slider__small">
+                                    путешественник, первый россиянин совершивший Explorers Grand Slam,
+                                    побывав на Южном и Северном полюсах и покоривший Семь вершин
+                                    нашей планеты.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-slider__item">
+                        <img class="review-slider__img" src="%=static=%img/content/slide-1.jpg" alt="">
+                        <div class="review-slider__desc">
+                            <div class="review-slider__main">
+                                <p>Я, например,</p>
+                                <p><em>стал дипломированным историком</em></p>
+                                <p>
+                                    во время своей одиночной кругосветки
+                                    на парусной яхте. И это действительно
+                                    здорово, ведь мир слишком велик
+                                    и многообразен, чтобы просиживать
+                                    лучшие годы в аудиториях
+                                    на скучных лекциях.
+                                </p>
+                            </div>
+                            <div class="review-slider__end">
+                                <p class="review-slider__end-title">Федор Конюхов,</p>
+                                <p class="review-slider__small">
+                                    путешественник, первый россиянин совершивший Explorers Grand Slam,
+                                    побывав на Южном и Северном полюсах и покоривший Семь вершин
+                                    нашей планеты.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-slider__item">
+                        <img class="review-slider__img" src="%=static=%img/content/slide-1.jpg" alt="">
+                        <div class="review-slider__desc">
+                            <div class="review-slider__main">
+                                <p>Я, например,</p>
+                                <p><em>стал дипломированным программистом</em></p>
+                                <p>
+                                    во время своей одиночной кругосветки
+                                    на парусной яхте. И это действительно
+                                    здорово, ведь мир слишком велик
+                                    и многообразен, чтобы просиживать
+                                    лучшие годы в аудиториях
+                                    на скучных лекциях.
+                                </p>
+                            </div>
+                            <div class="review-slider__end">
+                                <p class="review-slider__end-title">Федор Конюхов,</p>
+                                <p class="review-slider__small">
+                                    путешественник, первый россиянин совершивший Explorers Grand Slam,
+                                    побывав на Южном и Северном полюсах и покоривший Семь вершин
+                                    нашей планеты.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews__list main-reviews">
+                    <div class="review-slider-mobile">
+                        <div class="review-slider-mobile__item">
+                            <div class="review-item review-item_theme-blue">
+                                <div class="review-item__img-wrap">
+                                    <img class="review-item__img" src="%=static=%img/content/review-ava1.png" alt="">
+                                </div>
+                                <div class="review-item__content">
+                                    <div class="review-item__name">Федор Конюхов</div>
+                                    <div class="review-item__prof">Путешественник</div>
+                                    <hr class="review-item__hr">
+                                    <div class="review-item__disc">Дистанционное обучение – лучший подарок для тех, кто ценит свободу!</div>
+                                    <a href="#" class="review-item__more js-review-more">подробнее</a>
+                                </div>
+                            </div>
+
+                            <div class="review-item review-item_theme-green">
+                                <div class="review-item__img-wrap">
+                                    <img class="review-item__img" src="%=static=%img/content/review-ava2.png" alt="">
+                                </div>
+                                <div class="review-item__content">
+                                    <div class="review-item__name">конcтантин константинов</div>
+                                    <div class="review-item__prof">Путешественник</div>
+                                    <hr class="review-item__hr">
+                                    <div class="review-item__disc">Дистанционное обучение – лучший подарок для тех, кто ценит свободу! </div>
+                                    <a href="#" class="review-item__more js-review-more">подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-slider-mobile__item">
+                            <div class="review-item review-item_theme-blue">
+                                <div class="review-item__img-wrap">
+                                    <img class="review-item__img" src="%=static=%img/content/review-ava1.png" alt="">
+                                </div>
+                                <div class="review-item__content">
+                                    <div class="review-item__name">Федор Конюхов</div>
+                                    <div class="review-item__prof">Путешественник</div>
+                                    <hr class="review-item__hr">
+                                    <div class="review-item__disc">Дистанционное обучение – лучший подарок для тех, кто ценит свободу!</div>
+                                    <a href="#" class="review-item__more js-review-more">подробнее</a>
+                                </div>
+                            </div>
+
+                            <div class="review-item review-item_theme-green">
+                                <div class="review-item__img-wrap">
+                                    <img class="review-item__img" src="%=static=%img/content/review-ava2.png" alt="">
+                                </div>
+                                <div class="review-item__content">
+                                    <div class="review-item__name">конcтантин константинов</div>
+                                    <div class="review-item__prof">Путешественник</div>
+                                    <hr class="review-item__hr">
+                                    <div class="review-item__disc">Дистанционное обучение – лучший подарок для тех, кто ценит свободу! </div>
+                                    <a href="#" class="review-item__more js-review-more">подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-slider-mobile__item">
+                            <div class="review-item review-item_theme-blue">
+                                <div class="review-item__img-wrap">
+                                    <img class="review-item__img" src="%=static=%img/content/review-ava1.png" alt="">
+                                </div>
+                                <div class="review-item__content">
+                                    <div class="review-item__name">Федор Конюхов</div>
+                                    <div class="review-item__prof">Путешественник</div>
+                                    <hr class="review-item__hr">
+                                    <div class="review-item__disc">Дистанционное обучение – лучший подарок для тех, кто ценит свободу!</div>
+                                    <a href="#" class="review-item__more js-review-more">подробнее</a>
+                                </div>
+                            </div>
+
+                            <div class="review-item review-item_theme-green">
+                                <div class="review-item__img-wrap">
+                                    <img class="review-item__img" src="%=static=%img/content/review-ava2.png" alt="">
+                                </div>
+                                <div class="review-item__content">
+                                    <div class="review-item__name">конcтантин константинов</div>
+                                    <div class="review-item__prof">Путешественник</div>
+                                    <hr class="review-item__hr">
+                                    <div class="review-item__disc">Дистанционное обучение – лучший подарок для тех, кто ценит свободу! </div>
+                                    <a href="#" class="review-item__more js-review-more">подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-slider-mobile__item">
+                            <div class="review-item review-item_theme-blue">
+                                <div class="review-item__img-wrap">
+                                    <img class="review-item__img" src="%=static=%img/content/review-ava1.png" alt="">
+                                </div>
+                                <div class="review-item__content">
+                                    <div class="review-item__name">Федор Конюхов</div>
+                                    <div class="review-item__prof">Путешественник</div>
+                                    <hr class="review-item__hr">
+                                    <div class="review-item__disc">Дистанционное обучение – лучший подарок для тех, кто ценит свободу!</div>
+                                    <a href="#" class="review-item__more js-review-more">подробнее</a>
+                                </div>
+                            </div>
+
+                            <div class="review-item review-item_theme-green">
+                                <div class="review-item__img-wrap">
+                                    <img class="review-item__img" src="%=static=%img/content/review-ava2.png" alt="">
+                                </div>
+                                <div class="review-item__content">
+                                    <div class="review-item__name">конcтантин константинов</div>
+                                    <div class="review-item__prof">Путешественник</div>
+                                    <hr class="review-item__hr">
+                                    <div class="review-item__disc">Дистанционное обучение – лучший подарок для тех, кто ценит свободу! </div>
+                                    <a href="#" class="review-item__more js-review-more">подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-slider-mobile__item">
+                            <div class="review-item review-item_theme-blue">
+                                <div class="review-item__img-wrap">
+                                    <img class="review-item__img" src="%=static=%img/content/review-ava1.png" alt="">
+                                </div>
+                                <div class="review-item__content">
+                                    <div class="review-item__name">Федор Конюхов</div>
+                                    <div class="review-item__prof">Путешественник</div>
+                                    <hr class="review-item__hr">
+                                    <div class="review-item__disc">Дистанционное обучение – лучший подарок для тех, кто ценит свободу!</div>
+                                    <a href="#" class="review-item__more js-review-more">подробнее</a>
+                                </div>
+                            </div>
+
+                            <div class="review-item review-item_theme-green">
+                                <div class="review-item__img-wrap">
+                                    <img class="review-item__img" src="%=static=%img/content/review-ava2.png" alt="">
+                                </div>
+                                <div class="review-item__content">
+                                    <div class="review-item__name">конcтантин константинов</div>
+                                    <div class="review-item__prof">Путешественник</div>
+                                    <hr class="review-item__hr">
+                                    <div class="review-item__disc">Дистанционное обучение – лучший подарок для тех, кто ценит свободу! </div>
+                                    <a href="#" class="review-item__more js-review-more">подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="articles">
+                <div class="container">
+                    <h2 class="articles__title"><span>Умней</span><br> в соц. сетях</h2>
+                    <div class="articles__all">
+                        <p class="articles__show">Показать: <a href="javascript:void(0)" class="articles__show-link js-social-show">Все посты</a></p>
+                        <ul class="articles__social-menu mobile-visible">
+                            <li class="articles__social-item"><a href="#1" class="articles__social-link">Twitter</a></li>
+                            <li class="articles__social-item"><a href="#2" class="articles__social-link">Vkontakte</a></li>
+                            <li class="articles__social-item"><a href="#3" class="articles__social-link">Odnoklasniki</a></li>
+                        </ul>
+                    </div>
+                    <ul class="articles__socials js-vertical-anim">
+                        <li class="articles__socials-item"><a href="#">Twitter</a>
+                        <li class="articles__socials-item"><a href="#">Vkontakte</a>
+                        <li class="articles__socials-item"><a href="#">Odnoklasniki</a>
+                    </ul>
+
+                    <div class="article-slider">
+                        <ul class="article-slider__page">
+                            <li class="article-slider__item js-vertical-anim">
+                                <div class="article article--narrow">
+                                    <div class="article__header">
+                                        <img src="%=static=%img/content/article-1.jpg" alt="Salam">
+                                    </div>
+                                    <div class="article__body text-center">
+                                        <div class="article__content">Всегда считал дистанционное образование ерундой, пока сам не попробовал, сейчас получаю второе высшее – учусь на факультете</div>
+                                        <a href="#" class="article__more">Читать больше</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="article-slider__item js-vertical-anim">
+                                <div class="article article--advice">
+                                    <div class="article__header">
+                                        <div class="article__header-title">Умные<br>Cоветы</div>
+                                        <div class="article__header-desc">Постоянная рубрика</div>
+                                    </div>
+                                    <div class="article__body">
+                                        <div class="fsz-30 fw-700 mb-5">Совет</div>
+                                        <div class="fsz-60 fw-700">№10</div>
+                                        <hr class="mt-20 mb-30">
+                                        <div class="article__title">Как быстрее освоить новый предмет?</div>
+                                        <a href="#" class="article__more">Читать больше</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="article-slider__item js-vertical-anim">
+                                <div class="article">
+                                    <div class="article__body text-center">
+                                        <div class="fsz-24 ttu fw-900 lts-5 lh-1-3">Истории<br>Успеха</div>
+                                        <hr class="mt-20 mb-20">
+                                        <div class="article__ava">
+                                            <img src="%=static=%img/content/article-ava.jpg" alt="Ava">
+                                        </div>
+                                        <div class="article__name">Менделеев Дмитрий Иванович</div>
+                                        <div class="article__desc">Фундаментальных законы мироздания, неотъемлемы для всего естествознания.</div>
+                                        <a href="#" class="article__more">Читать больше</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="article-slider__item article-slider__item_wide js-vertical-anim">
+                                <div class="article article--wide">
+                                    <div class="article__img">
+                                        <img src="%=static=%img/content/article-2.jpg" alt="Salam">
+                                    </div>
+                                    <div class="article__body">
+                                        <div class="article__content">Всегда считал дистанционное образование ерундой, пока сам не попробовал, сейчас получаю второе высшее</div>
+                                        <a href="#" class="article__more">Читать больше</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="article-slider__item article-slider__item_square js-vertical-anim">
+                                <div class="quote-block">
+                                    <div class="quote-block__title">постоянная рубрика<br>«цитаты успешных людей</div>
+                                    <div class="quote-block__text">«Фундаментальных законы мироздания, неотъемлемы для всего естествознания.»</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="article-slider-mobile mobile-visible">
+                        <div class="article-slider-mobile__item">
+                            <div class="article-mobile">
+                                <div class="article-mobile__img-wrap">
+                                    <img src="%=static=%img/general/main-5.jpg" alt="" class="article-mobile__img">
+                                </div>
+                                <div class="article-mobile__body">
+                                    <p class="article-mobile__text">Всегда считал дистанционное образование ерундой, пока сам не попробовал, сейчас получаю второе высшее – учусь на факультете</p>
+                                    <a href="javascript:void(0)" class="article-mobile__link">Читать больше</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article-slider-mobile__item">
+                            <div class="article-mobile">
+                                <div class="article-mobile__img-wrap">
+                                    <img src="%=static=%img/general/main-5.jpg" alt="" class="article-mobile__img">
+                                </div>
+                                <div class="article-mobile__body">
+                                    <p class="article-mobile__text">Всегда считал дистанционное образование ерундой, пока сам не попробовал, сейчас получаю второе высшее – учусь на факультете</p>
+                                    <a href="javascript:void(0)" class="article-mobile__link">Читать больше</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article-slider-mobile__item">
+                            <div class="article-mobile">
+                                <div class="article-mobile__img-wrap">
+                                    <img src="%=static=%img/general/main-5.jpg" alt="" class="article-mobile__img">
+                                </div>
+                                <div class="article-mobile__body">
+                                    <p class="article-mobile__text">Всегда считал дистанционное образование ерундой, пока сам не попробовал, сейчас получаю второе высшее – учусь на факультете</p>
+                                    <a href="javascript:void(0)" class="article-mobile__link">Читать больше</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article-slider-mobile__item">
+                            <div class="article-mobile">
+                                <div class="article-mobile__img-wrap">
+                                    <img src="%=static=%img/general/main-5.jpg" alt="" class="article-mobile__img">
+                                </div>
+                                <div class="article-mobile__body">
+                                    <p class="article-mobile__text">Всегда считал дистанционное образование ерундой, пока сам не попробовал, сейчас получаю второе высшее – учусь на факультете</p>
+                                    <a href="javascript:void(0)" class="article-mobile__link">Читать больше</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article-slider-mobile__item">
+                            <div class="article-mobile">
+                                <div class="article-mobile__img-wrap">
+                                    <img src="%=static=%img/general/main-5.jpg" alt="" class="article-mobile__img">
+                                </div>
+                                <div class="article-mobile__body">
+                                    <p class="article-mobile__text">Всегда считал дистанционное образование ерундой, пока сам не попробовал, сейчас получаю второе высшее – учусь на факультете</p>
+                                    <a href="javascript:void(0)" class="article-mobile__link">Читать больше</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section section-footer">
+            <div class="start start--hidden js-vertical-anim">
+                <div class="start-wrap-left">
+                    {{Icon iconName='logotype' className='start-anim__left'}}
+                </div>
+                <div class="start-wrap-right">
+                    {{Icon iconName='logotype' className='start-anim__right'}}
+                </div>
+                <div class="content">
+                    <div class="start__holder">
+                        <h2 class="start__title js-vertical-anim">Начни учиться с нами<br> прямо сейчас!</h2>
+                        <a class="btn btn_default start_btn js-vertical-anim" href="#">подать заявку на обучение</a>
+                    </div>
+                </div>
+            </div>
+
+            {{> footer/footer }}
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        VK.init({apiId: 5553951, onlyWidgets: true});
+    </script>
+
+    <div class="paper">
+        <div class="paper__header">
+            <div class="paper__thumb">
+                <img src="%=static=%img/content/paper-thumb.jpg" alt="Thumb">
+            </div>
+            <div class="paper__header-content">
+                <div class="paper__title">УМНЕЙ| Образование онлайн</div>
+                <div class="paper__date">вчера в 11:35</div>
+            </div>
+        </div>
+        <div class="paper__body">
+            <div class="paper__img">
+                <img src="%=static=%img/content/paper-img.jpg" alt="Умней с нами!">
+            </div>
+            <div class="paper__content">
+                <p>Нет времени на учебу? Ты просто никогда не учился вместе с УМНЕЙ! Получить диплом о высшем образовании стало гораздо проще. Нужно лишь желание и доступ в интернет!</p>
+                <p>Теперь ради учебы не нужно отказываться от работы и других занятий. Диктуй свои правила – совмещай учебу с привычной жизнью! Планируй расписание учебы и каникул, как это удобно тебе!</p>
+                <p>УМНЕЙ дает возможность жить полной жизнью – учись дистанционно и получай профессию своей мечты!</p>
+            </div>
+        </div>
+        <div class="paper__footer">
+            <ul class="paper__share">
+                <li class="paper__share-vk">
+                    <span class="paper__share-wrap">
+                        <span class="paper__share-icon paper__share-icon--vk"></span>
+                        <span class="paper__share-text paper__share-text--vk">12</span>
+                    </span>
+                    <span class="paper__share-wrap">
+                        <span class="paper__share-icon paper__share-icon--vk-share"></span>
+                        <span class="paper__share-text paper__share-text--vk">7</span>
+                    </span>
+                </li>
+                <li class="paper__share-fb">
+                    <span class="paper__share-wrap">
+                        <span class="paper__share-icon paper__share-icon--fb"></span>
+                        <span class="paper__share-text paper__share-text--vk">2</span>
+                    </span>
+                </li>
+                <li class="paper__share-od">
+                    <span class="paper__share-wrap">
+                        <span class="paper__share-icon paper__share-icon--od"></span>
+                        <span class="paper__share-text paper__share-text--vk">111</span>
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <button class="paper__close">Закрыть</button>
+    </div>
+
+    <div class="mail-msg">
+        <div class="mail-msg-wrap">
+            <div class="mail-msg-inner">
+            <div class="mail-msg__content">
+                <div class="mail-msg__title">
+                    Привет, fgfjfgj! <br>Пишу тебе из 2026 года. <br>Мне сейчас 26 лет.					</div>
+                <div class="mail-msg__text">
+                    <p>
+                        Возможно, тебе кажется, что это много, но я могу сказать тебе точно – жизнь только началась :)
+                    </p>
+                    <p>
+                        Как сейчас помню - 10 лет назад ты этими самыми руками «гуглила» в интернете про экономическое образование и раздумывала, сможет ли оно тебе пригодиться. Поверь, ты будешь сомневаться еще совсем недолго, а потом твоя жизнь начнет кардинально меняться. Еще бы! :)
+                    </p>
+                    <p>
+                        Я сейчас возглавляю один из головных отделов крупного международного холдинга. И всё развивается прекрасно. Работа, конечно, отнимает много времени, но это того стоит! Это действительно крупная позиция и крупные деньги.
+                    </p>
+                    <p>
+                        Параллельно читаю лекции и семинары. Я ведь не только успешная бизнесвуман, но ещё и профессор :)
+                    </p>
+                    <p>
+                        У меня отличная семья. Я смотрю на мужа, детей и понимаю, что абсолютно счастлива. А они счастливы со мной – ведь я много добилась и мной действительно можно гордиться ;)
+                    </p>
+                    <p>
+                        И да, мы всё-таки купили тот дом, о котором ты так мечтала. Там есть всё, включая spa, бассейн и массажную комнату :) И у меня роскошная гардеробная. Чего там только нет! Обожаю моду.
+                    </p>
+                    <p>
+                        Ты главное не останавливайся сейчас, ни в чем не сомневайся. Знай, что перед тобой твоя главная отправная точка в будущее. Будущее, которое кардинально изменится благодаря твоему образованию.
+                    </p>
+                </div>
+                <div class="fw-500 zi-1 fsi posr mb-25">Приятной учебы!</div>
+                <div class="fw-500 zi-1 posr">Твоя будущая fgfjfgj</div>
+
+            </div>
+            <div class="mail-msg__btns">
+                <div class="mail-msg__btn mail-msg__btn--pink"><a class="another-future" href="#">Хочу другое будущее</a></div>
+                <div class="mail-msg__btn mail-msg__btn--green"><a href="/programms/undergraduate/ekonomika/order/?MYNAME=fgfjfgj&amp;MYMAIL=fgjhfg@fghfh.ru">Хочу такое будущее</a></div>
+            </div>
+            <div class="mail-msg__socials">
+                <div class="mail-msg__social">
+                    <div class="mail-msg__social-title">Поделиться:</div>
+                    <ul>
+                        <li>
+                            <a href="#" id="letter-share-fb">
+                                <img src="/local/templates/general/markup/builds/static/img/general/fb.png" alt="FB">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" id="letter-share-vk">
+                                <img src="/local/templates/general/markup/builds/static/img/general/vk.png" alt="VK">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" id="letter-share-ok">
+                                <img src="/local/templates/general/markup/builds/static/img/general/ok.png" alt="OK">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <a href="#" class="mail-tab js-mail-tab">
+        <div class="mail-tab__text">Письмо<br>из будущего</div>
+        <div class="mail-tab__mail"></div>
+    </a>
+
+    <div class="mail-form">
+        <div class="mail-form-wrap">
+            <div class="mail-form-inner">
+                <div class="text-center">
+                    <div class="fsz-30 fw-700 lts-1 ttu mb-20">Письмо из будущего</div>
+                    <div class="fsz-18 fw-500">Введи свои данные и узнай, каким будет твое будущее!</div>
+                </div>
+                <hr class="mt-40 mb-40">
+                <form id="letters-from-future" novalidate="novalidate">
+                    <input type="hidden" name="GET-LETTER-FROM-FUTURE" value="Y">
+                    <div class="mail-form-direct">
+                        <select class="mail-form-direction select2-hidden-accessible" name="DIRECTION" tabindex="-1" aria-hidden="true">
+                            <option></option><!-- .placeholder -->
+
+                            <option value="7674">Юриспруденция</option>
+                            <option value="7681">Экономика</option>
+                            <option value="7706">Бухгалтер</option>
+                            <option value="7705">Логистика на транспорте и в бизнесе</option>
+                            <option value="7704">Социология</option>
+                            <option value="7703">Гос. и муниц. управление</option>
+                            <option value="7702">Бизнес-информатика</option>
+                            <option value="7701">Менеджмент</option>
+                            <option value="7700">Право и организация соц. обеспечения</option>
+                            <option value="7699">Дошкольное образование</option>
+                            <option value="7698">Психология</option>
+                            <option value="7707">Прикладная информатика</option>
+                        </select>
+                        <!--<span class="select2 select2-container select2-container&#45;&#45;default" dir="ltr" style="width: auto;"><span class="selection"><span class="select2-selection select2-selection&#45;&#45;single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-DIRECTION-uj-container"><span class="select2-selection__rendered" id="select2-DIRECTION-uj-container"><span class="select2-selection__placeholder">Выбери направление обучения *</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>-->
+                        <div class="mail-future-error">
+                            <label id="DIRECTION-error" class="error-class" for="DIRECTION"></label>
+                        </div>
+                    </div>
+                    <div class="mail-form__row mail-form__row--one">
+                        <div class="mail-form__col mail-form__col--left">
+                            <div class="mail-form__title">Укажи пол:<span>*</span></div>
+                            <div class="mail-form__line">
+                                <label class="mail-form__label">
+                                    <input type="radio" name="GENDER" value="FEMALE">
+                                    <span class="mail-form__check"></span>
+                                    <span class="mail-form__legend">Женщина</span>
+                                </label>
+                                <label class="mail-form__label">
+                                    <input type="radio" name="GENDER" value="MALE">
+                                    <span class="mail-form__check"></span>
+                                    <span class="mail-form__legend">Мужчина</span>
+                                </label>
+                            </div>
+                            <div class="mail-future-error">
+                                <label id="GENDER-error" class="error-class" for="GENDER" style="display: none"></label>
+                            </div>
+                        </div>
+                        <div class="mail-form__col mail-form__col--right">
+                            <div class="mail-form__title">Сколько тебе лет:<span>*</span></div>
+                            <div class="mail-form__years">
+                                <select class="mail-form-year select2-hidden-accessible" name="AGE" tabindex="-1" aria-hidden="true">
+                                    <option value="">Цифра</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                    <option value="31">31</option>
+                                    <option value="32">32</option>
+                                    <option value="33">33</option>
+                                    <option value="34">34</option>
+                                    <option value="35">35</option>
+                                    <option value="36">36</option>
+                                    <option value="37">37</option>
+                                    <option value="38">38</option>
+                                    <option value="39">39</option>
+                                    <option value="40">40</option>
+                                    <option value="41">41</option>
+                                    <option value="42">42</option>
+                                    <option value="43">43</option>
+                                    <option value="44">44</option>
+                                    <option value="45">45</option>
+                                    <option value="46">46</option>
+                                    <option value="47">47</option>
+                                    <option value="48">48</option>
+                                    <option value="49">49</option>
+                                    <option value="50">50</option>
+                                    <option value="51">51</option>
+                                    <option value="52">52</option>
+                                    <option value="53">53</option>
+                                    <option value="54">54</option>
+                                    <option value="55">55</option>
+                                    <option value="56">56</option>
+                                    <option value="57">57</option>
+                                    <option value="58">58</option>
+                                    <option value="59">59</option>
+                                    <option value="60">60</option>
+                                    <option value="61">61</option>
+                                    <option value="62">62</option>
+                                    <option value="63">63</option>
+                                    <option value="64">64</option>
+                                    <option value="65">65</option>
+                                    <option value="66">66</option>
+                                    <option value="67">67</option>
+                                    <option value="68">68</option>
+                                    <option value="69">69</option>
+                                    <option value="70">70</option>
+                                    <option value="71">71</option>
+                                    <option value="72">72</option>
+                                    <option value="73">73</option>
+                                    <option value="74">74</option>
+                                    <option value="75">75</option>
+                                    <option value="76">76</option>
+                                    <option value="77">77</option>
+                                    <option value="78">78</option>
+                                    <option value="79">79</option>
+                                    <option value="80">80</option>
+                                    <option value="81">81</option>
+                                    <option value="82">82</option>
+                                    <option value="83">83</option>
+                                    <option value="84">84</option>
+                                    <option value="85">85</option>
+                                </select>
+                                <!--<span class="select2 select2-container select2-container&#45;&#45;default" dir="ltr" style="width: auto;"><span class="selection"><span class="select2-selection select2-selection&#45;&#45;single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-AGE-4h-container"><span class="select2-selection__rendered" id="select2-AGE-4h-container"><span class="select2-selection__placeholder">Цифра *</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>-->
+                            </div>
+                            <div class="mail-future-error">
+                                <label id="AGE-error" class="error-class" for="AGE"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mail-form__row">
+                        <div class="mail-form__title">Как тебя зовут:<span>*</span></div>
+                        <div class="mail-form__col mail-form__col--left">
+                            <input class="mail-form__input" type="text" name="NAME" placeholder="Имя">
+                            <div class="mail-future-error">
+                                <label id="NAME-error" class="error-class" for="NAME"></label>
+                            </div>
+                        </div>
+                        <div class="mail-form__col mail-form__col--right">
+                            <input class="mail-form__input" type="text" name="MAIL" placeholder="Твой e-mail (необязательно)">
+                            <div class="mail-future-error">
+                                <label id="MAIL-error" class="error-class" for="MAIL"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="mt-25 mb-40">
+                    <div class="text-center">
+                        <a href="javascript:void(0)" class="btn btn_primary btn_xlg mail-get">Получить письмо из будущего</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <a href="#" class="mail-form__close"><span>Закрыть</span></a>
+    </div>
+
+    <div class="overlay"></div>
+
+    <script src="%=static=%js/separate-js/svg4everybody.min.js"></script>
+    <script>svg4everybody();</script>
+
+    <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
+    <script src="%=static=%js/main%=hash=%%=min=%.js"></script>
+</body>
+</html>

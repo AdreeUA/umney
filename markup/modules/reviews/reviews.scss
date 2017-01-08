@@ -1,0 +1,517 @@
+.reviews {
+
+    @include below($mobile) {
+        padding: rem(10) rem(10) rem(60);
+
+        .search-wrap{
+            //display: none;
+        }
+    }
+
+    .container-wide {
+        //max-width: rem(1050);
+    }
+    
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        @extend .contact__holder;
+
+        @include below($mobile) {
+            display: block;
+        }
+
+    }
+
+    .bid__title {
+        display: block;
+
+        @include below($mobile) {
+            position: relative;
+
+            padding: rem(19) rem(10) rem(25);
+            border: 2px solid #000;
+            margin: 0 0 rem(25) !important;
+
+            font-size: rem(18) !important;
+            letter-spacing: 0 !important;
+
+            background: transparent;
+            box-shadow: 0 rem(2) rem(4) rgba(4,4,4,.28);
+
+            &:before {
+                position: absolute;
+                content: "";
+                display: block;
+                top: 99%;
+                //left: rem(150);
+                left: 0;
+                right: 0;
+                margin: auto;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: rem(14) rem(12) 0 rem(12);
+                z-index: 2;
+                border-color: #f2f2f2 transparent transparent transparent;
+            }
+            &:after {
+                position: absolute;
+                content: "";
+                display: block;
+                top: 100%;
+                //left: rem(147);
+                left: 0;
+                right: 0;
+                margin: auto;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: rem(16) rem(14) 0 rem(14);
+                z-index: 1;
+                border-color: #000000 transparent transparent transparent;
+            }
+        }
+    }
+}
+
+.review-item {
+    width: 48%;
+    min-height: rem(527);
+    margin-bottom: rem(39);
+
+    font-family: $Museo;
+    font-size: rem(24);
+
+    overflow: hidden;
+    border-radius: 3px 2px 2px 3px;
+    box-shadow: 0 2px 4px rgba(4, 4, 4, 0.28);
+
+    &_theme-blue {
+        .review-item__img-wrap {
+            background-color: #8ccdf2;
+            text-align: left;
+
+            &::after {
+                background-image: url(__static__minified-svg/review-blue.svg);
+                background-position: right rem(-10);
+            }
+
+        }
+    }
+
+    &_theme-green {
+        .review-item__img-wrap {
+            background-color: #dcf28f;
+            text-align: right;
+
+            &::after {
+                background-image: url(__static__minified-svg/review-green.svg);
+                background-position: left rem(-10);
+            }
+        }
+    }
+
+    @include below($mobile) {
+        width: 100%;
+        min-height: 1px;
+        margin-bottom: rem(25);
+
+        font-size: rem(18);
+        text-align: center;
+
+        background-color: #fff;
+    }
+
+    &__img-wrap {
+        position: relative;
+        height: rem(255);
+
+        overflow: hidden;
+
+        &::before {
+            position: absolute;
+            bottom: 0;
+            left: rem(17);
+            z-index: 2;
+
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 rem(20) rem(20) rem(20);
+            border-color: transparent transparent #fff transparent;
+
+            content: '';
+        }
+
+        &::after {
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            width: 100%;
+            height: 100%;
+
+            background-size: rem(150) rem(150);
+            background-repeat: no-repeat;
+            opacity: .6;
+
+            content: '';
+        }
+
+        @include below($mobile) {
+            height: rem(150);
+
+            &::before {
+                border-width: 0 rem(15) rem(15) rem(15);
+            }
+        }
+    }
+
+    &__img {
+        width: 100%;
+
+        @include below($mobile) {
+            width: auto;
+            height: 100%;
+        }
+    }
+
+    &__icon-wrap {
+
+    }
+
+    &__icon {
+        width: rem(320);
+        height: rem(320);
+    }
+
+    &__content {
+        position: relative;
+
+        padding: rem(20) rem(29) rem(24) rem(29);
+
+        @include below($mobile) {
+
+            display: flex;
+            flex-direction: column;
+            padding: rem(15) rem(20) rem(20);
+        }
+    }
+
+    &__name {
+        margin-bottom: rem(4);
+
+        font-size: rem(24);
+        line-height: 1;
+        font-weight: 500;
+        text-transform: uppercase;
+
+        @include below($mobile) {
+            order: 3;
+
+            font-size: rem(14);
+        }
+    }
+
+    &__prof {
+        font-size: rem(18);
+        line-height: 1.3;
+
+        @include below($mobile) {
+            order: 4;
+
+            font-size: rem(12);
+        }
+    }
+
+    &__hr {
+        margin: rem(26) 0;
+
+        @include below($mobile) {
+            order: 2;
+            margin: rem(15) 0;
+        }
+    }
+
+    &__disc {
+        margin-bottom: rem(19);
+
+        line-height: 1.25;
+
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        @include below($mobile) {
+            order: 1;
+            margin: 0;
+
+            color: $brand-primary;
+            cursor: pointer;
+        }
+    }
+
+    &__more {
+        color: $brand-primary;
+        font-size: rem(14);
+        text-transform: uppercase;
+        text-decoration: none;
+
+        @include below($mobile) {
+            display: none;
+        }
+    }
+}
+
+.popup-review {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2000;
+
+    display: none;
+    max-height: 100vh;
+    padding-top: rem(160);
+    padding-bottom: rem(120);
+
+    overflow-y: auto;
+
+    @include below($mobile) {
+        max-height: 100%;
+        max-height: 100vh;
+        max-width: 100%;
+        //padding: rem(160) rem(10) rem(120);
+        //padding-right: rem(10);
+    }
+
+    &__over {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+
+        height: 100%;
+        width: 100%;
+
+        background-color: rgba(0, 0, 0, .55);
+    }
+
+    &__wrap {
+        display: table;
+        height: 100%;
+        width: 100%;
+
+        @include below($mobile) {
+            //padding: 0 rem(10);
+            width: 96%;
+            margin: 0 auto;
+        }
+    }
+
+    &__inner {
+        display: table-cell;
+        vertical-align: middle;
+
+        @include below($mobile) {
+            //padding: 0 rem(10);
+        }
+    }
+
+    &__close {
+        position: absolute;
+        top: rem(-33);
+        right: 0;
+        z-index: 5;
+
+        color: $brand-primary;
+        font-size: rem(18);
+        line-height: 2;
+        font-weight: 500;
+        text-transform: uppercase;
+
+        cursor: pointer;
+
+        @include below($mobile) {
+            top: auto;
+            bottom: rem(20);
+            left: 0;
+            right: 0;
+
+            font-size: rem(14);
+        }
+    }
+
+    &__box {
+        position: relative;
+        z-index: 1000;
+
+        max-width: rem(1150);
+        margin: 0 auto;
+
+        font-size: rem(28);
+        line-height: 1.2;
+
+        b {
+            font-size: 110%;
+        }
+
+        &_theme-blue {
+            background-color: #9fd3fb;
+
+            .popup-review__bg {
+                background-position: left bottom;
+            }
+
+            .popup-review__content {
+
+                &::before {
+                    background-image: url(__static__minified-svg/review-blue.svg);
+                    background-size: rem(360) rem(350);
+                    background-position: right rem(-10);
+
+                }
+            }
+        }
+
+        &_theme-green {
+            background-color: #dcf28f;
+
+            .popup-review__bg {
+                background-position: right bottom;
+            }
+
+            .popup-review__content {
+                margin-left: 0;
+                margin-right: auto;
+
+                &::before {
+                    background-image: url(__static__minified-svg/review-green.svg);
+                    background-size: rem(360) rem(350);
+                    background-position: left rem(-10);
+
+                }
+            }
+        }
+
+        @include below($mobile) {
+            max-width: 100%;
+            max-width: 100vw;
+            border: 2px solid #000;
+            //margin: 0 rem(10);
+
+
+            font-size: rem(18);
+            text-align: center;
+
+            border-radius: 3px;
+        }
+    }
+
+    &__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        height: 100%;
+        width: 100%;
+
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        @include below($mobile) {
+            background-size: auto rem(165);
+            background-position: center top !important;
+        }
+    }
+
+    &__content {
+        position: relative;
+        z-index: 2;
+
+        width: 55%;
+        margin-left: auto;
+        padding: rem(58) rem(71) rem(54);
+
+        &::before {
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            width: 100%;
+            height: 100%;
+
+            background-repeat: no-repeat;
+            opacity: .5;
+
+            content: '';
+        }
+
+        @include below($mobile) {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin: 0;
+            padding: rem(173) rem(10) rem(50);
+
+            &::before {
+                display: none;
+            }
+        }
+
+    }
+
+    &__disc {
+        position: relative;
+        z-index: 2;
+
+        margin-bottom: rem(70);
+
+        @include below($mobile) {
+            order: 4;
+            margin-bottom: rem(25);
+
+            p {
+                margin-bottom: rem(5);
+            }
+        }
+    }
+    
+    &__name {
+        margin-bottom: rem(18);
+
+        font-size: rem(24);
+        text-transform: uppercase;
+        color: #fff;
+
+        @include below($mobile) {
+            order: 1;
+
+            font-size: rem(18);
+            color: #000;
+        }
+    }
+    
+    &__about {
+        font-size: rem(14);
+        line-height: 1.7;
+        color: #fff;
+
+        @include below($mobile) {
+            order: 2;
+
+            font-size: rem(12);
+            color: #000;
+            line-height: 1.1;
+        }
+    }
+
+    &__hr {
+        order: 3;
+        //width: 100vw;
+        margin: rem(25) 0;
+    }
+}

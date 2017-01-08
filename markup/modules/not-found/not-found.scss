@@ -1,0 +1,236 @@
+.not-found {
+    position: relative;
+    padding: rem(45) 0;
+
+    z-index: 200;
+
+    @include below($tablet) {
+        padding: rem(15) rem(10);
+
+        hr {
+            display: none;
+        }
+    }
+
+    &__wrap {
+        position: relative;
+        padding: rem(25);
+
+        border: 2px solid #000;
+        border-radius: 3px;
+
+        z-index: 2;
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -20px;
+            left: 6%;
+        }
+
+        &::before {
+            margin-bottom: 5px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 15px 15px 0 15px;
+            border-color: #f6f6f6 transparent transparent transparent;
+
+            z-index: 3;
+        }
+
+        &::after {
+            margin-bottom: 3px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 15px 15px 0 15px;
+            border-color: #000000 transparent transparent transparent;
+            z-index: 1;
+        }
+
+        @include below($tablet) {
+            border: none;
+            padding: 0;
+
+            &::before,
+            &::after {
+                display: none;
+            }
+        }
+    }
+
+    &__content {
+        @include cf;
+
+        @include below($mobile) {
+            position: relative;
+
+            padding-top: rem(10);
+            margin-bottom: rem(25);
+            border: 2px solid #000;
+            border-radius: 3px;
+
+            z-index: 2;
+
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: rem(-18);
+                left: 50%;
+                margin-left: rem(-7.5);
+            }
+
+            &::before {
+                margin-bottom: rem(5);
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: rem(15) rem(15) 0 rem(15);
+                border-color: #f6f6f6 transparent transparent transparent;
+
+                z-index: 3;
+            }
+
+            &::after {
+                margin-bottom: 3px;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: rem(15) rem(15) 0 rem(15);
+                border-color: #000000 transparent transparent transparent;
+                z-index: 1;
+            }
+
+        }
+    }
+
+    &__error {
+        float: left;
+        width: 33%;
+
+        text-align: center;
+
+        @include below($tablet) {
+            float: none;
+            width: 100%;
+        }
+    }
+
+    &__error-text {
+        display: inline-block;
+        vertical-align: middle;
+
+        font-family: $Museo;
+        font-size: rem(120);
+        font-weight: 300;
+        text-align: center;
+        line-height: rem(122);
+
+        @include below($tablet) {
+            font-size: rem(60);
+            line-height: rem(82);
+        }
+    }
+
+    &__message {
+        float: left;
+        width: 66%;
+
+        @include below($tablet) {
+            float: none;
+            width: 100%;
+
+            text-align: center;
+        }
+    }
+
+    &__title {
+        margin: rem(15) 0 rem(20) 0;
+
+        font-size: rem(36);
+        line-height: rem(38);
+
+        @include below($tablet) {
+            margin: 0 0 rem(18);
+
+            font-size: rem(24);
+            line-height: 1.1;
+        }
+    }
+
+    &__subtitle {
+        font-size: rem(24);
+        line-height: rem(26);
+
+        @include below($tablet) {
+            font-size: rem(18);
+            line-height: 1.1;
+        }
+
+        a {
+            color: #ef465b;
+            text-decoration: none;
+
+            &:hover {
+                color: #000;
+            }
+        }
+    }
+
+    .search-wrap {
+        position: static;
+
+        padding: rem(10) 0;
+
+        .prof-search__placeholder {
+            font-size: rem(18);
+
+            @include below($tablet) {
+
+            }
+        }
+    }
+
+    hr {
+        margin: rem(25) 0;
+    }
+
+    .search-result {
+        top: rem(35);
+    }
+
+    @include below($tablet) {
+        .prof-search__placeholder {
+            color: $brand-primary;
+            line-height: rem(50);
+        }
+
+        .prof-search__input {
+            height: rem(50);
+            padding: 0 rem(50) 0 rem(22);
+
+            font-size: rem(18);
+        }
+
+        .prof-search__submit {
+            top: 50%;
+            right: rem(17);
+
+            margin-top: rem(-12.5);
+            width: rem(26);
+            min-width: 1px;
+            height: rem(27);
+            padding: 0;
+
+            background-image: url(__static__general/search-icon.svg);
+            background-repeat: no-repeat;
+            //background-size: contain;
+            background-color: transparent;
+            text-indent: -999px;
+        }
+    }
+
+}

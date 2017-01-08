@@ -1,0 +1,74 @@
+// Common styles of the project
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 1.143vw;
+    -webkit-font-smoothing: antialiased;
+	@include above(1500px) {
+		font-size: 20px;
+	}
+}
+
+html, body {
+    line-height: 1;
+    font-family: $Museo;
+    font-weight: 300;
+    color: #000;
+
+	background: #f6f6f6;
+}
+
+body {
+	font-size: rem(18);
+}
+
+.oh {
+    overflow: hidden !important;
+}
+
+.container {
+	width: rem($container);
+	margin: 0 auto;
+    position: relative;
+	@include cf;
+}
+.container-wide {
+	width: rem(1172);
+    transition: all 0.5s ease 0s;
+	margin: 0 auto;
+    position: relative;
+	@include cf;
+}
+
+p {
+	margin-top: 0;
+}
+
+hr {
+	height: 3px;
+	display: block;
+	width: 100%;
+	border: none;
+	background: url('%=static=%general/hr.png') 0 0 repeat-x transparent;
+
+	&.hr-white {
+		background: url('%=static=%general/hr-white.png') 0 0 repeat-x transparent;
+	}
+
+	&.hr-purple {
+		background: url('%=static=%general/hr-purple.png') 0 0 repeat-x transparent;
+	}
+
+	&.hr-green {
+		background: url('%=static=%general/hr-green.png') 0 0 repeat-x transparent;
+	}
+
+	&.hr-blue {
+		background: url('%=static=%general/hr-blue.png') 0 0 repeat-x transparent;
+	}
+    &.hr-grid {
+        margin: rem(40) 0;
+    }
+}

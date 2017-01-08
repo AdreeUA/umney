@@ -1,0 +1,133 @@
+// Mixins.
+
+@function vw($px, $root: 1400) {
+    @return $px / $root * 100 + vw;
+}
+
+@function vh($px, $root: 875) {
+    @return $px / $root * 100 + vh;
+}
+
+@function rem($px, $root: 16) {
+    @return $px / $root + rem;
+}
+
+@mixin transition($time: 0.2s) {
+    transition: all $time ease 0s;
+}
+
+@mixin nl {
+    margin: 0;
+    padding: 0;
+    text-indent: 0;
+    list-style: none;
+    list-style-position: outside;
+}
+
+@mixin reset-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+@mixin abs-center {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+@mixin slick-dots {
+    position: absolute;
+    right: 0;
+    left: 0;
+
+    margin: 0 rem(10);
+    padding: 0;
+
+    list-style-type: none;
+    text-align: center;
+
+    @include above($tablet) {
+        display: none !important;
+    }
+
+    li {
+        display: inline-block;
+        vertical-align: middle;
+
+        &:not(:last-child) {
+            margin-right: rem(20);
+        }
+
+        button {
+            width: 12px;
+            height: 12px;
+            padding: 0;
+
+            font-size: 0;
+
+            color: #ef465b;
+            background-color: #ef465b;
+
+            border: 0;
+            border-radius: 50%;
+            outline: none;
+        }
+    }
+
+    .slick-active {
+        button {
+            height: 18px;
+            width: 18px;
+
+            color: transparent;
+            background-color: transparent;
+
+            border: 3px solid #cccccc;
+        }
+    }
+}
+
+@mixin cf {
+    &:before,
+    &:after {
+        display: table;
+        content: "";
+    }
+
+    &:after {
+        clear: both;
+    }
+
+    .lt-ie8 & {
+        zoom: 1;
+    }
+}
+
+@mixin blocks-justify {
+    text-align: justify;
+    text-justify: newspaper;
+}
+
+// меньше указанной ширины
+@mixin below($width) {
+    @media screen and (max-width: $width) {
+      @content;
+    }
+}
+
+// больше указанной ширины
+@mixin above($width) {
+    @media screen and (min-width: $width) {
+      @content;
+    }
+}
+
+// между первой и второй шириной
+@mixin between($minWidth, $maxWidth) {
+    @media screen and (min-width: $minWidth) and (max-width: $maxWidth) {
+      @content;
+    }
+}

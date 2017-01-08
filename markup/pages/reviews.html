@@ -1,0 +1,199 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+    <head>
+        {{> head/head head.defaults}}
+    </head>
+
+    <body class="page">
+        %=symbols=%
+
+        {{> header/header }}
+
+        <div class="reviews oh">
+            <div class="container">
+                <div class="search-wrap">
+                    <a href="#" class="search-icon js-vertical-anim"></a>
+                    <div class="prof-search prof-search--hidden">
+                        <form method="post">
+                            <div class="prof-search__holder">
+                                <input class="prof-search__input" type="text">
+                                <span class="prof-search__placeholder"><span>Например:</span> Психолог, Финансирование, Бух. учет</span>
+                                <input type="submit" class="prof-search__submit" value="Поиск">
+                            </div>
+                        </form>
+                        <div class="search-result">
+                            <div class="search-loader"></div>
+                            <div class="search-content">
+                                <!--                            <div class="search-no-result">
+                                                                Результаты не найдены!
+                                                            </div>-->
+                                <!--                            <div class="search-no-result search-no-result&#45;&#45;incorrect">
+                                                                Введен пустой или некорректный поисковой запрос.
+                                                            </div>-->
+                                <div class="search-cards">
+                                    <div class="search-result__title">Направления обучения</div>
+                                    <a href="#" class="search-card">
+                                        <div class="search-card__col">
+                                            <div class="search-card__title">Юриспруденция и вторая</div>
+                                            <div class="search-card__direct">Бакалавриат</div>
+                                        </div>
+                                        <div class="search-card__col">
+                                            <div class="search-card__text"><span>1-ое</span> место в рейтинге самых высокооплачиваемых сфер деятельности</div>
+                                        </div>
+                                        <div class="search-card__col">
+                                            <div class="search-card__text">
+                                                Экономист управляет, планирует и контролирует финансовые ресурсы предприятий подробнее</div>
+                                        </div>
+                                    </a><!-- .search-card -->
+                                    <a href="#" class="search-card">
+                                        <div class="search-card__col">
+                                            <div class="search-card__title">возможное совпадение по карточке</div>
+                                            <div class="search-card__direct">ДПО</div>
+                                        </div>
+                                        <div class="search-card__col">
+                                            <div class="search-card__text"><span>1-ое</span> место в рейтинге самых высокооплачиваемых сфер деятельности</div>
+                                        </div>
+                                        <div class="search-card__col">
+                                            <div class="search-card__text">
+                                                Экономист управляет, планирует и контролирует финансовые ресурсы предприятий подробнее</div>
+                                        </div>
+                                    </a><!-- .search-card -->
+                                </div><!-- .search-cards -->
+                                <div class="search-other">
+                                    <div class="search-bordered">
+                                        <div class="search-gray">Возможны вы искали:</div>
+                                        <div class="search-box">
+                                            <div class="search-title">Статьи по теме:</div>
+                                            <a href="#" class="search-article">Вариант текстовой выдачи, длинная строка до самого конца и второя строка текста </a>
+                                            <a href="#" class="search-article">Вариант текстовой выдачи, длинная строка до самого конца и второя строка текста </a>
+                                        </div>
+                                    </div>
+                                    <div class="search-bordered">
+                                        <div class="search-box">
+                                            <div class="search-title">Заявка:</div>
+                                            <a href="#" class="search-article">Вариант текстовой выдачи, длинная строка до самого конца</a>
+                                        </div>
+                                    </div>
+                                </div><!-- .search-other -->
+                            </div><!-- .search-content -->
+                        </div><!-- .search-result -->
+                    </div>
+                </div>
+            </div>
+            <div class="container-wide">
+                <h2 class="bid__title programs__title js-vertical-anim">—отзывы про умней—</h2>
+
+                <div class="reviews__list">
+
+                    <div class="review-item review-item_theme-blue">
+                        <div class="review-item__img-wrap">
+                            <img class="review-item__img" src="%=static=%img/content/review-ava1.png" alt="">
+                        </div>
+                        <div class="review-item__content">
+                            <div class="review-item__name">Федор Конюхов</div>
+                            <div class="review-item__prof">Путешественник</div>
+                            <hr class="review-item__hr">
+                            <div class="review-item__disc">Дистанционное обучение – лучший подарок для тех, кто ценит свободу!</div>
+                            <a href="#" class="review-item__more js-review-more">подробнее</a>
+                        </div>
+                    </div>
+
+                    <div class="review-item review-item_theme-green">
+                        <div class="review-item__img-wrap">
+                            <img class="review-item__img" src="%=static=%img/content/review-ava2.png" alt="">
+                        </div>
+                        <div class="review-item__content">
+                            <div class="review-item__name">конcтантин константинов</div>
+                            <div class="review-item__prof">Путешественник</div>
+                            <hr class="review-item__hr">
+                            <div class="review-item__disc">Дистанционное обучение – лучший подарок для тех, кто ценит свободу! </div>
+                            <a href="#" class="review-item__more js-review-more">подробнее</a>
+                        </div>
+                    </div>
+
+                    <div class="review-item review-item_theme-blue">
+                        <div class="review-item__img-wrap">
+                            <img class="review-item__img" src="%=static=%img/content/review-ava1.png" alt="">
+                        </div>
+                        <div class="review-item__content">
+                            <div class="review-item__name">макс корж  </div>
+                            <div class="review-item__prof">Путешественник</div>
+                            <hr class="review-item__hr">
+                            <div class="review-item__disc">Дистанционное обучение – лучший подарок для тех, кто ценит свободу! </div>
+                            <a href="#" class="review-item__more js-review-more">подробнее</a>
+                        </div>
+                    </div>
+
+                    <div class="review-item review-item_theme-green">
+                        <div class="review-item__img-wrap">
+                            <img class="review-item__img" src="%=static=%img/content/review-ava2.png" alt="">
+                        </div>
+                        <div class="review-item__content">
+                            <div class="review-item__name">александр александров</div>
+                            <div class="review-item__prof">Путешественник</div>
+                            <hr class="review-item__hr">
+                            <div class="review-item__disc">Дистанционное обучение – лучший подарок для тех, кто ценит свободу! </div>
+                            <a href="#" class="review-item__more js-review-more">подробнее</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="popup-review">
+                    <div class="popup-review__wrap">
+                        <div class="popup-review__over"></div>
+                        <div class="popup-review__inner">
+                            <div class="popup-review__box popup-review__box_theme-blue">
+                                <div class="popup-review__bg" style="background-image: url(__static__img/content/popup-img-1.png)"></div>
+                                <div class="popup-review__close">Закрыть</div>
+                                <div class="popup-review__content">
+                                    <div class="popup-review__disc">
+                                        <p><em>Я, например,</em></p>
+                                        <p><em><b>стал дипломированнымюристом</b></em> <br></p>
+                                        <p>прямо в океане, во время своей одиночной кругосветки на парусной яхте. Проходил курсы во время путешествий в пустынях Эфиопии, во льдах Арктики и даже на склоне Эвереста. И это действительно здорово, ведь мир слишком велик и многообразен, чтобы просиживать лучшие годы в аудиториях. Дистанционное обучение – лучший подарок для тех, кто ценит свободу и стремится жить полной жизнью. Ведь современные технологии позволяют получать знания в любой точке Земли и в любое удобное время.
+                                        </p>
+                                    </div>
+                                    <div class="popup-review__name">Федор Конюхов,</div>
+                                    <div class="popup-review__about">
+                                        путешественник, первый россиянин совершивший Explorers Grand Slam,
+                                        побывав на Южном и Северном полюсах и покоривший Семь вершин
+                                        нашей планеты. </div>
+                                    <hr class="hr popup-review__hr">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="container-wide">
+            <div class="start start--hidden js-vertical-anim">
+                <div class="start-wrap-left">
+                    {{Icon iconName='logotype' className='start-anim__left js-rotate-anim'}}
+                </div>
+                <div class="start-wrap-right">
+                    {{Icon iconName='logotype' className='start-anim__right js-rotate-anim'}}
+                </div>
+                <div class="content">
+                    <div class="start__holder">
+                        <h2 class="start__title js-vertical-anim">Начни учиться с нами<br> прямо сейчас!</h2>
+                        <a class="btn btn_default start_btn js-vertical-anim" href="#">подать заявку</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {{> footer/footer }}
+
+        <script src="%=static=%js/separate-js/svg4everybody.min.js"></script>
+        <script>svg4everybody();</script>
+
+        <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
+        <script src="%=static=%js/main%=hash=%%=min=%.js"></script>
+    </body>
+
+</html>

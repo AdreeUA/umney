@@ -1,0 +1,66 @@
+/* Your custom fonts here */
+
+/* Example
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../fonts/Custom-Font.eot');
+    src: url('../fonts/Custom-Font.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Custom-Font.woff') format('woff'),
+         url('../fonts/Custom-Font.svg#custom_font') format('svg');
+    font-weight: 400;       // For normal width. It could has another value
+    font-style: normal;     // Also could has another value
+    }
+*/
+
+@font-face {
+    font-family: 'Museo';
+    src: url('../fonts/MuseoCyrl-300.eot');
+    src: url('../fonts/MuseoCyrl-300.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/MuseoCyrl-300.woff') format('woff'),
+         url('../fonts/MuseoCyrl.svg#MuseoCyrl-300') format('svg');
+    font-weight: 300;       // For normal width. It could has another value
+    font-style: normal;     // Also could has another value
+}
+@font-face {
+    font-family: 'Museo';
+    src: url('../fonts/MuseoCyrl-500.eot');
+    src: url('../fonts/MuseoCyrl-500.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/MuseoCyrl-500.woff') format('woff'),
+         url('../fonts/MuseoCyrl.svg#MuseoCyrl-500') format('svg');
+    font-weight: normal;       // For normal width. It could has another value
+    font-style: normal;     // Also could has another value
+}
+@font-face {
+    font-family: 'Museo';
+    src: url('../fonts/MuseoCyrl-700.eot');
+    src: url('../fonts/MuseoCyrl-700.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/MuseoCyrl-700.woff') format('woff'),
+         url('../fonts/MuseoCyrl.svg#MuseoCyrl-700') format('svg');
+    font-weight: bold;       // For normal width. It could has another value
+    font-style: normal;     // Also could has another value
+}
+@font-face {
+    font-family: 'Museo';
+    src: url('../fonts/MuseoCyrl-900.eot');
+    src: url('../fonts/MuseoCyrl-900.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/MuseoCyrl-900.woff') format('woff'),
+         url('../fonts/MuseoCyrl.svg#MuseoCyrl-900') format('svg');
+    font-weight: 900;       // For normal width. It could has another value
+    font-style: normal;     // Also could has another value
+}
+
+@font-face {
+    font-family: 'MuseoSans';
+    src: url('../fonts/MuseoSansCyrl-500.eot');
+    src: url('../fonts/MuseoSansCyrl-500.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/MuseoSansCyrl-500.woff') format('woff'),
+         url('../fonts/MuseoSansCyrl.svg#MuseoSansCyrl-500') format('svg');
+    font-weight: normal;       // For normal width. It could has another value
+    font-style: normal;     // Also could has another value
+}
+
+// Var for using custom font
+$Museo: 'Museo', Helvetica, Arial, sans-serif;
+$MuseoSans: 'MuseoSans', Helvetica, Arial, sans-serif;
+$Roboto: 'Roboto', Helvetica, Arial, sans-serif;

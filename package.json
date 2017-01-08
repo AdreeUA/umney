@@ -1,0 +1,31 @@
+{
+  "name": "awesome_project",
+  "version": "1.0.0",
+  "description": "Your awesome project description",
+  "main": "gulpfile.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "animate.css": "^3.5.1",
+    "autosize-input": "^0.2.1",
+    "fullpage.js": "^2.8.1",
+    "gulp": "3.9.1",
+    "jquery-mousewheel": "^3.1.13",
+    "jquery-validation": "^1.15.0",
+    "malihu-custom-scrollbar-plugin": "^3.1.5",
+    "slick-carousel": "^1.6.0",
+    "social-likes": "^3.1.0",
+    "waypoints": "^4.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@gitolite.digitalwant.ru:miro/umnei.git"
+  }
+}

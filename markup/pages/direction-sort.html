@@ -1,0 +1,725 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+<head>
+    {{> head/head }}
+</head>
+
+<body class="page">
+    %=symbols=%
+
+    {{> header/header }}
+
+    <div class="container">
+        <div class="search-wrap">
+            <a href="#" class="search-icon js-vertical-anim"></a>
+            <div class="prof-search prof-search--nomargin prof-search--hidden">
+                <form method="post">
+                    <div class="prof-search__holder">
+                        <input class="prof-search__input" type="text">
+                        <span class="prof-search__placeholder"><span>Например:</span> Психолог, Финансирование, Бух. учет</span>
+                        <input type="submit" class="prof-search__submit" value="Поиск">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h2 class="bid__title programs__title js-vertical-anim">—Программы обучения—</h2>
+        <div class="bid-tabs bid-tabs--program bid-tabs--gray-triangle _rose mobile-hide">
+            <a class="bid-tabs__item js-vertical-anim-3" href="#spec">
+                <span class="bid-tabs__title">выбрать<br> ваш уровень обучения</span>
+            </a>
+            <a class="bid-tabs__item js-vertical-anim-3 active" href="#vyz">
+                <span class="bid-tabs__title">выбрать<br> направление обучения</span>
+            </a>
+            <a class="bid-tabs__item js-vertical-anim-3">
+                <span class="bid-tabs__title">Заполнить<br> заявку на обучение</span>
+            </a>
+        </div>
+        <div class="sort js-vertical-anim mobile-hide">
+            <ul class="sort__list">
+                <li class="sort__item"><a href="#section-all" class="sort__link active">все<br>направления<br>обучения</a></li>
+                <li class="sort__item">
+                    <span>для высшее проф.:</span><br>
+                    <a href="#section-baklav" class="sort__link">бакалавриат</a><br>
+                    <a href="#section-magis" class="sort__link">магистратура</a>
+                </li>
+                <li class="sort__item">
+                    <span>для среднее проф.:</span><br>
+                    <a href="#section-proff" class="sort__link">среднее проф.</a><br>
+                    <a href="#section-courses" class="sort__link">курсы</a>
+                </li>
+                <li class="sort__item">
+                    <span>для высшее проф.<br>за рубежом:</span><br>
+                    <a href="#section-aboard" class="sort__link">бакалавриат</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container-wide">
+
+        <div class="bid-tabs bid-tabs_programs bid-tabs--gray-triangle mobile-visible">
+            <a class="bid-tabs__item js-programs-bid" href="#programsContent">
+                <span class="bid-tabs__title">Выбрать уровень обучения</span>
+            </a>
+        </div>
+
+        <div class="bid-tabs bid-tabs_programs bid-tabs--gray-triangle mobile-visible">
+            <a class="bid-tabs__item active js-programs-bid" href="direction-sort.html">
+                <span class="bid-tabs__title">Выбрать направление обучения</span>
+            </a>
+        </div>
+
+        <div class="direction__all direction-tab active" id="section-all">
+            <div class="container-wide">
+                <div class="prof__block direction__block active">
+                    <h2 class="programs__subtitle js-vertical-anim">— все направления —</h2>
+                    <ul class="prof__list">
+                        <li class="prof__item js-vertical-anim-3">
+                            <div class="prof__item-front">
+                                <div class="prof__header">
+                                    <h3 class="prof__name">Юриспруденция</h3>
+                                </div>
+                                <hr>
+                                <p class="prof__desc">
+                                    <strong>1-ое место</strong> в рейтинге самых высокооплачиваемых сфер деятельности
+                                </p>
+                            </div>
+                            <div class="prof__overlay">
+                                <h4 class="prof__overlay-title">Экономика</h4>
+                                <hr>
+                                <div class="prof__overlay-list">
+                                    <a href="#">Психология</a>, <a href="#">Маркетинг</a>, <a href="#">Философия</a>, <a href="#">Экономика</a>, <a href="#">Бугалтерия и право длинное название</a>
+                                </div>
+                            </div>
+
+                        <li class="prof__item js-vertical-anim-3">
+                            <div class="prof__item-front">
+                                <div class="prof__header">
+                                    <h3 class="prof__name">Экономика</h3>
+                                </div>
+                                <hr>
+                                <p class="prof__desc">
+                                    <strong>5 млрд</strong> выделит государство до конца 2016 года на развитие сферы
+                                </p>
+                            </div>
+                            <div class="prof__overlay">
+                                <h4 class="prof__overlay-title">Экономика</h4>
+                                <hr>
+                                <div class="prof__overlay-list">
+                                    <a href="#">Психология</a>, <a href="#">Маркетинг</a>, <a href="#">Философия</a>, <a href="#">Экономика</a>, <a href="#">Бугалтерия и право длинное название</a>
+                                </div>
+                            </div>
+                        <li class="prof__item js-vertical-anim-3">
+                            <div class="prof__item-front">
+                                <div class="prof__header">
+                                    <h3 class="prof__name">Менеджмент</h3>
+                                </div>
+                                <hr>
+                                <p class="prof__desc">
+                                    <strong>+33%</strong> ежемесячно  увеличивается количество вакансий
+                                </p>
+                            </div>
+                            <div class="prof__overlay">
+                                <h4 class="prof__overlay-title">Экономика</h4>
+                                <hr>
+                                <div class="prof__overlay-list">
+                                    <a href="#">Психология</a>, <a href="#">Маркетинг</a>, <a href="#">Философия</a>, <a href="#">Экономика</a>, <a href="#">Бугалтерия и право длинное название</a>
+                                </div>
+                            </div>
+                        <li class="prof__item js-vertical-anim-3">
+                            <div class="prof__item-front">
+                                <div class="prof__header">
+                                    <h3 class="prof__name">Форм-е проф. компетенций сотр-в при ФГОС</h3>
+                                    <p class="prof__subname">ДПО</p>
+                                </div>
+                                <hr>
+                                <p class="prof__desc">
+                                    <strong>5%</strong> выделит государство до конца 2016 года на развитие сферы
+                                </p>
+                            </div>
+                            <div class="prof__overlay">
+                                <h4 class="prof__overlay-title">Экономика</h4>
+                                <hr>
+                                <div class="prof__overlay-list">
+                                    <a href="#">Психология</a>, <a href="#">Маркетинг</a>, <a href="#">Философия</a>, <a href="#">Экономика</a>, <a href="#">Бугалтерия и право длинное название</a>
+                                </div>
+                            </div>
+                        <li class="prof__item js-vertical-anim-3">
+                            <div class="prof__item-front">
+                                <div class="prof__header">
+                                    <h3 class="prof__name">Гос.<br> и муниц. управление</h3>
+                                </div>
+                                <hr>
+                                <p class="prof__desc">
+                                    <strong>+90%</strong> ежемесячно  увеличивается количество вакансий
+                                </p>
+                            </div>
+                            <div class="prof__overlay">
+                                <h4 class="prof__overlay-title">Экономика</h4>
+                                <hr>
+                                <div class="prof__overlay-list">
+                                    <a href="#">Психология</a>, <a href="#">Маркетинг</a>, <a href="#">Философия</a>, <a href="#">Экономика</a>, <a href="#">Бугалтерия и право длинное название</a>
+                                </div>
+                            </div>
+                        <li class="prof__item js-vertical-anim-3">
+                            <div class="prof__item-front">
+                                <div class="prof__header">
+                                    <h3 class="prof__name">Экономика и бух. учет</h3>
+                                </div>
+                                <hr>
+                                <p class="prof__desc">
+                                    <strong>5-ое место</strong> в рейтинге самых высокооплачиваемых сфер деятельности
+                                </p>
+                            </div>
+                            <div class="prof__overlay">
+                                <h4 class="prof__overlay-title">Экономика</h4>
+                                <hr>
+                                <div class="prof__overlay-list">
+                                    <a href="#">Психология</a>, <a href="#">Маркетинг</a>, <a href="#">Философия</a>, <a href="#">Экономика</a>, <a href="#">Бугалтерия и право длинное название</a>
+                                </div>
+                            </div>
+                    </ul>
+
+                    <ul class="prof__list">
+                        <li class="prof__item js-vertical-anim-3">
+                            <div class="prof__item-front">
+                                <div class="prof__header">
+                                    <h3 class="prof__name">Юриспруденция</h3>
+                                </div>
+                                <hr>
+                                <p class="prof__desc">
+                                    <strong>1-ое место</strong> в рейтинге самых высокооплачиваемых сфер деятельности
+                                </p>
+                            </div>
+                            <div class="prof__overlay">
+                                <h4 class="prof__overlay-title">Экономика</h4>
+                                <hr>
+                                <div class="prof__overlay-list">
+                                    <a href="#">Психология</a>, <a href="#">Маркетинг</a>, <a href="#">Философия</a>, <a href="#">Экономика</a>, <a href="#">Бугалтерия и право длинное название</a>
+                                </div>
+                            </div>
+
+                        <li class="prof__item js-vertical-anim-3">
+                            <div class="prof__item-front">
+                                <div class="prof__header">
+                                    <h3 class="prof__name">Экономика</h3>
+                                </div>
+                                <hr>
+                                <p class="prof__desc">
+                                    <strong>5 млрд</strong> выделит государство до конца 2016 года на развитие сферы
+                                </p>
+                            </div>
+                            <div class="prof__overlay">
+                                <h4 class="prof__overlay-title">Экономика</h4>
+                                <hr>
+                                <div class="prof__overlay-list">
+                                    <a href="#">Психология</a>, <a href="#">Маркетинг</a>, <a href="#">Философия</a>, <a href="#">Экономика</a>, <a href="#">Бугалтерия и право длинное название</a>
+                                </div>
+                            </div>
+                        <li class="prof__item js-vertical-anim-3">
+                            <div class="prof__item-front">
+                                <div class="prof__header">
+                                    <h3 class="prof__name">Менеджмент</h3>
+                                </div>
+                                <hr>
+                                <p class="prof__desc">
+                                    <strong>+33%</strong> ежемесячно  увеличивается количество вакансий
+                                </p>
+                            </div>
+                            <div class="prof__overlay">
+                                <h4 class="prof__overlay-title">Экономика</h4>
+                                <hr>
+                                <div class="prof__overlay-list">
+                                    <a href="#">Психология</a>, <a href="#">Маркетинг</a>, <a href="#">Философия</a>, <a href="#">Экономика</a>, <a href="#">Бугалтерия и право длинное название</a>
+                                </div>
+                            </div>
+                        <li class="prof__item js-vertical-anim-3">
+                            <div class="prof__item-front">
+                                <div class="prof__header">
+                                    <h3 class="prof__name">Психология</h3>
+                                </div>
+                                <hr>
+                                <p class="prof__desc">
+                                    <strong>5%</strong> выделит государство до конца 2016 года на развитие сферы
+                                </p>
+                            </div>
+                            <div class="prof__overlay">
+                                <h4 class="prof__overlay-title">Экономика</h4>
+                                <hr>
+                                <div class="prof__overlay-list">
+                                    <a href="#">Психология</a>, <a href="#">Маркетинг</a>, <a href="#">Философия</a>, <a href="#">Экономика</a>, <a href="#">Бугалтерия и право длинное название</a>
+                                </div>
+                            </div>
+                        <li class="prof__item js-vertical-anim-3">
+                            <div class="prof__item-front">
+                                <div class="prof__header">
+                                    <h3 class="prof__name">Гос.<br> и муниц. управление</h3>
+                                </div>
+                                <hr>
+                                <p class="prof__desc">
+                                    <strong>+90%</strong> ежемесячно  увеличивается количество вакансий
+                                </p>
+                            </div>
+                            <div class="prof__overlay">
+                                <h4 class="prof__overlay-title">Экономика</h4>
+                                <hr>
+                                <div class="prof__overlay-list">
+                                    <a href="#">Психология</a>, <a href="#">Маркетинг</a>, <a href="#">Философия</a>, <a href="#">Экономика</a>, <a href="#">Бугалтерия и право длинное название</a>
+                                </div>
+                            </div>
+                        <li class="prof__item js-vertical-anim-3">
+                            <div class="prof__item-front">
+                                <div class="prof__header">
+                                    <h3 class="prof__name">Экономика и бух. учет</h3>
+                                </div>
+                                <hr>
+                                <p class="prof__desc">
+                                    <strong>5-ое место</strong> в рейтинге самых высокооплачиваемых сфер деятельности
+                                </p>
+                            </div>
+                            <div class="prof__overlay">
+                                <h4 class="prof__overlay-title">Экономика</h4>
+                                <hr>
+                                <div class="prof__overlay-list">
+                                    <a href="#">Психология</a>, <a href="#">Маркетинг</a>, <a href="#">Философия</a>, <a href="#">Экономика</a>, <a href="#">Бугалтерия и право длинное название</a>
+                                </div>
+                            </div>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="bid-tabs bid-tabs_programs bid-tabs--gray-triangle mobile-visible">
+            <a class="bid-tabs__item js-programs-bid" href="#">
+                <span class="bid-tabs__title">Заполнить заявку на обучение</span>
+            </a>
+        </div>
+
+        <div class="direction__spec direction__higher direction-tab" id="section-baklav">
+            <div class="container-wide">
+                <div class="prof__block direction__block active">
+                    <div class="direction-text js-vertical-anim">направления для высшего профессионального обучения</div>
+                    <h2 class="programs__subtitle js-vertical-anim">—бакалавриат—</h2>
+                    <ul class="prof__list">
+                        <li class="prof__item js-vertical-anim-3">
+                            <div class="prof__item-front">
+                                <div class="prof__header">
+                                    <h3 class="prof__name">Юриспруденция</h3>
+                                </div>
+                                <hr>
+                                <p class="prof__desc">
+                                    <strong>1-ое место</strong> в рейтинге самых высокооплачиваемых сфер деятельности
+                                </p>
+                            </div>
+                            <div class="prof__overlay">
+                                <h4 class="prof__overlay-title">Экономика</h4>
+                                <hr>
+                                <div class="prof__overlay-list">
+                                    <a href="#">Психология</a>, <a href="#">Маркетинг</a>, <a href="#">Философия</a>, <a href="#">Экономика</a>, <a href="#">Бугалтерия и право длинное название</a>
+                                </div>
+                            </div>
+                        <li class="prof__item js-vertical-anim-3">
+                            <div class="prof__item-front">
+                                <div class="prof__header">
+                                    <h3 class="prof__name">Экономика</h3>
+                                </div>
+                                <hr>
+                                <p class="prof__desc">
+                                    <strong>5 млрд</strong> выделит государство до конца 2016 года на развитие сферы
+                                </p>
+                            </div>
+                            <div class="prof__overlay">
+                                <h4 class="prof__overlay-title">Экономика</h4>
+                                <hr>
+                                <div class="prof__overlay-list">
+                                    <a href="#">Психология</a>, <a href="#">Маркетинг</a>, <a href="#">Философия</a>, <a href="#">Экономика</a>, <a href="#">Бугалтерия и право длинное название</a>
+                                </div>
+                            </div>
+                        <li class="prof__item js-vertical-anim-3">
+                            <div class="prof__item-front">
+                                <div class="prof__header">
+                                    <h3 class="prof__name">Менеджмент</h3>
+                                </div>
+                                <hr>
+                                <p class="prof__desc">
+                                    <strong>+33%</strong> ежемесячно  увеличивается количество вакансий
+                                </p>
+                            </div>
+                            <div class="prof__overlay">
+                                <h4 class="prof__overlay-title">Экономика</h4>
+                                <hr>
+                                <div class="prof__overlay-list">
+                                    <a href="#">Психология</a>, <a href="#">Маркетинг</a>, <a href="#">Философия</a>, <a href="#">Экономика</a>, <a href="#">Бугалтерия и право длинное название</a>
+                                </div>
+                            </div>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="direction__spec direction__higher direction-tab" id="section-magis">
+            <div class="container-wide">
+                <div class="prof__block direction__block active">
+                    <div class="direction-text js-vertical-anim">направления для высшего профессионального обучения</div>
+                    <h2 class="programs__subtitle js-vertical-anim">—магистратура—</h2>
+                    <ul class="prof__list">
+                        <li class="prof__item js-vertical-anim-3">
+                            <div class="prof__item-front">
+                                <div class="prof__header">
+                                    <h3 class="prof__name">Юриспруденция</h3>
+                                </div>
+                                <hr>
+                                <p class="prof__desc">
+                                    <strong>1-ое место</strong> в рейтинге самых высокооплачиваемых сфер деятельности
+                                </p>
+                            </div>
+                            <div class="prof__overlay">
+                                <h4 class="prof__overlay-title">Экономика</h4>
+                                <hr>
+                                <div class="prof__overlay-list">
+                                    <a href="#">Психология</a>, <a href="#">Маркетинг</a>, <a href="#">Философия</a>, <a href="#">Экономика</a>, <a href="#">Бугалтерия и право длинное название</a>
+                                </div>
+                            </div>
+                        <li class="prof__item js-vertical-anim-3">
+                            <div class="prof__item-front">
+                                <div class="prof__header">
+                                    <h3 class="prof__name">Экономика</h3>
+                                </div>
+                                <hr>
+                                <p class="prof__desc">
+                                    <strong>5 млрд</strong> выделит государство до конца 2016 года на развитие сферы
+                                </p>
+                            </div>
+                            <div class="prof__overlay">
+                                <h4 class="prof__overlay-title">Экономика</h4>
+                                <hr>
+                                <div class="prof__overlay-list">
+                                    <a href="#">Психология</a>, <a href="#">Маркетинг</a>, <a href="#">Философия</a>, <a href="#">Экономика</a>, <a href="#">Бугалтерия и право длинное название</a>
+                                </div>
+                            </div>
+                        <li class="prof__item js-vertical-anim-3">
+                            <div class="prof__item-front">
+                                <div class="prof__header">
+                                    <h3 class="prof__name">Менеджмент</h3>
+                                </div>
+                                <hr>
+                                <p class="prof__desc">
+                                    <strong>+33%</strong> ежемесячно  увеличивается количество вакансий
+                                </p>
+                            </div>
+                            <div class="prof__overlay">
+                                <h4 class="prof__overlay-title">Экономика</h4>
+                                <hr>
+                                <div class="prof__overlay-list">
+                                    <a href="#">Психология</a>, <a href="#">Маркетинг</a>, <a href="#">Философия</a>, <a href="#">Экономика</a>, <a href="#">Бугалтерия и право длинное название</a>
+                                </div>
+                            </div>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="direction__spec direction__middle direction-tab" id="section-proff">
+            <div class="container-wide">
+                <div class="prof__block direction__block active">
+                    <div class="direction-text js-vertical-anim">направления для среднего профессионального обучения</div>
+                    <h2 class="programs__subtitle js-vertical-anim">—среднее профессиональное—</h2>
+                    <ul class="prof__list">
+                        <li class="prof__item js-vertical-anim-3">
+                            <div class="prof__item-front">
+                                <div class="prof__header">
+                                    <h3 class="prof__name">Юриспруденция</h3>
+                                </div>
+                                <hr>
+                                <p class="prof__desc">
+                                    <strong>1-ое место</strong> в рейтинге самых высокооплачиваемых сфер деятельности
+                                </p>
+                            </div>
+                            <div class="prof__overlay">
+                                <h4 class="prof__overlay-title">Экономика</h4>
+                                <hr>
+                                <div class="prof__overlay-list">
+                                    <a href="#">Психология</a>, <a href="#">Маркетинг</a>, <a href="#">Философия</a>, <a href="#">Экономика</a>, <a href="#">Бугалтерия и право длинное название</a>
+                                </div>
+                            </div>
+                        <li class="prof__item js-vertical-anim-3">
+                            <div class="prof__item-front">
+                                <div class="prof__header">
+                                    <h3 class="prof__name">Экономика</h3>
+                                </div>
+                                <hr>
+                                <p class="prof__desc">
+                                    <strong>5 млрд</strong> выделит государство до конца 2016 года на развитие сферы
+                                </p>
+                            </div>
+                            <div class="prof__overlay">
+                                <h4 class="prof__overlay-title">Экономика</h4>
+                                <hr>
+                                <div class="prof__overlay-list">
+                                    <a href="#">Психология</a>, <a href="#">Маркетинг</a>, <a href="#">Философия</a>, <a href="#">Экономика</a>, <a href="#">Бугалтерия и право длинное название</a>
+                                </div>
+                            </div>
+                        <li class="prof__item js-vertical-anim-3">
+                            <div class="prof__item-front">
+                                <div class="prof__header">
+                                    <h3 class="prof__name">Менеджмент</h3>
+                                </div>
+                                <hr>
+                                <p class="prof__desc">
+                                    <strong>+33%</strong> ежемесячно  увеличивается количество вакансий
+                                </p>
+                            </div>
+                            <div class="prof__overlay">
+                                <h4 class="prof__overlay-title">Экономика</h4>
+                                <hr>
+                                <div class="prof__overlay-list">
+                                    <a href="#">Психология</a>, <a href="#">Маркетинг</a>, <a href="#">Философия</a>, <a href="#">Экономика</a>, <a href="#">Бугалтерия и право длинное название</a>
+                                </div>
+                            </div>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="direction__spec direction__abroad direction-tab" id="section-aboard">
+            <div class="container-wide">
+                <div class="prof__block direction__block active">
+                    <div class="direction-text js-vertical-anim">направления для высшего профессионального обучения</div>
+                    <h2 class="programs__subtitle js-vertical-anim">—за рубежом / бакалавриат—</h2>
+                    <ul class="prof__list">
+                        <li class="prof__item js-vertical-anim-3">
+                            <div class="prof__item-front">
+                                <div class="prof__header">
+                                    <h3 class="prof__name">Юриспруденция</h3>
+                                </div>
+                                <hr>
+                                <p class="prof__desc">
+                                    <strong>1-ое место</strong> в рейтинге самых высокооплачиваемых сфер деятельности
+                                </p>
+                            </div>
+                            <div class="prof__overlay">
+                                <h4 class="prof__overlay-title">Экономика</h4>
+                                <hr>
+                                <div class="prof__overlay-list">
+                                    <a href="#">Психология</a>, <a href="#">Маркетинг</a>, <a href="#">Философия</a>, <a href="#">Экономика</a>, <a href="#">Бугалтерия и право длинное название</a>
+                                </div>
+                            </div>
+                        <li class="prof__item js-vertical-anim-3">
+                            <div class="prof__item-front">
+                                <div class="prof__header">
+                                    <h3 class="prof__name">Экономика</h3>
+                                </div>
+                                <hr>
+                                <p class="prof__desc">
+                                    <strong>5 млрд</strong> выделит государство до конца 2016 года на развитие сферы
+                                </p>
+                            </div>
+                            <div class="prof__overlay">
+                                <h4 class="prof__overlay-title">Экономика</h4>
+                                <hr>
+                                <div class="prof__overlay-list">
+                                    <a href="#">Психология</a>, <a href="#">Маркетинг</a>, <a href="#">Философия</a>, <a href="#">Экономика</a>, <a href="#">Бугалтерия и право длинное название</a>
+                                </div>
+                            </div>
+                        <li class="prof__item js-vertical-anim-3">
+                            <div class="prof__item-front">
+                                <div class="prof__header">
+                                    <h3 class="prof__name">Менеджмент</h3>
+                                </div>
+                                <hr>
+                                <p class="prof__desc">
+                                    <strong>+33%</strong> ежемесячно  увеличивается количество вакансий
+                                </p>
+                            </div>
+                            <div class="prof__overlay">
+                                <h4 class="prof__overlay-title">Экономика</h4>
+                                <hr>
+                                <div class="prof__overlay-list">
+                                    <a href="#">Психология</a>, <a href="#">Маркетинг</a>, <a href="#">Философия</a>, <a href="#">Экономика</a>, <a href="#">Бугалтерия и право длинное название</a>
+                                </div>
+                            </div>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="direction__spec direction-tab" id="section-courses">
+            <div class="container-wide">
+                <div class="prof__block direction__block active">
+                    <div class="direction-text js-vertical-anim">направления для дополнительного профессионального обучения</div>
+                    <h2 class="programs__subtitle js-vertical-anim">—курсы—</h2>
+                    <ul class="prof__list">
+                        <li class="prof__item js-vertical-anim-3">
+                            <div class="prof__item-front">
+                                <div class="prof__header">
+                                    <h3 class="prof__name">Юриспруденция</h3>
+                                </div>
+                                <hr>
+                                <p class="prof__desc">
+                                    <strong>1-ое место</strong> в рейтинге самых высокооплачиваемых сфер деятельности
+                                </p>
+                            </div>
+                            <div class="prof__overlay">
+                                <h4 class="prof__overlay-title">Экономика</h4>
+                                <hr>
+                                <div class="prof__overlay-list">
+                                    <a href="#">Психология</a>, <a href="#">Маркетинг</a>, <a href="#">Философия</a>, <a href="#">Экономика</a>, <a href="#">Бугалтерия и право длинное название</a>
+                                </div>
+                            </div>
+                        <li class="prof__item js-vertical-anim-3">
+                            <div class="prof__item-front">
+                                <div class="prof__header">
+                                    <h3 class="prof__name">Экономика</h3>
+                                </div>
+                                <hr>
+                                <p class="prof__desc">
+                                    <strong>5 млрд</strong> выделит государство до конца 2016 года на развитие сферы
+                                </p>
+                            </div>
+                            <div class="prof__overlay">
+                                <h4 class="prof__overlay-title">Экономика</h4>
+                                <hr>
+                                <div class="prof__overlay-list">
+                                    <a href="#">Психология</a>, <a href="#">Маркетинг</a>, <a href="#">Философия</a>, <a href="#">Экономика</a>, <a href="#">Бугалтерия и право длинное название</a>
+                                </div>
+                            </div>
+                        <li class="prof__item js-vertical-anim-3">
+                            <div class="prof__item-front">
+                                <div class="prof__header">
+                                    <h3 class="prof__name">Менеджмент</h3>
+                                </div>
+                                <hr>
+                                <p class="prof__desc">
+                                    <strong>+33%</strong> ежемесячно  увеличивается количество вакансий
+                                </p>
+                            </div>
+                            <div class="prof__overlay">
+                                <h4 class="prof__overlay-title">Экономика</h4>
+                                <hr>
+                                <div class="prof__overlay-list">
+                                    <a href="#">Психология</a>, <a href="#">Маркетинг</a>, <a href="#">Философия</a>, <a href="#">Экономика</a>, <a href="#">Бугалтерия и право длинное название</a>
+                                </div>
+                            </div>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--<div class="programs__content direction__content">-->
+            <!--<h2 class="programs__title js-vertical-anim direction__title">Юриспруденция</h2>-->
+            <!--<h2 class="direction__subtitle js-vertical-anim">код направления: 38.03.01</h2>-->
+            <!--<hr class="programs__hr">-->
+            <!--<h3 class="direction__inner-title">-->
+                <!--Юрист – одна из самых популярных и модных<br>-->
+                <!--профессий в наше время.-->
+            <!--</h3>-->
+            <!--<p class="direction__text">-->
+                <!--Это специалист в отрасли права. Он знает законы и правовые нормы, умеет их использовать-->
+                <!--и способен обучать их основам других. Это эксперт в области юриспруденции, который может занимать любую правовую должность, от адвоката до судьи. Профессия юриста является универсальной,-->
+                <!--поскольку такие специалисты востребованы в разных сферах деятельности: трудовых, таможенных отношений, правовых СМИ, судебной защиты, страховании, недвижимости, строительстве, консалтинге, налоговых инспекциях, инвестиционном бизнесе и др.-->
+            <!--</p>-->
+            <!--<div class="profession">-->
+                <!--<div class="profession__title">ваша будующая Специальность по направлению «юриспруденция»:</div>-->
+                <!--<div class="profession__name">Психология, Маркетинг, Философия, Экономика</div>-->
+            <!--</div>-->
+            <!--<div class="bid-card js-vertical-anim">-->
+                <!--<div class="bid-card__title js-vertical-anim">карточка направления</div>-->
+                <!--<div class="bid-card__row">-->
+                    <!--<div class="bid-card__col bid-card__col&#45;&#45;lg js-vertical-anim-4">-->
+                        <!--<div class="bid-card__def">-->
+                            <!--<div class="bid-card__subtitle">Ваша будующая<br>квалификация:</div>-->
+                            <!--<div class="bid-card__value">Бакалавр</div>-->
+                        <!--</div>-->
+                        <!--<div class="bid-card__def">-->
+                            <!--<div class="bid-card__subtitle">Срок обучения:</div>-->
+                            <!--<div class="bid-card__value">5 лет</div>-->
+                        <!--</div>-->
+                        <!--<div class="bid-card__def">-->
+                            <!--<div class="bid-card__subtitle">Стоимость обучения:</div>-->
+                            <!--<div class="bid-card__value">13000 руб.</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="bid-card__col bid-card__col&#45;&#45;sm js-vertical-anim-4 _big">-->
+                        <!--<div class="bid-card__def">-->
+                            <!--<div class="bid-card__subtitle">ВУЗы для обучения:</div>-->
+                            <!--<ul class="vmenu vmenu&#45;&#45;university vmenu&#45;&#45;direction">-->
+                                <!--<li class="vmenu__item">-->
+                                    <!--<label class="vmenu__label">-->
+                                        <!--<input type="radio" name="university" value="1">-->
+                                        <!--<div class="vmenu__target">-->
+                                            <!--<div class="vmenu__text">-->
+                                                <!--<div class="vmenu__title">ВПШ</div>-->
+                                                <!--<div class="vmenu__subtitle">Открытый институт — Высшая профессиональная школа</div>-->
+                                                <!--<div class="vmenu__radio"></div>-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                    <!--</label>-->
+                                <!--</li>-->
+                                <!--<li class="vmenu__item">-->
+                                    <!--<label class="vmenu__label">-->
+                                        <!--<input type="radio" name="university" value="2">-->
+                                        <!--<div class="vmenu__target">-->
+                                            <!--<div class="vmenu__text">-->
+                                                <!--<div class="vmenu__title">МНЭПУ</div>-->
+                                                <!--<div class="vmenu__subtitle">Международный независимый эколого-политологический университет</div>-->
+                                                <!--<div class="vmenu__radio"></div>-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                    <!--</label>-->
+                                <!--</li>-->
+                            <!--</ul>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="bid-card__col bid-card__col&#45;&#45;xs js-vertical-anim-4">-->
+                        <!--<div class="bid-card__def">-->
+                            <!--<div class="bid-card__subtitle">Дисциплины<br>вступительных экзаменов:</div>-->
+                            <!--<div class="bid-card__value">Русский язык,<br>Математика,<br>Биология</div>-->
+                        <!--</div>-->
+                        <!--<div class="bid-card__def">-->
+                            <!--<div class="bid-card__subtitle">Сроки приема документов:</div>-->
+                            <!--<div class="bid-card__value">01.06.2016г.</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>&lt;!&ndash; .bid-card &ndash;&gt;-->
+            <!--<a class="btn btn_default start_btn direction__button js-vertical-anim animated fadeInUp btn_bordered" href="#">подать заявку на обучение</a>-->
+        <!--</div>&lt;!&ndash; .programs__content &ndash;&gt;-->
+    </div>
+
+
+    {{> footer/footer }}
+
+    <script src="%=static=%js/separate-js/svg4everybody.min.js"></script>
+    <script>svg4everybody();</script>
+
+    <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
+    <script src="%=static=%js/main%=hash=%%=min=%.js"></script>
+</body>
+</html>

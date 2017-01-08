@@ -1,0 +1,202 @@
+.footer {
+	background: #484848;
+	padding-top: rem(45);
+	padding-bottom: rem(45);
+	color: #FFF;
+	font-size: rem(24);
+    position: relative;
+    z-index: 100;
+	overflow: hidden;
+
+	@include below($mobile) {
+		padding: rem(28) rem(28) 0 rem(28);
+
+		.container {
+			padding: 0;
+		}
+	}
+
+	a {
+		color: #FFF;
+		text-decoration: none;
+	}
+
+    .container {
+        z-index: 100;
+    }
+}
+.footer-nav {
+	@include cf;
+}
+.footer-menu {
+	@include reset-list;
+	float: left;
+	padding-left: rem(35);
+	width: 27%;
+    &:first-child { padding-left: rem(45); }
+    &:last-child { width: 19%; }
+
+	@include below($mobile) {
+		width: 50%;
+		padding: 0;
+		margin-bottom: rem(10);
+
+		&:first-child {
+			padding-left: 0;
+		}
+
+		&:last-child {
+			width: 50%;
+		}
+
+		&:nth-of-type(even) {
+			padding-left: rem(20);
+		}
+	}
+}
+.footer-menu__item {
+	font-size: rem(18);
+	font-weight: 300;
+	margin-bottom: rem(15);
+
+	&_main {
+		margin-bottom: rem(22);
+		font-size: rem(24);
+		font-weight: normal;
+	}
+
+	@include below($mobile) {
+		margin-bottom: rem(9);
+
+		font-size: rem(13);
+
+		&_main {
+			font-size: rem(13);
+		}
+	}
+}
+.footer__hr {
+	margin: rem(45) 0;
+
+	@include below($mobile) {
+		margin: rem(10) 0 rem(20);
+	}
+}
+
+.footer__area {
+	@include cf;
+	.footer-menu {
+		width: 33.333%;
+		float: left;
+	}
+
+	@include below($mobile) {
+		.footer-menu {
+			width: 100%;
+			float: none;
+			padding: 0;
+		}
+
+		.footer-menu__item {
+			margin-bottom: rem(15);
+		}
+	}
+}
+
+.footer-address {
+	@include reset-list;
+	padding-left: rem(45);
+	width: 66.666%;
+	float: left;
+
+	@include below($mobile) {
+		width: 100%;
+		float: none;
+		padding: 0;
+
+		font-size: rem(14);
+	}
+}
+.footer-address__item {
+	& + .footer-address__item {
+		margin-top: rem(25);
+
+		@include below($mobile) {
+			margin-top: 0;
+		}
+	}
+}
+.footer-address__label {
+	font-family: $Roboto;
+	color: #A4A4A4;
+	font-weight: normal;
+	margin-top: 0;
+	font-size: rem(18);
+	margin-bottom: rem(10);
+
+	@include below($mobile) {
+		margin-bottom: rem(15);
+
+		font-size: inherit;
+	}
+}
+.footer-adress__value {
+	margin-bottom: 0;
+
+	@include below($mobile) {
+		margin-bottom: rem(15);
+	}
+}
+
+.footer__end {
+	@include cf;
+}
+.footer__copyright {
+	padding-left: rem(45);
+	float: left;
+	width: 66.666%;
+	font-size: rem(14);
+	line-height: rem(24);
+	font-weight: normal;
+	color: #A4A4A4;
+	font-family: $Roboto;
+
+	@include below($mobile) {
+		width: 100%;
+		padding: 0;
+		margin-bottom: rem(44);
+		float: none;
+
+		font-size: rem(12);
+		line-height: 1;
+	}
+}
+.devby {
+	a {
+		color: #A4A4A4;
+	}
+	padding-left: rem(45);
+	float: left;
+	width: 33.333%;
+	font-size: rem(14);
+	line-height: rem(24);
+	font-weight: normal;
+	color: #A4A4A4;
+	margin-top: rem(-10);
+	font-family: $Roboto;
+	strong {
+		font-size: rem(36);
+		font-weight: normal;
+	}
+
+	@include below($mobile) {
+		margin: 0 0 0 rem(-28);
+		padding: rem(15) rem(30) rem(20);
+		width: 100vw;
+		float: none;
+
+		color: #484848;
+
+		background-color: #f2f2f2;
+	}
+}

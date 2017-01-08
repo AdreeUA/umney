@@ -1,0 +1,41 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+<head>
+    {{> head/head }}
+</head>
+
+<body class="page">
+%=symbols=%
+
+{{> header/header }}
+
+<div class="container-wide">
+    <div class="success">
+        <div class="success__wrap">
+            <div class="success__content text-center">
+                <p class="success__title">Спасибо!</p>
+                <p class="success__subtitle">Твоя заявка принята,  мы свяжемся в течение 24 часов.</p>
+            </div>
+            <hr class="hr">
+            <div class="success__recommend text-center">
+                <p class="success__text">Рекомендуем посетить разделы:</p>
+                <ul class="success__nav">
+                    <li class="success__nav-item"><a href="#index" class="success__nav-link">Что такое Умней</a></li>
+                    <li class="success__nav-item"><a href="#index" class="success__nav-link">Как учиться умней</a></li>
+                    <li class="success__nav-item"><a href="#index" class="success__nav-link">Главная страница</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{> footer/footer }}
+
+<script src="%=static=%js/separate-js/svg4everybody.min.js"></script>
+<script>svg4everybody();</script>
+
+<!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
+<script src="%=static=%js/main%=hash=%%=min=%.js"></script>
+
+</body>
+</html>

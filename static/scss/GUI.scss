@@ -1,0 +1,185 @@
+// GUI stylies of the project
+// For example, styles of the links, buttons and so on.
+.btn {
+	display: inline-block;
+	border: none;
+	text-decoration: none;
+	color: #FFF;
+	border-radius: rem(30);
+	padding: rem(15);
+	text-align: center;
+	min-width: rem(164);
+	text-transform: uppercase;
+	font-size: rem(20);
+	font-weight: bold;
+	background: #FFF;
+	color: #EF465B;
+	&.btn_default {
+		background: #FFF;
+		color: #EF465B;
+		padding-left: rem(40);
+		padding-right: rem(40);
+		font-size: rem(24);
+		padding-top: rem(22);
+		padding-bottom: rem(22);
+		border-radius: rem(36);
+	}
+	&.btn_primary {
+		background: $brand-primary;
+	}
+	&.btn_invert {
+		background: $brand-primary;
+		color: #FFF;
+	}
+	&.btn_green-invert {
+		background: #b2d340;
+		color: #FFF;
+	}
+	&.btn_blue-invert {
+		background: #27b2e4;
+		color: #FFF;
+	}
+	&.btn_black-invert {
+		background: #000000;
+		color: #FFF;
+	}
+    &.btn_bordered {
+        background: transparent;
+        border: rem(3) solid $brand-primary;
+    }
+    &.btn_green-bordered {
+        background: transparent;
+        border: rem(3) solid #b2d340;
+        color: #b2d340;
+    }
+    &.btn_blue-bordered {
+        background: transparent;
+        border: rem(3) solid #27b2e4;
+        color: #27b2e4;
+    }
+    &.btn_white-bordered {
+        background: transparent;
+        border: rem(3) solid #ffffff;
+        color: #ffffff;
+    }
+    &.btn_gray-bordered {
+        background: transparent;
+        border: rem(3) solid #c5c5c5;
+        color: #000000;
+    }
+    &.btn_md {
+        font-size: rem(15);
+        letter-spacing: rem(1.5);
+    }
+}
+
+.near,
+.choose-city {
+	.select2-container {
+		width: rem(450) !important;
+		margin: 0 auto rem(35);
+	}
+	.select2-container .select2-selection--single {
+		height: rem(68);
+        outline: none;
+	}
+	.select2-container--default .select2-selection--single {
+		background: #000;
+		border-color: #000;
+		border-radius: rem(3);
+		width: 100%;
+		padding: 0 rem(70);
+
+        &:hover {
+            background: #ef465b;
+            border-color: #ef465b;
+        }
+	}
+    .select2-container--open .select2-selection--single {
+        background: #ef465b;
+        border-color: #ef465b;
+	}
+	.select2-container .select2-selection--single .select2-selection__rendered {
+		text-align: center;
+		color: #FFF;
+		font-size: rem(36);
+		line-height: 1;
+		padding: 0;
+		line-height: rem(68);
+	}
+	.select2-container--default .select2-selection--single .select2-selection__arrow {
+		right: rem(22);
+		top: rem(28);
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: rem(14) rem(16) 0 rem(16);
+		border-color: #ffffff transparent transparent transparent;
+		b {
+			display: none;
+		}
+	}
+    .select2-dropdown {
+        background: #ffffff;
+        border: none;
+        box-shadow: rem(1) rem(2) rem(4) rgba(4,4,4,.28);
+    }
+
+    .select2-search--dropdown {
+        padding: rem(10);
+    }
+
+    .select2-container .select2-search--dropdown .select2-search__field {
+        outline: none;
+        border: none;
+        padding: 0 rem(20);
+        height: rem(46);
+        border-radius: rem(23);
+        background-color: #fff;
+        font-size: rem(30);
+        box-shadow: inset rem(3) rem(4) rem(5) rgba(4,4,4,.17);
+    }
+
+    .select2-results__option {
+        padding: rem(15) rem(30);
+        font-size: rem(30);
+        border-top: 1px solid #e0e0e0;
+    }
+
+    .select2-container--default .select2-results__option[aria-selected=true] {
+        background: #949494;
+        color: #ffffff;
+    }
+
+    .select2-container--default .select2-results__option--highlighted[aria-selected] {
+        background: #27b2e4;
+    }
+}
+
+.choose-city {
+    .select2-container {
+        width: rem(331) !important;
+        margin-bottom: 0;
+    }
+
+    .select2-container--default .select2-selection--single {
+        background: #ef465b;
+        border-color: #ef465b;
+        padding: 0 0 0 rem(30);
+    }
+
+    .select2-selection__arrow {
+        display: none;
+    }
+
+    .select2-container .select2-selection--single .select2-selection__rendered {
+        text-align: left;
+        line-height: 1;
+        margin-top: rem(25);
+    }
+
+    .select2-results__option,
+    .select2-container .select2-search--dropdown .select2-search__field {
+        font-size: rem(24);
+    }
+}
